@@ -98,7 +98,7 @@ def test_output_contract_shape(base_config):
     result = run_engine(df, config=base_config)
 
     # Check top-level keys
-    assert set(result.keys()) == {"summary", "warnings", "results"}
+    assert set(result.keys()) == {"summary", "warnings", "results", "analytics"}
 
     # Check summary keys
     summary = result["summary"]

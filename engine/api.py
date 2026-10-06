@@ -20,6 +20,7 @@ from engine.scoring import compute_score
 from engine.routing import route
 from engine.evidence import resolve_primary
 from engine.schemas import Violation, build_result
+from engine.analytics import confidence_calibration, vendor_risk_profiles
 
 
 __version__ = "1.0.0"
@@ -55,7 +56,7 @@ def run_engine(
     history: list[dict] | None = None,
     config: dict | None = None,
 ) -> dict:
-    """Process invoices and return decisions.
+    """Process invoices and return decisions + analytics.
 
     Args:
         source: str/Path to .csv/.xlsx, or a pandas DataFrame.
@@ -63,14 +64,12 @@ def run_engine(
         config: optional dict that overrides default_config.json (deep-merged).
 
     Returns:
-        dict with keys: summary, warnings, results.
+        dict with keys: summary, warnings, results, analytics.
 
     Raises:
         IngestionError: On file-level problems.
     """
     cfg = load_config(config)
-
-    # Determine as_of_date
     as_of = cfg.get("as_of_date") or date.today().isoformat()
 
     # -- Ingest ---------------------------------------------------------------
@@ -104,7 +103,7 @@ def run_engine(
     for rec in records:
         all_violations: list[Violation] = []
 
-        # Pass 1 (R01-R08) - runs on every invoice
+        # Pass 1 (R01-R08)
         for rule_fn in PASS1_RULES:
             v = rule_fn(rec, ctx)
             if v is not None:
@@ -113,7 +112,6 @@ def run_engine(
         has_hard = any(v.severity == "hard" for v in all_violations)
 
         if not has_hard:
-            # Determine if record is uncertain (has soft violations OR candidates)
             has_candidates = len(candidates.get(rec["invoice_id"], [])) > 0
             uncertain = len(all_violations) > 0 or has_candidates
             pass_resolved_in = 2 if uncertain else 1
@@ -122,20 +120,17 @@ def run_engine(
                 # R09 + R10 (fuzzy duplicate)
                 cands = candidates.get(rec["invoice_id"], [])
                 exact_match_id = exact_matches.get(rec["invoice_id"])
-                fuzzy_violations = r09_r10(rec, cands, exact_match_id, cfg)
-                all_violations.extend(fuzzy_violations)
+                all_violations.extend(r09_r10(rec, cands, exact_match_id, cfg))
 
-            # R11 (amount outlier) -- runs whenever no hard violation,
-            # independently of candidates (vendor history check)
+            # R11 (outlier) -- always runs when no hard violation
             v11 = r11(rec, vendor_stats, cfg)
             if v11 is not None:
                 all_violations.append(v11)
                 if not uncertain:
-                    pass_resolved_in = 2  # entered pass 2 due to R11
+                    pass_resolved_in = 2
         else:
             pass_resolved_in = 1
 
-        # Score and route
         score = compute_score(all_violations)
         decision = route(score, all_violations, cfg)
         exception_type, primary_reason, matched_record, evidence = resolve_primary(
@@ -155,8 +150,13 @@ def run_engine(
         ))
         counts[decision] += 1
 
-    # Sort by row_index
     results.sort(key=lambda r: r["row_index"])
+
+    # -- Analytics ------------------------------------------------------------
+    analytics = {
+        "confidence_calibration": confidence_calibration(results),
+        "vendor_risk": vendor_risk_profiles(results, history),
+    }
 
     return {
         "summary": {
@@ -170,4 +170,5 @@ def run_engine(
         },
         "warnings": warnings,
         "results": results,
+        "analytics": analytics,
     }
