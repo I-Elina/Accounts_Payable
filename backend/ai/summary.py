@@ -9,6 +9,16 @@ def generate_summary(decision_record: dict[str, Any]) -> dict[str, Any]:
 
     Contract function: Never decides, only explains based on verified record facts.
     """
+    if AI_MODE == "gemini":
+        try:
+            from backend.ai.llm_client import call_gemini_summary
+            result = call_gemini_summary(decision_record)
+            if validate_summary(result, decision_record):
+                return result
+        except Exception:
+            pass
+        return mock_generate_summary(decision_record)
+
     if AI_MODE == "azure":
         try:
             from backend.ai.llm_client import call_azure_summary
