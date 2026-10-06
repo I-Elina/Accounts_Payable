@@ -1,0 +1,6 @@
+invoice_id,invoice_number,vendor_name,invoice_date,total_amount,currency,decision,confidence,exception_type,primary_reason,matched_record,review_status
+INV-1042,AC/2026/0345,Acme Pvt Ltd,2026-09-03,10000.00,INR,needs_review,0.50,fuzzy_duplicate,Probable duplicate of INV-0987 (96% similar),INV-0987,pending
+INV-1055,TC/2026/9912,Tata Consultancy Services,2026-09-10,125000.00,INR,needs_review,0.80,policy_limit,Amount 125000.0 exceeds policy limit 100000,,pending
+INV-1088,DL/2026/1102,Dell Technologies Inc,2026-09-15,45000.00,INR,exception,0.20,exact_duplicate,Exact duplicate of INV-1020,INV-1020,pending
+INV-1110,MS/2026/0091,Microsoft India Pvt Ltd,2026-09-20,0.00,INR,exception,0.40,invalid_amount,Invalid amount: 0.0,,pending
+INV-1134,FK/2026/4401,Unknown Tech Corp,2026-09-22,8500.00,INR,needs_review,0.80,unknown_vendor,Vendor or category not in approved list,,pending

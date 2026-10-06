@@ -1,0 +1,46 @@
+{
+  "reply": "I found 1 invoice needing immediate review. INV-1042 was flagged as a probable duplicate of INV-0987.",
+  "session_id": "sess-abc123xyz",
+  "referenced_invoice_ids": ["INV-1042", "INV-0987"],
+  "tools_used": [
+    {
+      "name": "explain_decision",
+      "arguments": { "invoice_id": "INV-1042" }
+    }
+  ],
+  "cards": [
+    {
+      "type": "invoice",
+      "id": 7,
+      "invoice_id": "INV-1042",
+      "vendor_name": "Acme Pvt Ltd",
+      "total_amount": 10000.0,
+      "currency": "INR",
+      "decision": "needs_review",
+      "confidence": 0.5,
+      "primary_reason": "Probable duplicate of INV-0987 (96% similar)",
+      "matched_record": "INV-0987",
+      "review_status": "pending"
+    },
+    {
+      "type": "stats",
+      "upload_id": 1,
+      "total": 1000,
+      "auto_pass": 816,
+      "needs_review": 90,
+      "exception": 94
+    },
+    {
+      "type": "report",
+      "upload_id": 1,
+      "url": "/api/uploads/1/report"
+    }
+  ],
+  "proposal": {
+    "type": "review_proposal",
+    "id": 7,
+    "invoice_id": "INV-1042",
+    "action": "reject",
+    "reason": "Probable duplicate submission with 96% similarity"
+  }
+}

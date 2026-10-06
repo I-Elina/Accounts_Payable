@@ -1,0 +1,77 @@
+{
+  "items": [
+    {
+      "id": 6,
+      "timestamp": "2026-10-07T10:15:00Z",
+      "actor": "Shree",
+      "actor_type": "user",
+      "event_type": "REVIEW_APPROVED",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": { "comment": "ok", "previous_confidence": 0.50 }
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-10-07T10:12:30Z",
+      "actor": "ai-assistant",
+      "actor_type": "ai",
+      "event_type": "AI_SUMMARY_GENERATED",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": { "suggested_action": "investigate" }
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-10-07T10:00:05Z",
+      "actor": "decision-engine",
+      "actor_type": "engine",
+      "event_type": "INVOICE_FLAGGED",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": {
+        "decision": "needs_review",
+        "confidence": 0.50,
+        "exception_type": "fuzzy_duplicate",
+        "primary_reason": "Probable duplicate of INV-0987 (96% similar)"
+      }
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-10-07T10:00:03Z",
+      "actor": "decision-engine",
+      "actor_type": "engine",
+      "event_type": "INVOICE_AUTO_PASSED",
+      "invoice_id": "INV-1001",
+      "upload_id": 1,
+      "details": {
+        "decision": "auto_pass",
+        "confidence": 1.0,
+        "exception_type": "none",
+        "primary_reason": "No issues found"
+      }
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-10-07T10:00:02Z",
+      "actor": "system",
+      "actor_type": "system",
+      "event_type": "INGESTION_COMPLETED",
+      "invoice_id": null,
+      "upload_id": 1,
+      "details": { "total": 1000, "auto_pass": 816, "needs_review": 90, "exception": 94 }
+    },
+    {
+      "id": 1,
+      "timestamp": "2026-10-07T10:00:00Z",
+      "actor": "system",
+      "actor_type": "system",
+      "event_type": "UPLOAD_RECEIVED",
+      "invoice_id": null,
+      "upload_id": 1,
+      "details": { "filename": "invoices_demo.csv", "uploaded_by": "Shree" }
+    }
+  ],
+  "total": 6,
+  "page": 1,
+  "page_size": 25
+}

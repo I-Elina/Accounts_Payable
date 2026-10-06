@@ -1,0 +1,88 @@
+{
+  "invoice": {
+    "id": 7,
+    "upload_id": 1,
+    "invoice_id": "INV-1042",
+    "invoice_number": "AC/2026/0345",
+    "vendor_name": "Acme Pvt Ltd",
+    "invoice_date": "2026-09-03",
+    "due_date": null,
+    "currency": "INR",
+    "subtotal": 8474.58,
+    "tax_amount": 1525.42,
+    "total_amount": 10000.0,
+    "category": "Office Supplies",
+    "po_number": null,
+    "description": null
+  },
+  "decision": {
+    "decision": "needs_review",
+    "confidence": 0.5,
+    "pass_resolved_in": 2,
+    "exception_type": "fuzzy_duplicate",
+    "primary_reason": "Probable duplicate of INV-0987 (96% similar)",
+    "matched_record": "INV-0987",
+    "violations": [
+      {
+        "rule_id": "R09",
+        "name": "Fuzzy duplicate",
+        "severity": "soft",
+        "penalty": 0.35,
+        "exception_type": "fuzzy_duplicate",
+        "message": "Probable duplicate of INV-0987 (96% similar)",
+        "matched_record": "INV-0987",
+        "evidence": {
+          "vendor_similarity": 0.94,
+          "invoice_number_similarity": 1.0,
+          "amount_difference_pct": 0.2,
+          "days_apart": 1,
+          "combined_similarity": 0.96
+        }
+      },
+      {
+        "rule_id": "R10",
+        "name": "Near-identical amount",
+        "severity": "soft",
+        "penalty": 0.15,
+        "exception_type": "fuzzy_duplicate",
+        "message": "Amount within 0.2% of matched record INV-0987",
+        "matched_record": "INV-0987",
+        "evidence": {
+          "amount_difference_pct": 0.2
+        }
+      }
+    ],
+    "evidence": {
+      "matched_invoice_id": "INV-0987"
+    },
+    "ai_summary": "Invoice INV-1042 appears to be a probable duplicate of earlier invoice INV-0987 with identical invoice number and 96% overall similarity. Both invoices were issued within 1 day of each other. Verify with vendor whether this is a duplicate submission.",
+    "ai_suggested_action": "investigate",
+    "ai_summary_status": "ready",
+    "review_status": "pending"
+  },
+  "matched_invoice": {
+    "id": 2,
+    "upload_id": 1,
+    "invoice_id": "INV-0987",
+    "invoice_number": "AC/2026/0345",
+    "vendor_name": "Acme Private Limited",
+    "invoice_date": "2026-09-02",
+    "due_date": null,
+    "currency": "INR",
+    "subtotal": 8491.53,
+    "tax_amount": 1528.47,
+    "total_amount": 10020.0,
+    "category": "Office Supplies",
+    "po_number": null,
+    "description": null
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "reviewer": "Shree",
+      "action": "approve",
+      "comment": "ok",
+      "reviewed_at": "2026-10-07T10:15:00Z"
+    }
+  ]
+}
