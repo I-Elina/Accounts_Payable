@@ -1,0 +1,71 @@
+{
+  "summary": {
+    "total": 1000,
+    "auto_pass": 816,
+    "needs_review": 90,
+    "exception": 94,
+    "engine_version": "1.0.0",
+    "auto_pass_threshold": 0.85,
+    "exception_below": 0.40
+  },
+  "warnings": [],
+  "results": [
+    {
+      "invoice_id": "INV-1042",
+      "row_index": 42,
+      "decision": "needs_review",
+      "confidence": 0.50,
+      "pass_resolved_in": 2,
+      "exception_type": "fuzzy_duplicate",
+      "primary_reason": "Probable duplicate of INV-0987 (96% similar)",
+      "matched_record": "INV-0987",
+      "violations": [
+        {
+          "rule_id": "R09",
+          "name": "Fuzzy duplicate",
+          "severity": "soft",
+          "penalty": 0.35,
+          "exception_type": "fuzzy_duplicate",
+          "message": "Probable duplicate of INV-0987 (96% similar)",
+          "matched_record": "INV-0987",
+          "evidence": {
+            "vendor_similarity": 0.94,
+            "invoice_number_similarity": 1.0,
+            "amount_difference_pct": 0.2,
+            "days_apart": 1,
+            "combined_similarity": 0.96
+          }
+        },
+        {
+          "rule_id": "R10",
+          "name": "Near-identical amount",
+          "severity": "soft",
+          "penalty": 0.15,
+          "exception_type": "fuzzy_duplicate",
+          "message": "Amount within 0.2% of matched record INV-0987",
+          "matched_record": "INV-0987",
+          "evidence": {
+            "amount_difference_pct": 0.2
+          }
+        }
+      ],
+      "evidence": {
+        "matched_invoice_id": "INV-0987"
+      },
+      "record": {
+        "invoice_id": "INV-1042",
+        "invoice_number": "AC/2026/0345",
+        "vendor_name": "Acme Pvt Ltd",
+        "invoice_date": "2026-09-03",
+        "due_date": null,
+        "currency": "INR",
+        "subtotal": 8474.58,
+        "tax_amount": 1525.42,
+        "total_amount": 10000.0,
+        "category": "Office Supplies",
+        "po_number": null,
+        "description": null
+      }
+    }
+  ]
+}
