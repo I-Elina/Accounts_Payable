@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Architecture & Database Specification — Cache Me If You Can</title>
+  <style>
+    :root {
+      --color-primary: #0078D4;
+      --color-primary-hover: #106EBE;
+      --color-primary-soft: #E5F1FB;
+      --color-navy: #11213F;
+      --color-navy-2: #1B2F55;
+      --color-bg: #F4F7FB;
+      --color-surface: #FFFFFF;
+      --color-border: #D8E0EA;
+      --color-text: #11213F;
+      --color-text-muted: #5B6B7F;
+      --color-pass: #107C10;
+      --color-pass-bg: #E6F4E6;
+      --color-review: #B35C00;
+      --color-review-bg: #FFF1DB;
+      --color-exception: #C42B31;
+      --color-exception-bg: #FDE7E9;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(17, 33, 63, 0.08), 0 1px 3px rgba(17, 33, 63, 0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-2) 100%);
+      color: #FFFFFF;
+      padding: 36px 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 32px;
+    }
+
+    header .tag {
+      display: inline-block;
+      background: rgba(0, 120, 212, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #D8E0EA;
+      font-size: 16px;
+      max-width: 860px;
+    }
+
+    .nav-bar {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+
+    .nav-bar a:hover {
+      background: var(--color-primary);
+    }
+
+    section {
+      background: var(--color-surface);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 28px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--color-navy);
+      border-bottom: 2px solid var(--color-primary-soft);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 17px;
+      color: var(--color-navy-2);
+      margin: 20px 0 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13.5px;
+    }
+
+    th, td {
+      padding: 11px 13px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    th {
+      background: var(--color-bg);
+      color: var(--color-navy);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+      background: rgba(0, 120, 212, 0.02);
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+
+    .pill-pk { background: #E6F4E6; color: #107C10; }
+    .pill-fk { background: #E5F1FB; color: #0078D4; }
+    .pill-idx { background: #FFF1DB; color: #B35C00; }
+
+    pre, code {
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+
+    pre {
+      background: #111B2E;
+      color: #E2E8F0;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+
+    code:not(pre code) {
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .callout {
+      border-left: 4px solid var(--color-primary);
+      background: var(--color-primary-soft);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .callout.enterprise {
+      border-left-color: #107C10;
+      background: #EBF7EB;
+      color: #0E5E0E;
+    }
+
+    .feature-card {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 16px;
+      background: #FCFDFF;
+    }
+
+    .feature-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .feature-title {
+      font-weight: 700;
+      color: var(--color-navy);
+      font-size: 15px;
+    }
+
+    .feature-path {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--color-text-muted);
+    }
+
+    .diag-box {
+      background: #111B2E;
+      color: #D8E0EA;
+      padding: 20px;
+      border-radius: var(--radius);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 16px 0;
+      overflow-x: auto;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: var(--color-text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="tag">Enterprise Technical Specification</div>
+    <h1>Backend Architecture & Database Schema Specification</h1>
+    <p>Complete structural breakdown of the FastAPI backend service, relational data model, conversational chat grounding architecture, and enterprise compliance considerations for <em>Cache Me If You Can</em>.</p>
+    <div class="nav-bar">
+      <a href="#architecture-pillars">Enterprise Architecture Pillars</a>
+      <a href="#database-schema">Database Schema Deep-Dive</a>
+      <a href="#function-directory">Complete Function Directory</a>
+      <a href="#scaling-roadmap">Production Scaling & Security</a>
+    </div>
+  </header>
+
+  <!-- Section 1: Architecture Pillars -->
+  <section id="architecture-pillars">
+    <h2>🏛️ Section 1: Enterprise Architecture Pillars</h2>
+    <p>The system is designed following modern financial automation best practices, ensuring zero regulatory or audit vulnerabilities:</p>
+
+    <div class="diag-box">
+[ User Upload (.csv / .xlsx) ]
+           │
+           ▼
+[ FastAPI Ingestion: POST /api/uploads ] ──► Emits: UPLOAD_RECEIVED
+           │
+           ▼
+[ Deterministic Engine Boundary: run_engine ]
+   ├─► Pass 1: R01-R08 (Missing, Invalid, Dates, Mismatch, Exact Dup, Policy)
+   └─► Pass 2: R09-R11 (Fuzzy Duplicates with Gate, Outliers)
+           │
+           ▼
+[ SQLite ACID Persistence ] ──► Emits: INGESTION_COMPLETED & INVOICE_FLAGGED
+   ├─► uploads (Batch records)
+   ├─► invoices (Canonical fields)
+   ├─► decisions (Score, evidence JSON, review status)
+   └─► audit_log (Immutable append-only trail)
+           │
+    ┌──────┴───────────────────────────────────┐
+    ▼                                          ▼
+[ AI Explanations: POST .../summary ]     [ Conversational Assistant: POST /api/chat ]
+   ├─ Multi-LLM: Mock / Azure / Gemini       ├─ Read-only Tool Registry
+   ├─ Zero-Decision Mandate                  ├─ DB-Generated Cards (No LLM Text)
+   └─ Anti-Hallucination Regex Guard         └─ Human-in-the-Loop Proposal Bar
+    </div>
+
+    <div class="callout enterprise">
+      <strong>Enterprise Compliance Guarantees (SOX & Financial Integrity):</strong>
+      <ul style="margin-left: 20px; margin-top: 6px;">
+        <li><strong>Deterministic Authority:</strong> Financial routing is 100% deterministic code. Generative LLMs are mathematically prevented from changing invoice decisions, approving disbursements, or modifying ledger entries.</li>
+        <li><strong>Immutable Audit Trail:</strong> Every single state change is recorded in <code>audit_log</code> with UTC ISO-8601 timestamps and unambiguous actor attribution (<code>engine</code>, <code>ai</code>, <code>user</code>, <code>system</code>).</li>
+        <li><strong>Zero-Mutation Chat Proposing:</strong> When a user asks the chatbot to <em>"Approve INV-1042"</em>, the assistant only returns a visual proposal. Zero bytes are written to the database until a human reviewer physically clicks the confirmation button.</li>
+        <li><strong>Spreadsheet Formula Injection Defense (CSV DDE):</strong> In compliance with OWASP guidelines, text cells beginning with <code>=</code>, <code>+</code>, <code>-</code>, or <code>@</code> are sanitized with a leading apostrophe <code>'</code> to prevent Excel formula execution attacks.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 2: Database Schema Deep-Dive -->
+  <section id="database-schema">
+    <h2>🗄️ Section 2: Database Schema & Relational Specifications</h2>
+    <p>Engineered with SQLite for instant embedded execution and 100% compatibility with PostgreSQL.</p>
+
+    <!-- Table 1: uploads -->
+    <h3>1. <code>uploads</code> Table</h3>
+    <p>Tracks uploaded invoice batches, row metrics, and cross-batch history options.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Key</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>id</code></td><td>INTEGER</td><td><span class="pill pill-pk">PRIMARY KEY</span></td><td>Auto-incrementing batch identifier.</td></tr>
+        <tr><td><code>filename</code></td><td>TEXT NOT NULL</td><td>-</td><td>Original sanitized filename uploaded by user.</td></tr>
+        <tr><td><code>uploaded_at</code></td><td>TEXT NOT NULL</td><td>-</td><td>ISO-8601 UTC timestamp of upload event.</td></tr>
+        <tr><td><code>uploaded_by</code></td><td>TEXT</td><td>-</td><td>User or system that submitted the file.</td></tr>
+        <tr><td><code>total_rows</code></td><td>INTEGER</td><td>-</td><td>Total invoices processed in batch.</td></tr>
+        <tr><td><code>auto_pass_count</code></td><td>INTEGER</td><td>-</td><td>Count of auto-passed clean rows.</td></tr>
+        <tr><td><code>needs_review_count</code></td><td>INTEGER</td><td>-</td><td>Count of soft-violation rows sent for review.</td></tr>
+        <tr><td><code>exception_count</code></td><td>INTEGER</td><td>-</td><td>Count of hard-violation or high-risk exception rows.</td></tr>
+        <tr><td><code>used_history</code></td><td>INTEGER</td><td>-</td><td>1 if earlier upload history was included, 0 if batch-only.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Table 2: invoices -->
+    <h3>2. <code>invoices</code> Table</h3>
+    <p>Normalized canonical storage for each invoice line item.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Key / Constraints</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>id</code></td><td>INTEGER</td><td><span class="pill pill-pk">PRIMARY KEY</span></td><td>Internal invoice primary key.</td></tr>
+        <tr><td><code>upload_id</code></td><td>INTEGER NOT NULL</td><td><span class="pill pill-fk">REFERENCES uploads(id)</span></td><td>Foreign key to parent upload batch.</td></tr>
+        <tr><td><code>invoice_id</code></td><td>TEXT NOT NULL</td><td><span class="pill pill-idx">UNIQUE(upload_id, invoice_id)</span></td><td>Invoice identifier (e.g., <code>INV-1042</code>).</td></tr>
+        <tr><td><code>invoice_number</code></td><td>TEXT</td><td>-</td><td>Vendor's bill/invoice reference number.</td></tr>
+        <tr><td><code>vendor_name</code></td><td>TEXT</td><td>-</td><td>Name of supplier or vendor.</td></tr>
+        <tr><td><code>invoice_date</code></td><td>TEXT</td><td>-</td><td>ISO-8601 calendar date (<code>YYYY-MM-DD</code>).</td></tr>
+        <tr><td><code>due_date</code></td><td>TEXT</td><td>-</td><td>Payment due date if provided.</td></tr>
+        <tr><td><code>currency</code></td><td>TEXT</td><td>-</td><td>Default <code>INR</code>.</td></tr>
+        <tr><td><code>subtotal</code></td><td>REAL</td><td>-</td><td>Tax-exclusive amount.</td></tr>
+        <tr><td><code>tax_amount</code></td><td>REAL</td><td>-</td><td>GST / VAT amount.</td></tr>
+        <tr><td><code>total_amount</code></td><td>REAL</td><td>-</td><td>Grand total amount.</td></tr>
+        <tr><td><code>category</code></td><td>TEXT</td><td>-</td><td>Approved expense category string.</td></tr>
+        <tr><td><code>po_number</code></td><td>TEXT</td><td>-</td><td>Purchase order number.</td></tr>
+        <tr><td><code>description</code></td><td>TEXT</td><td>-</td><td>Item description or line details.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Table 3: decisions -->
+    <h3>3. <code>decisions</code> Table</h3>
+    <p>Stores the decision engine evaluation, confidence scores, structured violation payloads, and review states.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Key / Constraints</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>id</code></td><td>INTEGER</td><td><span class="pill pill-pk">PRIMARY KEY</span></td><td>Decision primary key.</td></tr>
+        <tr><td><code>invoice_pk</code></td><td>INTEGER NOT NULL</td><td><span class="pill pill-fk">REFERENCES invoices(id) UNIQUE</span></td><td>1:1 relationship with invoice.</td></tr>
+        <tr><td><code>decision</code></td><td>TEXT NOT NULL</td><td><span class="pill pill-idx">INDEXED</span></td><td><code>auto_pass</code>, <code>needs_review</code>, <code>exception</code>.</td></tr>
+        <tr><td><code>confidence</code></td><td>REAL NOT NULL</td><td>-</td><td>Calculated confidence score between 0.00 and 1.00.</td></tr>
+        <tr><td><code>pass_resolved_in</code></td><td>INTEGER</td><td>-</td><td>1 (Pass 1 rule) or 2 (Pass 2 fuzzy/outlier).</td></tr>
+        <tr><td><code>exception_type</code></td><td>TEXT</td><td>-</td><td>Primary exception enum from contract.</td></tr>
+        <tr><td><code>primary_reason</code></td><td>TEXT</td><td>-</td><td>Primary explanation string (e.g. Probable duplicate).</td></tr>
+        <tr><td><code>matched_record</code></td><td>TEXT</td><td>-</td><td>Invoice ID of matched duplicate pair (e.g. <code>INV-0987</code>).</td></tr>
+        <tr><td><code>violations_json</code></td><td>TEXT</td><td>-</td><td>Full JSON array of all triggered violations.</td></tr>
+        <tr><td><code>evidence_json</code></td><td>TEXT</td><td>-</td><td>Detailed similarity and mathematical evidence dict.</td></tr>
+        <tr><td><code>ai_summary</code></td><td>TEXT</td><td>-</td><td>Plain-English generated summary from LLM.</td></tr>
+        <tr><td><code>ai_suggested_action</code></td><td>TEXT</td><td>-</td><td>Suggested next step (<code>approve</code>, <code>reject</code>, <code>investigate</code>, <code>contact_vendor</code>).</td></tr>
+        <tr><td><code>ai_summary_status</code></td><td>TEXT</td><td>-</td><td><code>ready</code>, <code>not_generated</code>, or <code>failed</code>.</td></tr>
+        <tr><td><code>review_status</code></td><td>TEXT NOT NULL</td><td>-</td><td><code>not_required</code>, <code>pending</code>, <code>approved</code>, <code>rejected</code>.</td></tr>
+        <tr><td><code>created_at</code></td><td>TEXT NOT NULL</td><td>-</td><td>UTC timestamp of evaluation.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Table 4: reviews -->
+    <h3>4. <code>reviews</code> Table</h3>
+    <p>Permanent audit record of human reviewer approvals and rejections.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Key</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>id</code></td><td>INTEGER</td><td><span class="pill pill-pk">PRIMARY KEY</span></td><td>Review event PK.</td></tr>
+        <tr><td><code>decision_pk</code></td><td>INTEGER NOT NULL</td><td><span class="pill pill-fk">REFERENCES decisions(id)</span></td><td>Foreign key to evaluated decision.</td></tr>
+        <tr><td><code>reviewer</code></td><td>TEXT NOT NULL</td><td>-</td><td>Name of person confirming review (e.g. <code>Shree</code>).</td></tr>
+        <tr><td><code>action</code></td><td>TEXT NOT NULL</td><td>-</td><td><code>approve</code> or <code>reject</code>.</td></tr>
+        <tr><td><code>comment</code></td><td>TEXT</td><td>-</td><td>Reviewer justification or note.</td></tr>
+        <tr><td><code>reviewed_at</code></td><td>TEXT NOT NULL</td><td>-</td><td>UTC ISO timestamp of action.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Table 5: audit_log -->
+    <h3>5. <code>audit_log</code> Table</h3>
+    <p>Append-only audit trail capturing every system, engine, AI, and human event.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Column</th>
+          <th>Type</th>
+          <th>Key</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>id</code></td><td>INTEGER</td><td><span class="pill pill-pk">PRIMARY KEY</span></td><td>Sequential audit event ID.</td></tr>
+        <tr><td><code>timestamp</code></td><td>TEXT NOT NULL</td><td>-</td><td>UTC timestamp.</td></tr>
+        <tr><td><code>actor</code></td><td>TEXT NOT NULL</td><td>-</td><td>Actor name (e.g., <code>decision-engine</code>, <code>ai-assistant</code>, <code>Shree</code>).</td></tr>
+        <tr><td><code>actor_type</code></td><td>TEXT NOT NULL</td><td>-</td><td><code>engine</code>, <code>ai</code>, <code>user</code>, or <code>system</code>.</td></tr>
+        <tr><td><code>event_type</code></td><td>TEXT NOT NULL</td><td>-</td><td>Standard contract event enum (e.g. <code>INVOICE_FLAGGED</code>).</td></tr>
+        <tr><td><code>invoice_id</code></td><td>TEXT</td><td><span class="pill pill-idx">INDEXED</span></td><td>Associated invoice ID (if applicable).</td></tr>
+        <tr><td><code>upload_id</code></td><td>INTEGER</td><td>-</td><td>Associated upload ID.</td></tr>
+        <tr><td><code>details_json</code></td><td>TEXT</td><td>-</td><td>Arbitrary JSON payload detailing context and diffs.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Table 6: settings -->
+    <h3>6. <code>settings</code> Table</h3>
+    <p>Persistent key-value table holding live configuration parameters (<code>auto_pass_threshold</code>, <code>exception_below</code>, <code>policy_limit</code>).</p>
+  </section>
+
+  <!-- Section 3: Function Directory -->
+  <section id="function-directory">
+    <h2>🧩 Section 3: Complete Backend Function Directory</h2>
+    <p>Every service and router module implemented in <code>backend/</code>:</p>
+
+    <!-- Module 1: database -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Database Layer</span>
+        <span class="feature-path">backend/database.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>get_conn(db_path=None) -> sqlite3.Connection</code>: Opens thread-safe connection with <code>PRAGMA foreign_keys = ON;</code> and <code>sqlite3.Row</code> factory.</li>
+        <li><code>init_db(db_path=None) -> None</code>: Reads and executes <code>schema.sql</code>, sets default settings if empty.</li>
+        <li><code>row_to_dict(row) -> dict | None</code>: Converts SQLite Row object to clean Python dictionary.</li>
+      </ul>
+    </div>
+
+    <!-- Module 2: upload_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Upload & Ingestion Pipeline</span>
+        <span class="feature-path">backend/services/upload_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>process_upload(file, uploaded_by=None, use_history=False) -> UploadResponse</code>: Orchestrates file storage, engine execution, database insertion, and individual invoice audit event logging.</li>
+        <li><code>_run_engine_or_stub(file_path, history, config) -> dict</code>: Invokes Member 1's decision engine with seamless fallback to contract mock JSON if engine is still in progress.</li>
+        <li><code>list_uploads() -> UploadListResponse</code>: Returns all past uploads sorted by most recent.</li>
+      </ul>
+    </div>
+
+    <!-- Module 3: invoice_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Invoice Query & Detail Service</span>
+        <span class="feature-path">backend/services/invoice_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>list_invoices(...) -> PaginatedInvoicesResponse</code>: High-performance SQL query with parameterized filtering (decision, exception_type, review_status, confidence range, full-text search) and pagination.</li>
+        <li><code>get_invoice_detail(invoice_pk) -> InvoiceDetailResponse</code>: Joins invoice and decision records, fetches matching duplicate record if present, and appends review history.</li>
+      </ul>
+    </div>
+
+    <!-- Module 4: review_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Review & Conflict Workflow</span>
+        <span class="feature-path">backend/services/review_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>submit_review(invoice_pk, review_req) -> InvoiceDetailResponse</code>: Enforces that invoice is in <code>pending</code> status, rejects duplicate reviews with HTTP 409 Conflict, updates decision to <code>approved</code>/<code>rejected</code>, and logs <code>REVIEW_APPROVED</code>/<code>REVIEW_REJECTED</code> audit events.</li>
+      </ul>
+    </div>
+
+    <!-- Module 5: stats_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Dashboard Aggregation Service</span>
+        <span class="feature-path">backend/services/stats_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>get_stats(upload_id=None) -> StatsResponse</code>: Computes total counts, decision breakdown, auto-pass rate, exception frequency, 10-bucket histogram (0.0-0.1 ... 0.9-1.0), and estimated minutes saved (5 mins per auto-pass).</li>
+      </ul>
+    </div>
+
+    <!-- Module 6: report_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Formula-Safe Report Export</span>
+        <span class="feature-path">backend/services/report_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>generate_report_csv(upload_id, decision=None) -> io.BytesIO</code>: Generates streaming CSV with UTF-8 BOM (<code>\ufeff</code>) for Indian Rupee symbol support in Excel. Escapes formula characters (<code>=, +, -, @</code>) with a leading single quote.</li>
+        <li><code>_escape_cell(val) -> Any</code>: Prevents CSV Formula Injection attacks.</li>
+      </ul>
+    </div>
+
+    <!-- Module 7: audit_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Immutable Audit Trail Service</span>
+        <span class="feature-path">backend/services/audit_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>log_event(actor, actor_type, event_type, invoice_id=None, upload_id=None, details=None, conn=None) -> int</code>: Appends an immutable audit event to SQLite. Supports transactional re-use.</li>
+        <li><code>get_audit_events(upload_id=None, invoice_id=None, event_type=None, page=1, page_size=25) -> PaginatedAuditResponse</code>: Paginated query for audit logs, ordered newest first.</li>
+      </ul>
+    </div>
+
+    <!-- Module 8: config_service -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Configuration & Threshold Service</span>
+        <span class="feature-path">backend/services/config_service.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>get_current_config() -> ConfigResponse</code>: Reads threshold settings from the database and returns the full 11-rule catalogue.</li>
+        <li><code>update_config(update_req) -> ConfigResponse</code>: Validates <code>0 ≤ exception_below < auto_pass_threshold ≤ 1</code>, updates settings, and logs <code>SETTINGS_CHANGED</code> in audit log.</li>
+      </ul>
+    </div>
+
+    <!-- Module 9: chat_service & tools -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">Chat Assistant & Non-Mutating Tools</span>
+        <span class="feature-path">backend/services/chat_service.py & backend/ai/tools.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>process_chat_message(chat_req) -> ChatResponse</code>: Intent matching, tool execution, verified card rendering, and proposal handling.</li>
+        <li><code>TOOL_REGISTRY</code>: Read-only functions (<code>get_invoice</code>, <code>explain_decision</code>, <code>list_pending</code>, <code>list_exceptions</code>, <code>list_duplicates</code>, <code>get_stats</code>, <code>get_audit</code>, <code>get_report_link</code>, <code>propose_review</code>).</li>
+        <li><code>propose_review(invoice_id, action)</code>: Returns a visual UI proposal bar. <strong>Never writes to database!</strong></li>
+      </ul>
+    </div>
+
+    <!-- Module 10: ai summary & validation -->
+    <div class="feature-card">
+      <div class="feature-header">
+        <span class="feature-title">AI Explanation & Anti-Hallucination Guard</span>
+        <span class="feature-path">backend/ai/summary.py & backend/ai/validate.py</span>
+      </div>
+      <ul style="margin-left: 20px;">
+        <li><code>generate_summary(decision_record) -> dict</code>: Multi-provider summary generation supporting <code>mock</code>, <code>azure</code>, and <code>gemini</code>.</li>
+        <li><code>validate_summary(output, record) -> bool</code>: Validates that summary is ≤ 3 sentences, ≤ 600 chars, suggested action is valid, and every token matching invoice ID format exists in verified input facts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4: Scaling & Security -->
+  <section id="scaling-roadmap">
+    <h2>🚀 Section 4: Enterprise Production Scaling & Security</h2>
+    <div class="callout">
+      <strong>Postgres / Azure Cloud Production Roadmap:</strong>
+      <ol style="margin-left: 20px; margin-top: 8px;">
+        <li><strong>Database Migration:</strong> The schema uses standard ANSI SQL types. Transitioning to <code>PostgreSQL</code> or <code>Azure SQL</code> requires only replacing <code>backend/database.py</code> with an async SQLAlchemy connection pool (e.g. <code>asyncpg</code>).</li>
+        <li><strong>Asynchronous Processing:</strong> For files larger than 10,000 rows, file parsing can be offloaded to Celery / Redis background worker queue while the API returns an immediate <code>202 Accepted</code> with job tracking.</li>
+        <li><strong>Multi-LLM Resilience:</strong> Supports Google Gemini 1.5/2.5 Flash, Azure OpenAI GPT-4o, and an offline deterministic fallback with zero disruption if API quotas are exhausted.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <p>Cache Me If You Can &copy; 2026 — Microsoft Innovate Hackathon | Enterprise Prototype Specification</p>
+  </footer>
+</div>
+
+</body>
+</html>
