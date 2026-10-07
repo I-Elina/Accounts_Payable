@@ -1,0 +1,56 @@
+{
+  "as_of_date": null,
+  "auto_pass_threshold": 0.85,
+  "exception_below": 0.40,
+  "policy_limit": 100000,
+  "calc_tolerance_pct": 0.5,
+  "currency_default": "INR",
+  "required_fields": ["invoice_number", "vendor_name", "invoice_date", "total_amount"],
+  "allowed_categories": [
+    "Office Supplies",
+    "IT Equipment",
+    "Software & Licenses",
+    "Travel",
+    "Utilities",
+    "Professional Services",
+    "Marketing",
+    "Logistics",
+    "Maintenance",
+    "Raw Materials"
+  ],
+  "vendor_master_path": "data/reference/vendor_master.csv",
+  "blocking": {
+    "days": 30,
+    "amount_pct": 10
+  },
+  "fuzzy": {
+    "weights": {
+      "vendor": 0.35,
+      "invoice_number": 0.30,
+      "amount": 0.20,
+      "date": 0.15
+    },
+    "invoice_number_gate": 0.80,
+    "strong": 0.85,
+    "weak": 0.70,
+    "date_window_days": 7,
+    "near_amount_pct": 1.0
+  },
+  "outlier": {
+    "min_history": 5,
+    "z_threshold": 3.0
+  },
+  "rules": {
+    "R01": {"enabled": true, "penalty": 0.50},
+    "R02": {"enabled": true, "penalty": 0.60},
+    "R03": {"enabled": true, "penalty": 0.40},
+    "R04": {"enabled": true, "penalty": 0.30},
+    "R05": {"enabled": true, "penalty": 0.35},
+    "R06": {"enabled": true, "penalty": 0.80},
+    "R07": {"enabled": true, "penalty": 0.20},
+    "R08": {"enabled": true, "penalty": 0.20},
+    "R09": {"enabled": true, "penalty": 0.35, "penalty_weak": 0.20},
+    "R10": {"enabled": true, "penalty": 0.15},
+    "R11": {"enabled": true, "penalty": 0.20}
+  }
+}
