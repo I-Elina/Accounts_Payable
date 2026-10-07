@@ -1,0 +1,11 @@
+{
+  "upload_id": 1,
+  "filename": "invoices_demo.csv",
+  "summary": {
+    "total": 1000,
+    "auto_pass": 816,
+    "needs_review": 90,
+    "exception": 94
+  },
+  "warnings": []
+}
