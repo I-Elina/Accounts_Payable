@@ -1,6 +1,7 @@
 import { mockApi } from '../mocks/mockApi';
 
 const isMock = import.meta.env.VITE_USE_MOCK === 'true' || import.meta.env.VITE_USE_MOCK === true;
+const BASE_URL = import.meta.env.VITE_API_BASE || '';
 
 async function request(url, options = {}) {
   const headers = {
@@ -32,12 +33,12 @@ async function request(url, options = {}) {
 export const api = {
   async getHealth() {
     if (isMock) return mockApi.getHealth();
-    return request('/api/health');
+    return request("${BASE_URL}/api/health');
   },
 
   async getUploads() {
     if (isMock) return mockApi.getUploads();
-    return request('/api/uploads');
+    return request("${BASE_URL}/api/uploads');
   },
 
   async uploadFile(file, options = {}) {
@@ -113,7 +114,7 @@ export const api = {
 
   async sendChat(message, sessionId = null, uploadId = null) {
     if (isMock) return mockApi.sendChat(message, sessionId, uploadId);
-    return request('/api/chat', {
+    return request("${BASE_URL}/api/chat', {
       method: 'POST',
       body: JSON.stringify({ message, session_id: sessionId, upload_id: uploadId }),
     });
@@ -121,12 +122,12 @@ export const api = {
 
   async getConfig() {
     if (isMock) return mockApi.getConfig();
-    return request('/api/config');
+    return request("${BASE_URL}/api/config');
   },
 
   async putConfig(body) {
     if (isMock) return mockApi.putConfig(body);
-    return request('/api/config', {
+    return request("${BASE_URL}/api/config', {
       method: 'PUT',
       body: JSON.stringify(body),
     });
