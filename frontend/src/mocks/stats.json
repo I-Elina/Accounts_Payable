@@ -1,0 +1,36 @@
+{
+  "upload_id": 1,
+  "total": 1000,
+  "by_decision": {
+    "auto_pass": 816,
+    "needs_review": 90,
+    "exception": 94
+  },
+  "auto_pass_rate": 0.816,
+  "pending_reviews": 124,
+  "by_exception_type": [
+    { "exception_type": "exact_duplicate", "count": 40 },
+    { "exception_type": "fuzzy_duplicate", "count": 30 },
+    { "exception_type": "missing_field", "count": 30 },
+    { "exception_type": "calculation_mismatch", "count": 25 },
+    { "exception_type": "policy_limit", "count": 15 },
+    { "exception_type": "invalid_amount", "count": 12 },
+    { "exception_type": "unknown_vendor", "count": 10 },
+    { "exception_type": "future_date", "count": 10 },
+    { "exception_type": "amount_outlier", "count": 7 },
+    { "exception_type": "invalid_date", "count": 5 }
+  ],
+  "confidence_histogram": [
+    { "bucket": "0.0-0.1", "count": 12 },
+    { "bucket": "0.1-0.2", "count": 18 },
+    { "bucket": "0.2-0.3", "count": 25 },
+    { "bucket": "0.3-0.4", "count": 39 },
+    { "bucket": "0.4-0.5", "count": 20 },
+    { "bucket": "0.5-0.6", "count": 35 },
+    { "bucket": "0.6-0.7", "count": 22 },
+    { "bucket": "0.7-0.8", "count": 13 },
+    { "bucket": "0.8-0.9", "count": 500 },
+    { "bucket": "0.9-1.0", "count": 316 }
+  ],
+  "estimated_minutes_saved": 4080
+}

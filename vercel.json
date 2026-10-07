@@ -1,0 +1,15 @@
+{
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://cache-me-if-you-can-hepu.onrender.com/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "id": 6,
+      "timestamp": "2026-10-07T10:15:00Z",
+      "actor": "Shree",
+      "actor_type": "user",
+      "event_type": "REVIEW_APPROVED",
+      "invoice_id": "INV-1020",
+      "upload_id": 1,
+      "details": {
+        "action": "approve",
+        "comment": "Verified PO-9923 and executive sign-off for large order",
+        "previous_confidence": 0.80
+      }
+    },
+    {
+      "id": 5,
+      "timestamp": "2026-10-07T10:12:00Z",
+      "actor": "ai-assistant",
+      "actor_type": "ai",
+      "event_type": "CHAT_QUERY",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": {
+        "query": "Why was INV-1042 flagged?",
+        "tools_used": ["explain_decision"]
+      }
+    },
+    {
+      "id": 4,
+      "timestamp": "2026-10-07T10:10:00Z",
+      "actor": "ai-assistant",
+      "actor_type": "ai",
+      "event_type": "AI_SUMMARY_GENERATED",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": {
+        "suggested_action": "investigate",
+        "referenced_rules": ["R09", "R10"]
+      }
+    },
+    {
+      "id": 3,
+      "timestamp": "2026-10-07T10:05:01Z",
+      "actor": "decision-engine",
+      "actor_type": "engine",
+      "event_type": "INVOICE_FLAGGED",
+      "invoice_id": "INV-1042",
+      "upload_id": 1,
+      "details": {
+        "decision": "needs_review",
+        "confidence": 0.50,
+        "exception_type": "fuzzy_duplicate",
+        "primary_reason": "Probable duplicate of INV-0987 (96% similar)"
+      }
+    },
+    {
+      "id": 2,
+      "timestamp": "2026-10-07T10:05:00Z",
+      "actor": "decision-engine",
+      "actor_type": "engine",
+      "event_type": "INGESTION_COMPLETED",
+      "invoice_id": null,
+      "upload_id": 1,
+      "details": {
+        "total": 1000,
+        "auto_pass": 816,
+        "needs_review": 90,
+        "exception": 94
+      }
+    },
+    {
+      "id": 1,
+      "timestamp": "2026-10-07T10:04:55Z",
+      "actor": "system",
+      "actor_type": "system",
+      "event_type": "UPLOAD_RECEIVED",
+      "invoice_id": null,
+      "upload_id": 1,
+      "details": {
+        "filename": "invoices_demo.csv",
+        "size_bytes": 104200
+      }
+    }
+  ],
+  "total": 6,
+  "page": 1,
+  "page_size": 25
+}

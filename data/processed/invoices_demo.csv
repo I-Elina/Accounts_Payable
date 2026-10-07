@@ -1,0 +1,1001 @@
+invoice_id,invoice_number,vendor_name,invoice_date,due_date,currency,subtotal,tax_amount,total_amount,category,po_number,description
+INV-0099,AC/2026/8VU9FZ,Acme Pvt Ltd,2025-10-13,2025-11-12,INR,6924.85,1246.47,8171.32,Office Supplies,PO-2026-9913,Standard invoice for office supplies
+INV-0382,FDX/2026/863LSY,FedEx Express Logistics,2025-10-13,2025-11-12,INR,4118.8,741.38,4860.18,Office Supplies,PO-2026-7921,Standard invoice for office supplies
+INV-0496,REL/2026/QPAGKA,Reliance Retail Limited,2025-10-13,2025-11-12,INR,5131.54,923.68,6055.22,Utilities,PO-2026-3985,Standard invoice for utilities
+INV-0560,GDJ/2026/FAS7RC,Godrej Interio Ltd,2025-10-13,2025-11-12,INR,6840.27,1231.25,8071.52,Marketing,PO-2026-7744,Standard invoice for marketing
+INV-0572,PWC/2026/XJNEEN,PwC India Advisory,2025-10-13,2025-11-12,INR,4968.32,894.3,5862.62,Maintenance,PO-2026-4036,Standard invoice for maintenance
+INV-0010,KPMG/2026/WY3NG4,KPMG Advisory Services,2025-10-14,2025-11-13,INR,7300.25,1314.04,8614.29,IT Equipment,PO-2026-2945,Standard invoice for it equipment
+INV-0259,HP/2026/RYQZRA,HP India Sales Pvt Ltd,2025-10-14,2025-11-13,INR,5440.78,979.34,6420.12,Maintenance,PO-2026-6131,Standard invoice for maintenance
+INV-0298,TCS/2026/TJ25GN,Tata Consultancy Services,2025-10-14,2025-11-13,INR,6307.42,1135.34,7442.76,Logistics,PO-2026-6944,Standard invoice for logistics
+INV-0319,PSYS/2026/AHNN82,Persistent Systems Ltd,2025-10-14,2025-11-13,INR,6272.21,1129.0,7401.21,Logistics,PO-2026-9994,Standard invoice for logistics
+INV-0750,SIEM/2026/YCMURL,Siemens Industry Software,2025-10-14,2025-11-13,INR,5891.62,1060.49,6952.11,Marketing,PO-2026-3650,Standard invoice for marketing
+INV-0014,MSFT/2026/W6MG5E,Microsoft India Pvt Ltd,2025-10-15,2025-11-14,INR,6435.31,1158.36,7593.67,Professional Services,PO-2026-6913,Standard invoice for professional services
+INV-0162,LTI/2026/6RLM4H,Larsen and Toubro Infotech,2025-10-15,2025-11-14,INR,5066.05,911.89,5977.94,Software & Licenses,PO-2026-8060,Standard invoice for software & licenses
+INV-0208,HCL/2026/LP3Y6J,HCL Technologies Limited,2025-10-15,2025-11-14,INR,6225.6,1120.61,7346.21,Logistics,PO-2026-5683,Standard invoice for logistics
+INV-0314,LTI/2026/U7CWDA,Larsen and Toubro Infotech,2025-10-15,2025-11-14,INR,5001.2,900.22,5901.42,Software & Licenses,PO-2026-7099,Standard invoice for software & licenses
+INV-0316,MMT/2026/U9AXH6,MakeMyTrip India Pvt Ltd,2025-10-15,2025-11-14,INR,6890.21,1240.24,8130.45,Utilities,PO-2026-9568,Standard invoice for utilities
+INV-0528,ZOHO/2026/GK2P9A,Zoho Corporation Pvt Ltd,2025-10-15,2025-11-14,INR,5486.32,987.54,6473.86,Utilities,PO-2026-8070,Standard invoice for utilities
+INV-0639,ITC/2026/DUSKRV,ITC Infotech India Ltd,2025-10-15,2025-11-14,INR,6878.46,1238.12,8116.58,Professional Services,PO-2026-2662,Standard invoice for professional services
+INV-0739,ITC/2026/VYAQFK,ITC Infotech India Ltd,2025-10-15,2025-11-14,INR,6346.66,1142.4,7489.06,Professional Services,PO-2026-1467,Standard invoice for professional services
+INV-0018,REL/2026/7KP3SG,Reliance Retail Limited,2025-10-16,2025-11-15,INR,5280.5,950.49,6230.99,Raw Materials,PO-2026-2817,Standard invoice for raw materials
+INV-0030,GDJ/2026/JA56J8,Godrej Interio Ltd,2025-10-16,2025-11-15,INR,6108.44,1099.52,7207.96,IT Equipment,PO-2026-4866,Standard invoice for it equipment
+INV-0157,HCL/2026/9BLEAB,HCL Technologies Limited,2025-10-16,2025-11-15,INR,6723.41,1210.21,7933.62,Logistics,PO-2026-2020,Standard invoice for logistics
+INV-0442,MSFT/2026/GRKLAW,Microsoft India Pvt Ltd,2025-10-16,2025-11-15,INR,7148.66,1286.76,8435.42,Office Supplies,PO-2026-7951,Standard invoice for office supplies
+INV-0488,KPMG/2026/22BW9J,KPMG Advisory Services,2025-10-16,2025-11-15,INR,7913.61,1424.45,9338.06,Marketing,PO-2026-7525,Standard invoice for marketing
+INV-0600,SIEM/2026/KR634H,Siemens Industry Software,2025-10-16,2025-11-15,INR,6666.14,1199.91,7866.05,Marketing,PO-2026-3447,Standard invoice for marketing
+INV-0878,KPMG/2026/WY3NG4,KPMG Advisory Services Pvt Ltd,2025-10-16,2025-11-15,INR,7260.25,1306.84,8567.09,IT Equipment,PO-2026-2945,Standard invoice for it equipment
+INV-0974,MSFT/2026/VPMM6D,Microsoft India Pvt Ltd,2025-10-16,2025-11-15,INR,165270.18,29748.63,195018.81,Professional Services,PO-2026-7118,Standard invoice for professional services
+INV-0022,WIP/2026/7B5WRX,Wipro Enterprises Limited,2025-10-17,2025-11-16,INR,4116.52,740.97,4857.49,Travel,PO-2026-7633,Standard invoice for travel
+INV-0427,AC/2026/W55EFZ,Acme Pvt Ltd,2025-10-17,2025-11-16,INR,7306.1,1315.1,8621.2,Professional Services,PO-2026-2889,Standard invoice for professional services
+INV-0535,GDJ/2026/RN7VHY,Godrej Interio Ltd,2025-10-17,2025-11-16,INR,6765.6,1217.81,7983.41,IT Equipment,PO-2026-1706,Standard invoice for it equipment
+INV-0536,HCL/2026/DMPNMT,HCL Technologies Limited,2025-10-17,2025-11-16,INR,6519.05,1173.43,7692.48,Software & Licenses,PO-2026-2061,Standard invoice for software & licenses
+INV-0864,LTI/2026/6RLM4H,Larsen and Toubro Infotech Pvt Ltd,2025-10-17,2025-11-16,INR,5027.17,904.89,5932.06,Software & Licenses,PO-2026-8060,Standard invoice for software & licenses
+INV-0886,LTI/2026/6RLM4H,Larsen and Toubro Infotech Pvt Ltd,2025-10-17,2025-11-16,INR,5044.94,908.09,5953.03,Software & Licenses,PO-2026-8060,Standard invoice for software & licenses
+INV-0994,MMT/2026/ZA9K9F,MakeMyTrip India Pvt Ltd,2025-10-17,2025-11-16,INR,52923.06,9526.15,62449.21,Office Supplies,PO-2026-4197,Standard invoice for office supplies
+INV-0073,ZOHO/2026/BM5Y4L,Zoho Corporation Pvt Ltd,2025-10-18,2025-11-17,INR,5053.3,909.59,5962.89,Utilities,PO-2026-9692,Standard invoice for utilities
+INV-0447,SMSG/2026/WU7K6R,Samsung India Electronics,2025-10-18,2025-11-17,INR,4734.44,852.2,5586.64,Professional Services,PO-2026-7924,Standard invoice for professional services
+INV-0494,PSYS/2026/WJ685R,Persistent Systems Ltd,2025-10-18,2025-11-17,INR,6451.61,1161.29,7612.9,Software & Licenses,PO-2026-2919,Standard invoice for software & licenses
+INV-0701,TCS/2026/ZE9VBB,Tata Consultancy Services,2025-10-18,2025-11-17,INR,6228.82,1121.19,7350.01,Logistics,PO-2026-5843,Standard invoice for logistics
+INV-0665,KPMG/2026/H2NTCF,KPMG Advisory Services,2025-10-20,2025-11-19,INR,7182.68,1292.88,8475.56,IT Equipment,PO-2026-9551,Standard invoice for it equipment
+INV-0726,TCS/2026/W5E56U,Tata Consultancy Services,2025-10-20,2025-11-19,INR,5196.58,935.38,6131.96,Software & Licenses,PO-2026-5881,Standard invoice for software & licenses
+INV-0504,AC/2026/MPM7MQ,Acme Pvt Ltd,2025-10-21,2025-11-20,INR,7677.87,1382.02,9059.89,Office Supplies,PO-2026-1880,Standard invoice for office supplies
+INV-0810,GDJ/2026/9HKLTF,Godrej Interio Ltd,2025-10-21,2025-11-20,INR,7066.63,1271.99,8338.62,Marketing,PO-2026-6854,Standard invoice for marketing
+INV-0173,WIP/2026/B9D9UT,Wipro Enterprises Limited,2025-10-22,2025-11-21,INR,3697.71,665.59,4363.3,Travel,PO-2026-9114,Standard invoice for travel
+INV-0315,LEN/2026/RJ3WB5,Lenovo India Private Limited,2025-10-22,2025-11-21,INR,8197.87,1475.62,9673.49,Travel,PO-2026-4201,Standard invoice for travel
+INV-0355,CTS/2026/EHWFKA,Cognizant Technology Solutions,2025-10-22,2025-11-21,INR,4275.89,769.66,5045.55,Travel,PO-2026-9409,Standard invoice for travel
+INV-0636,HCL/2026/G94A6P,HCL Technologies Limited,2025-10-22,2025-11-21,INR,6132.22,1103.8,7236.02,Software & Licenses,PO-2026-7570,Standard invoice for software & licenses
+INV-0235,INFY/2026/CFEB2Q,Infosys Limited,2025-10-23,2025-11-22,INR,8955.21,1611.94,10567.15,Utilities,PO-2026-8378,Standard invoice for utilities
+INV-0530,APX/2026/LZL4WL,Apex Solutions Private Limited,2025-10-23,2025-11-22,INR,8577.85,1544.01,10121.86,Marketing,PO-2026-2627,Standard invoice for marketing
+INV-0589,ITC/2026/35VYLH,ITC Infotech India Ltd,2025-10-23,2025-11-22,INR,7291.32,1312.44,8603.76,Professional Services,PO-2026-1719,Standard invoice for professional services
+INV-0693,MMT/2026/ENM5H9,MakeMyTrip India Pvt Ltd,2025-10-23,2025-11-22,INR,6571.23,1182.82,7754.05,Raw Materials,PO-2026-6629,Standard invoice for raw materials
+INV-0958,FDX/2026/2PC3KT,FedEx Express Logistics,2025-10-23,2025-11-22,INR,4000.0,720.0,5154.0,IT Equipment,PO-2026-8669,Standard invoice for it equipment
+INV-0041,PSYS/2026/R3UGWE,Persistent Systems Ltd,2025-10-24,2025-11-23,INR,7226.71,1300.81,8527.52,Software & Licenses,PO-2026-5068,Standard invoice for software & licenses
+INV-0172,TCS/2026/EZEFHQ,Tata Consultancy Services,2025-10-24,2025-11-23,INR,5225.8,940.64,6166.44,Software & Licenses,PO-2026-3663,Standard invoice for software & licenses
+INV-0467,MSFT/2026/SMZBNQ,Microsoft India Pvt Ltd,2025-10-24,2025-11-23,INR,7089.48,1276.11,8365.59,Professional Services,PO-2026-8108,Standard invoice for professional services
+INV-0533,DELL/2026/ENDBXC,Dell Technologies Inc,2025-10-24,2025-11-23,INR,5766.39,1037.95,6804.34,Raw Materials,PO-2026-6873,Standard invoice for raw materials
+INV-0803,ZOHO/2026/XYBRGT,Zoho Corporation Pvt Ltd,2025-10-24,2025-11-23,INR,4627.69,832.98,5460.67,Raw Materials,PO-2026-6161,Standard invoice for raw materials
+INV-0845,LEN/2026/RJ3WB5,Lenovo India Private Limited,2025-10-24,2025-11-23,INR,8197.87,1475.62,9673.49,Travel,PO-2026-4201,Standard invoice for travel
+INV-0957,HCL/2026/SKENTU,HCL Technologies Limited,2025-10-24,2025-11-23,INR,6800.0,1224.0,9139.37,Software & Licenses,PO-2026-9161,Standard invoice for software & licenses
+INV-0549,SMSG/2026/VZJK8X,Samsung India Electronics,2025-10-25,2025-11-24,INR,4750.17,855.03,5605.2,Professional Services,PO-2026-6696,Standard invoice for professional services
+INV-0594,MSFT/2026/4VPUGL,Microsoft India Pvt Ltd,2025-10-25,2025-11-24,INR,6607.11,1189.28,7796.39,Office Supplies,PO-2026-7682,Standard invoice for office supplies
+INV-0782,CTS/2026/GSBL8K,Cognizant Technology Solutions,2025-10-25,2025-11-24,INR,4805.59,865.01,5670.6,Maintenance,PO-2026-8043,Standard invoice for maintenance
+INV-0110,ITC/2026/4VM92S,ITC Infotech India Ltd,2025-10-26,2025-11-25,INR,6834.93,1230.29,8065.22,Office Supplies,PO-2026-4237,Standard invoice for office supplies
+INV-0241,MSFT/2026/HZJ53K,Microsoft India Pvt Ltd,2025-10-26,2025-11-25,INR,6833.63,1230.05,8063.68,Office Supplies,PO-2026-6507,Standard invoice for office supplies
+INV-0351,ZOHO/2026/THZQ65,Zoho Corporation Pvt Ltd,2025-10-26,2025-11-25,INR,4859.09,874.64,5733.73,Raw Materials,PO-2026-2471,Standard invoice for raw materials
+INV-0588,INFY/2026/42ULMK,Infosys Limited,2025-10-26,2025-11-25,INR,9422.74,1696.09,11118.83,Utilities,PO-2026-1634,Standard invoice for utilities
+INV-0619,MSFT/2026/VK3QSA,Microsoft India Pvt Ltd,2025-10-26,2025-11-25,INR,6684.65,1203.24,7887.89,Professional Services,PO-2026-9514,Standard invoice for professional services
+INV-0623,REL/2026/G89SJU,Reliance Retail Limited,2025-10-26,2025-11-25,INR,5894.94,1061.09,6956.03,Raw Materials,PO-2026-5201,Standard invoice for raw materials
+INV-0637,HP/2026/NPS6ZX,HP India Sales Pvt Ltd,2025-10-26,2025-11-25,INR,5002.5,900.45,5902.95,Travel,PO-2026-4356,Standard invoice for travel
+INV-0806,BD/2026/QQRRMQ,Blue Dart Express Ltd,2025-10-26,2025-11-25,INR,6190.63,1114.31,7304.94,Software & Licenses,PO-2026-3318,Standard invoice for software & licenses
+INV-0926,MMT/2026/ETRP3N,MakeMyTrip India Pvt Ltd,2025-10-26,2025-11-25,INR,6800.0,1224.0,0.0,Maintenance,PO-2026-8775,Standard invoice for maintenance
+INV-0392,MSFT/2026/P69KY7,Microsoft India Pvt Ltd,2025-10-27,2025-11-26,INR,7048.03,1268.65,8316.68,Office Supplies,PO-2026-3893,Standard invoice for office supplies
+INV-0705,APX/2026/NUKEPF,Apex Solutions Private Limited,2025-10-27,2025-11-26,INR,8334.77,1500.26,9835.03,IT Equipment,PO-2026-7362,Standard invoice for it equipment
+INV-0479,BD/2026/ZH2BUT,Blue Dart Express Ltd,2025-10-28,2025-11-27,INR,5441.0,979.38,6420.38,Logistics,PO-2026-5443,Standard invoice for logistics
+INV-0580,APX/2026/QMPVS6,Apex Solutions Private Limited,2025-10-28,2025-11-27,INR,8727.55,1570.96,10298.51,Marketing,PO-2026-7875,Standard invoice for marketing
+INV-0704,AC/2026/Z485KS,Acme Pvt Ltd,2025-10-28,2025-11-27,INR,7603.64,1368.66,8972.3,Office Supplies,PO-2026-1703,Standard invoice for office supplies
+INV-0874,ITC/2026/4VM92S,ITC Infotech India Limited,2025-10-28,2025-11-27,INR,6781.9,1220.74,8002.64,Office Supplies,PO-2026-4237,Standard invoice for office supplies
+INV-0893,WIP/2026/Y3DZFH,,2025-10-28,2025-11-27,INR,4000.0,720.0,4720.0,Travel,PO-2026-8005,Standard invoice for travel
+INV-0965,FDX/2026/9T995G,FedEx Express Logistics,2025-10-28,2025-11-27,INR,4000.0,720.0,4203.43,Raw Materials,PO-2026-9287,Standard invoice for raw materials
+INV-0144,REL/2026/G8TS3T,Reliance Retail Limited,2025-11-13,2025-12-13,INR,5328.06,959.05,6287.11,Utilities,PO-2026-3289,Standard invoice for utilities
+INV-0502,WIP/2026/XMCN88,Wipro Enterprises Limited,2025-11-13,2025-12-13,INR,4179.22,752.26,4931.48,Maintenance,PO-2026-5587,Standard invoice for maintenance
+INV-0752,WIP/2026/JZS8KT,Wipro Enterprises Limited,2025-11-13,2025-12-13,INR,3976.99,715.86,4692.85,Maintenance,PO-2026-2211,Standard invoice for maintenance
+INV-0028,DELL/2026/UXE3DP,Dell Technologies Inc,2025-11-14,2025-12-14,INR,5679.84,1022.37,6702.21,Raw Materials,PO-2026-1506,Standard invoice for raw materials
+INV-0156,GDJ/2026/8VNTAT,Godrej Interio Ltd,2025-11-14,2025-12-14,INR,6945.23,1250.14,8195.37,Marketing,PO-2026-1428,Standard invoice for marketing
+INV-0203,BD/2026/WVXQW5,Blue Dart Express Ltd,2025-11-14,2025-12-14,INR,6092.28,1096.61,7188.89,Software & Licenses,PO-2026-4267,Standard invoice for software & licenses
+INV-0226,AC/2026/GU5MJN,Acme Pvt Ltd,2025-11-14,2025-12-14,INR,7478.11,1346.06,8824.17,Professional Services,PO-2026-1643,Standard invoice for professional services
+INV-0539,ITC/2026/T84CZF,ITC Infotech India Ltd,2025-11-14,2025-12-14,INR,6475.42,1165.58,7641.0,Professional Services,PO-2026-8791,Standard invoice for professional services
+INV-0115,MSFT/2026/D45TRV,Microsoft India Pvt Ltd,2025-11-15,2025-12-15,INR,6930.4,1247.47,8177.87,Professional Services,PO-2026-8918,Standard invoice for professional services
+INV-0271,SMSG/2026/XXG83J,Samsung India Electronics,2025-11-15,2025-12-15,INR,4019.86,723.57,4743.43,Office Supplies,PO-2026-7640,Standard invoice for office supplies
+INV-0644,MSFT/2026/4KR2W7,Microsoft India Pvt Ltd,2025-11-15,2025-12-15,INR,7719.61,1389.53,9109.14,Office Supplies,PO-2026-3672,Standard invoice for office supplies
+INV-0681,BD/2026/VHFXYJ,Blue Dart Express Ltd,2025-11-15,2025-12-15,INR,5790.21,1042.24,6832.45,Logistics,PO-2026-5051,Standard invoice for logistics
+INV-0770,ORCL/2026/SCTC4T,Oracle India Private Limited,2025-11-15,2025-12-15,INR,3967.64,714.18,4681.82,Marketing,PO-2026-7201,Standard invoice for marketing
+INV-0816,LTI/2026/F4GW5H,Larsen and Toubro Infotech,2025-11-15,2025-12-15,INR,4875.05,877.51,5752.56,Software & Licenses,PO-2026-7802,Standard invoice for software & licenses
+INV-0303,APX/2026/6MEUGW,Apex Solutions Private Limited,2025-11-16,2025-12-16,INR,8492.53,1528.66,10021.19,IT Equipment,PO-2026-3018,Standard invoice for it equipment
+INV-0353,APX/2026/TCAPJV,Apex Solutions Private Limited,2025-11-16,2025-12-16,INR,8055.46,1449.98,9505.44,IT Equipment,PO-2026-1648,Standard invoice for it equipment
+INV-0485,HP/2026/NBHLJD,HP India Sales Pvt Ltd,2025-11-16,2025-12-16,INR,5550.11,999.02,6549.13,Travel,PO-2026-2308,Standard invoice for travel
+INV-0503,ZOHO/2026/WS7LSS,Zoho Corporation Pvt Ltd,2025-11-16,2025-12-16,INR,4878.48,878.13,5756.61,Raw Materials,PO-2026-7708,Standard invoice for raw materials
+INV-0628,ZOHO/2026/8KUSC5,Zoho Corporation Pvt Ltd,2025-11-16,2025-12-16,INR,5233.55,942.04,6175.59,Utilities,PO-2026-9279,Standard invoice for utilities
+INV-0651,TCS/2026/PXX5XE,Tata Consultancy Services,2025-11-16,2025-12-16,INR,5252.42,945.44,6197.86,Logistics,PO-2026-2159,Standard invoice for logistics
+INV-0811,HCL/2026/29Z459,HCL Technologies Limited,2025-11-16,2025-12-16,INR,7239.82,1303.17,8542.99,Logistics,PO-2026-5917,Standard invoice for logistics
+INV-0820,BD/2026/WVXQW5,Blue Dart Express Ltd,2025-11-16,2025-12-16,INR,6092.28,1096.61,7188.89,Software & Licenses,PO-2026-4267,Standard invoice for software & licenses
+INV-0044,SMSG/2026/N8SWFS,Samsung India Electronics,2025-11-17,2025-12-17,INR,4552.34,819.42,5371.76,Professional Services,PO-2026-9217,Standard invoice for professional services
+INV-0132,HCL/2026/8PRWEA,HCL Technologies Limited,2025-11-17,2025-12-17,INR,6704.46,1206.8,7911.26,Software & Licenses,PO-2026-1269,Standard invoice for software & licenses
+INV-0185,ITC/2026/9NW4ME,ITC Infotech India Ltd,2025-11-17,2025-12-17,INR,6371.3,1146.83,7518.13,Professional Services,PO-2026-9333,Standard invoice for professional services
+INV-0299,WIP/2026/6C8BN6,Wipro Enterprises Limited,2025-11-17,2025-12-17,INR,4269.75,768.55,5038.3,Maintenance,PO-2026-6218,Standard invoice for maintenance
+INV-0385,HP/2026/H2FD9K,HP India Sales Pvt Ltd,2025-11-17,2025-12-17,INR,5492.54,988.66,6481.2,Travel,PO-2026-1467,Standard invoice for travel
+INV-0453,APX/2026/YGYM6K,Apex Solutions Private Limited,2025-11-17,2025-12-17,INR,9274.13,1669.34,10943.47,IT Equipment,PO-2026-2655,Standard invoice for it equipment
+INV-0465,LEN/2026/535EUG,Lenovo India Private Limited,2025-11-17,2025-12-17,INR,7177.07,1291.87,8468.94,Travel,PO-2026-6117,Standard invoice for travel
+INV-0584,FDX/2026/6ZE4AK,FedEx Express Logistics,2025-11-17,2025-12-17,INR,3703.05,666.55,4369.6,Office Supplies,PO-2026-3638,Standard invoice for office supplies
+INV-0946,WIP/2026/23RSLY,Wipro Enterprises Limited,2025-11-17,2025-12-17,INR,4000.0,720.0,4367.14,Logistics,PO-2026-5811,Standard invoice for logistics
+INV-0034,ITC/2026/PUA8GB,ITC Infotech India Ltd,2025-11-18,2025-12-18,INR,6961.8,1253.12,8214.92,Professional Services,PO-2026-5544,Standard invoice for professional services
+INV-0366,MMT/2026/3SGQ9G,MakeMyTrip India Pvt Ltd,2025-11-18,2025-12-18,INR,6955.43,1251.98,8207.41,Utilities,PO-2026-3717,Standard invoice for utilities
+INV-0378,APX/2026/XHVTZP,Apex Solutions Private Limited,2025-11-18,2025-12-18,INR,8137.4,1464.73,9602.13,Marketing,PO-2026-2376,Standard invoice for marketing
+INV-0703,ZOHO/2026/PSSWWH,Zoho Corporation Pvt Ltd,2025-11-18,2025-12-18,INR,4755.84,856.05,5611.89,Raw Materials,PO-2026-8860,Standard invoice for raw materials
+INV-0744,MSFT/2026/NWWGKZ,Microsoft India Pvt Ltd,2025-11-18,2025-12-18,INR,6665.71,1199.83,7865.54,Office Supplies,PO-2026-7970,Standard invoice for office supplies
+INV-0176,APX/2026/BSD5ND,Apex Solutions Private Limited,2025-11-19,2025-12-19,INR,8950.92,1611.17,10562.09,Marketing,PO-2026-4034,Standard invoice for marketing
+INV-0323,SIEM/2026/2JEYW3,Siemens Industry Software,2025-11-19,2025-12-19,INR,6546.22,1178.32,7724.54,IT Equipment,PO-2026-6484,Standard invoice for it equipment
+INV-0325,WIP/2026/VWN752,Wipro Enterprises Limited,2025-11-19,2025-12-19,INR,3741.03,673.39,4414.42,Travel,PO-2026-9896,Standard invoice for travel
+INV-0569,MSFT/2026/BAWG4B,Microsoft India Pvt Ltd,2025-11-19,2025-12-19,INR,7417.72,1335.19,8752.91,Professional Services,PO-2026-6589,Standard invoice for professional services
+INV-0738,INFY/2026/T4KQWA,Infosys Limited,2025-11-19,2025-12-19,INR,9227.01,1660.86,10887.87,Utilities,PO-2026-3197,Standard invoice for utilities
+INV-0927,LEN/2026/XBPN8B,Lenovo India Private Limited,2025-11-19,2025-12-19,INR,7850.0,1413.0,0.0,Utilities,PO-2026-7384,Standard invoice for utilities
+INV-0189,MMT/2026/ZQNJ9Z,MakeMyTrip India Pvt Ltd,2025-11-20,2025-12-20,INR,6953.92,1251.71,8205.63,Raw Materials,PO-2026-1326,Standard invoice for raw materials
+INV-0224,WIP/2026/CAZ5JS,Wipro Enterprises Limited,2025-11-20,2025-12-20,INR,4121.01,741.78,4862.79,Travel,PO-2026-4899,Standard invoice for travel
+INV-0345,PWC/2026/E79C6Z,PwC India Advisory,2025-11-20,2025-12-20,INR,4828.75,869.17,5697.92,Travel,PO-2026-2016,Standard invoice for travel
+INV-0547,PWC/2026/R3EMGJ,PwC India Advisory,2025-11-20,2025-12-20,INR,5237.4,942.73,6180.13,Travel,PO-2026-9401,Standard invoice for travel
+INV-0568,MMT/2026/8GUV25,MakeMyTrip India Pvt Ltd,2025-11-20,2025-12-20,INR,7221.99,1299.96,8521.95,Utilities,PO-2026-2913,Standard invoice for utilities
+INV-0652,WIP/2026/3FA2AU,Wipro Enterprises Limited,2025-11-20,2025-12-20,INR,3878.94,698.21,4577.15,Maintenance,PO-2026-7664,Standard invoice for maintenance
+INV-0870,SIEM/2026/2JEYW3,Siemens Industry Software Pvt Ltd,2025-11-20,2025-12-20,INR,6497.48,1169.55,7667.03,IT Equipment,PO-2026-6484,Standard invoice for it equipment
+INV-0875,APX/2026/XHVTZP,Apex Solutions Pvt Ltd,2025-11-20,2025-12-20,INR,8194.65,1475.04,9669.69,Marketing,PO-2026-2376,Standard invoice for marketing
+INV-0080,GDJ/2026/8CQT34,Godrej Interio Ltd,2025-11-21,2025-12-21,INR,6187.82,1113.81,7301.63,IT Equipment,PO-2026-8644,Standard invoice for it equipment
+INV-0306,DELL/2026/8FKV9K,Dell Technologies Inc,2025-11-21,2025-12-21,INR,5126.66,922.8,6049.46,Utilities,PO-2026-6994,Standard invoice for utilities
+INV-0354,BD/2026/LE4UBL,Blue Dart Express Ltd,2025-11-21,2025-12-21,INR,6013.24,1082.38,7095.62,Software & Licenses,PO-2026-7166,Standard invoice for software & licenses
+INV-0534,FDX/2026/RQ78SS,FedEx Express Logistics,2025-11-21,2025-12-21,INR,3875.68,697.62,4573.3,Office Supplies,PO-2026-7328,Standard invoice for office supplies
+INV-0641,LTI/2026/6ND7T2,Larsen and Toubro Infotech,2025-11-21,2025-12-21,INR,4849.04,872.83,5721.87,Logistics,PO-2026-7622,Standard invoice for logistics
+INV-0872,MMT/2026/ZQNJ9Z,MakeMyTrip India Private Limited,2025-11-21,2025-12-21,INR,6931.32,1247.64,8178.96,Raw Materials,PO-2026-1326,Standard invoice for raw materials
+INV-0892,APX/2026/BXHQLZ,Apex Solutions Private Limited,2025-11-21,2025-12-21,INR,8900.0,1602.0,,Logistics,PO-2026-5572,Standard invoice for logistics
+INV-0947,APX/2026/NVERSB,Apex Solutions Private Limited,2025-11-21,2025-12-21,INR,8900.0,1602.0,8621.58,Utilities,PO-2026-6677,Standard invoice for utilities
+INV-0973,INFY/2026/MYYX55,Infosys Limited,2025-11-21,2025-12-21,INR,278080.47,50054.48,328134.95,Travel,PO-2026-7854,Standard invoice for travel
+INV-0975,DELL/2026/V9QWH6,Dell Technologies Inc,2025-11-21,2025-12-21,INR,262015.33,47162.76,309178.09,Office Supplies,PO-2026-3282,Standard invoice for office supplies
+INV-0980,SMSG/2026/A7T88E,Samsung India Electronics,2025-11-21,2025-12-21,INR,134152.75,24147.49,158300.24,Utilities,PO-2026-1187,Standard invoice for utilities
+INV-0216,MSFT/2026/S4ZKVH,Microsoft India Pvt Ltd,2025-11-22,2025-12-22,INR,6690.86,1204.35,7895.21,Professional Services,PO-2026-6512,Standard invoice for professional services
+INV-0400,WIP/2026/5E89GZ,Wipro Enterprises Limited,2025-11-22,2025-12-22,INR,3680.68,662.52,4343.2,Maintenance,PO-2026-3641,Standard invoice for maintenance
+INV-0126,APX/2026/QV5K93,Apex Solutions Private Limited,2025-11-23,2025-12-23,INR,8778.52,1580.13,10358.65,Marketing,PO-2026-5705,Standard invoice for marketing
+INV-0308,GDJ/2026/3Q22U5,Godrej Interio Ltd,2025-11-23,2025-12-23,INR,6054.9,1089.88,7144.78,Marketing,PO-2026-6673,Standard invoice for marketing
+INV-0145,SMSG/2026/7BVR5R,Samsung India Electronics,2025-11-24,2025-12-24,INR,4747.97,854.63,5602.6,Professional Services,PO-2026-4134,Standard invoice for professional services
+INV-0365,LEN/2026/TNLT7Y,Lenovo India Private Limited,2025-11-24,2025-12-24,INR,7849.67,1412.94,9262.61,Travel,PO-2026-9953,Standard invoice for travel
+INV-0683,DELL/2026/6RN2RR,Dell Technologies Inc,2025-11-24,2025-12-24,INR,5444.03,979.93,6423.96,Raw Materials,PO-2026-2483,Standard invoice for raw materials
+INV-0789,ITC/2026/XPES4W,ITC Infotech India Ltd,2025-11-24,2025-12-24,INR,6236.95,1122.65,7359.6,Professional Services,PO-2026-5398,Standard invoice for professional services
+INV-0868,APX/2026/QV5K93,Apex Solutions Pvt Ltd,2025-11-24,2025-12-24,INR,8831.88,1589.74,10421.62,Marketing,PO-2026-5705,Standard invoice for marketing
+INV-0098,ZOHO/2026/L8CXAJ,Zoho Corporation Pvt Ltd,2025-11-25,2025-12-25,INR,5431.45,977.66,6409.11,Raw Materials,PO-2026-4216,Standard invoice for raw materials
+INV-0129,DELL/2026/DPD973,Dell Technologies Inc,2025-11-25,2025-12-25,INR,4899.74,881.95,5781.69,Raw Materials,PO-2026-1814,Standard invoice for raw materials
+INV-0297,SIEM/2026/7FYM4G,Siemens Industry Software,2025-11-25,2025-12-25,INR,5953.23,1071.58,7024.81,Marketing,PO-2026-6528,Standard invoice for marketing
+INV-0311,INFY/2026/P9CFD3,Infosys Limited,2025-11-25,2025-12-25,INR,8989.71,1618.15,10607.86,Raw Materials,PO-2026-6352,Standard invoice for raw materials
+INV-0356,DELL/2026/RKKXSA,Dell Technologies Inc,2025-11-25,2025-12-25,INR,5151.21,927.22,6078.43,Utilities,PO-2026-7392,Standard invoice for utilities
+INV-0513,INFY/2026/XBXEXW,Infosys Limited,2025-11-25,2025-12-25,INR,9254.68,1665.84,10920.52,Raw Materials,PO-2026-7703,Standard invoice for raw materials
+INV-0777,WIP/2026/2526GZ,Wipro Enterprises Limited,2025-11-25,2025-12-25,INR,4090.56,736.3,4826.86,Travel,PO-2026-1149,Standard invoice for travel
+INV-0984,HCL/2026/WVMPQL,Global Unknown Corp,2025-11-25,2025-12-25,INR,6800.0,1224.0,8024.0,IT Equipment,PO-2026-9387,Standard invoice for it equipment
+INV-0217,ORCL/2026/RHWW2U,Oracle India Private Limited,2025-11-26,2025-12-26,INR,4019.64,723.54,4743.18,Marketing,PO-2026-7098,Standard invoice for marketing
+INV-0309,HCL/2026/VLEDW2,HCL Technologies Limited,2025-11-26,2025-12-26,INR,6813.23,1226.38,8039.61,Logistics,PO-2026-6567,Standard invoice for logistics
+INV-0362,ITC/2026/ND269J,ITC Infotech India Ltd,2025-11-26,2025-12-26,INR,7320.3,1317.65,8637.95,Office Supplies,PO-2026-4484,Standard invoice for office supplies
+INV-0265,MMT/2026/UZ9QBD,MakeMyTrip India Pvt Ltd,2025-11-27,2025-12-27,INR,6586.01,1185.48,7771.49,Utilities,PO-2026-2766,Standard invoice for utilities
+INV-0267,ORCL/2026/7V8HPU,Oracle India Private Limited,2025-11-27,2025-12-27,INR,4188.93,754.01,4942.94,Marketing,PO-2026-6639,Standard invoice for marketing
+INV-0274,WIP/2026/YKYX9W,Wipro Enterprises Limited,2025-11-27,2025-12-27,INR,3784.71,681.25,4465.96,Travel,PO-2026-2045,Standard invoice for travel
+INV-0321,REL/2026/WMGV9D,Reliance Retail Limited,2025-11-27,2025-12-27,INR,5003.55,900.64,5904.19,Raw Materials,PO-2026-3126,Standard invoice for raw materials
+INV-0395,PWC/2026/PCRMDN,PwC India Advisory,2025-11-27,2025-12-27,INR,5445.73,980.23,6425.96,Travel,PO-2026-6439,Standard invoice for travel
+INV-0617,LEN/2026/LTKF2C,Lenovo India Private Limited,2025-11-27,2025-12-27,INR,8356.71,1504.21,9860.92,Travel,PO-2026-2940,Standard invoice for travel
+INV-0711,HCL/2026/AM5RSJ,HCL Technologies Limited,2025-11-27,2025-12-27,INR,6913.5,1244.43,8157.93,Logistics,PO-2026-9417,Standard invoice for logistics
+INV-0734,FDX/2026/F8JRX6,FedEx Express Logistics,2025-11-27,2025-12-27,INR,4387.4,789.73,5177.13,Office Supplies,PO-2026-7942,Standard invoice for office supplies
+INV-0823,ORCL/2026/RHWW2U,Oracle India Private Limited,2025-11-27,2025-12-27,INR,4019.64,723.54,4743.18,Marketing,PO-2026-7098,Standard invoice for marketing
+INV-0976,LTI/2026/U3MQQH,Larsen and Toubro Infotech,2025-11-27,2025-12-27,INR,316088.93,56896.01,372984.94,Office Supplies,PO-2026-3377,Standard invoice for office supplies
+INV-0261,ITC/2026/PTAGBY,ITC Infotech India Ltd,2025-11-28,2025-12-28,INR,6332.95,1139.93,7472.88,Office Supplies,PO-2026-5653,Standard invoice for office supplies
+INV-0358,GDJ/2026/HALKWC,Godrej Interio Ltd,2025-11-28,2025-12-28,INR,6626.16,1192.71,7818.87,Marketing,PO-2026-7930,Standard invoice for marketing
+INV-0374,TCS/2026/VF4EUD,Tata Consultancy Services,2025-11-28,2025-12-28,INR,6144.48,1106.01,7250.49,Software & Licenses,PO-2026-1853,Standard invoice for software & licenses
+INV-0379,BD/2026/EXRFFB,Blue Dart Express Ltd,2025-11-28,2025-12-28,INR,5720.94,1029.77,6750.71,Logistics,PO-2026-7062,Standard invoice for logistics
+INV-0393,ORCL/2026/WNNKSY,Oracle India Private Limited,2025-11-28,2025-12-28,INR,4271.64,768.9,5040.54,IT Equipment,PO-2026-2596,Standard invoice for it equipment
+INV-0469,PSYS/2026/2EMW87,Persistent Systems Ltd,2025-11-28,2025-12-28,INR,7386.29,1329.53,8715.82,Logistics,PO-2026-1655,Standard invoice for logistics
+INV-0544,MSFT/2026/9WRL8N,Microsoft India Pvt Ltd,2025-11-28,2025-12-28,INR,6539.5,1177.11,7716.61,Office Supplies,PO-2026-6344,Standard invoice for office supplies
+INV-0662,HP/2026/EDVF2H,HP India Sales Pvt Ltd,2025-11-28,2025-12-28,INR,5930.25,1067.44,6997.69,Maintenance,PO-2026-4835,Standard invoice for maintenance
+INV-0819,MSFT/2026/HZW7KV,Microsoft India Pvt Ltd,2025-11-28,2025-12-28,INR,6466.75,1164.01,7630.76,Professional Services,PO-2026-5603,Standard invoice for professional services
+INV-0871,INFY/2026/P9CFD3,Infosys Ltd,2025-11-28,2025-12-28,INR,9012.14,1622.18,10634.32,Raw Materials,PO-2026-6352,Standard invoice for raw materials
+INV-0873,ORCL/2026/WNNKSY,Oracle India Pvt Ltd,2025-11-28,2025-12-28,INR,4292.39,772.63,5065.02,IT Equipment,PO-2026-2596,Standard invoice for it equipment
+INV-0026,BD/2026/CQLT45,Blue Dart Express Ltd,2025-12-13,2026-01-12,INR,5579.74,1004.35,6584.09,Logistics,PO-2026-6057,Standard invoice for logistics
+INV-0234,HP/2026/QS7PJ4,HP India Sales Pvt Ltd,2025-12-13,2026-01-12,INR,4937.23,888.7,5825.93,Travel,PO-2026-7453,Standard invoice for travel
+INV-0477,AC/2026/65PMX8,Acme Pvt Ltd,2025-12-13,2026-01-12,INR,7169.38,1290.49,8459.87,Professional Services,PO-2026-4827,Standard invoice for professional services
+INV-0648,REL/2026/W2F9JD,Reliance Retail Limited,2025-12-13,2026-01-12,INR,5227.79,941.0,6168.79,Utilities,PO-2026-4720,Standard invoice for utilities
+INV-0676,TCS/2026/TGLWTN,Tata Consultancy Services,2025-12-13,2026-01-12,INR,5436.89,978.64,6415.53,Software & Licenses,PO-2026-9156,Standard invoice for software & licenses
+INV-0991,HCL/2026/TDA8W9,Global Unknown Corp,2025-12-13,2026-01-12,INR,6800.0,1224.0,8024.0,Raw Materials,PO-2026-9741,Standard invoice for raw materials
+INV-0021,TCS/2026/LVXCNG,Tata Consultancy Services,2025-12-14,2026-01-13,INR,5920.47,1065.68,6986.15,Software & Licenses,PO-2026-4886,Standard invoice for software & licenses
+INV-0072,WIP/2026/S6CXP6,Wipro Enterprises Limited,2025-12-14,2026-01-13,INR,3976.67,715.8,4692.47,Travel,PO-2026-9114,Standard invoice for travel
+INV-0206,FDX/2026/A8EZVE,FedEx Express Logistics,2025-12-14,2026-01-13,INR,3992.74,718.69,4711.43,Professional Services,PO-2026-7083,Standard invoice for professional services
+INV-0359,HCL/2026/KMJTEA,HCL Technologies Limited,2025-12-14,2026-01-13,INR,6488.07,1167.85,7655.92,Logistics,PO-2026-2701,Standard invoice for logistics
+INV-0754,AC/2026/3TEADF,Acme Pvt Ltd,2025-12-14,2026-01-13,INR,6672.91,1201.12,7874.03,Office Supplies,PO-2026-6475,Standard invoice for office supplies
+INV-0802,WIP/2026/UPDHFQ,Wipro Enterprises Limited,2025-12-14,2026-01-13,INR,4102.91,738.52,4841.43,Maintenance,PO-2026-1503,Standard invoice for maintenance
+INV-0998,ITC/2026/F8W7HC,ITC Infotech India Ltd,2025-12-14,2026-01-13,INR,53792.16,9682.59,63474.75,Software & Licenses,PO-2026-9655,Standard invoice for software & licenses
+INV-0037,LEN/2026/3HATP8,Lenovo India Private Limited,2025-12-15,2026-01-14,INR,8383.1,1508.96,9892.06,Maintenance,PO-2026-2272,Standard invoice for maintenance
+INV-0215,MMT/2026/BFK5BW,MakeMyTrip India Pvt Ltd,2025-12-15,2026-01-14,INR,6868.12,1236.26,8104.38,Utilities,PO-2026-8449,Standard invoice for utilities
+INV-0262,KPMG/2026/CXEL98,KPMG Advisory Services,2025-12-15,2026-01-14,INR,7686.89,1383.64,9070.53,IT Equipment,PO-2026-7519,Standard invoice for it equipment
+INV-0291,MSFT/2026/3N7DYP,Microsoft India Pvt Ltd,2025-12-15,2026-01-14,INR,7739.94,1393.19,9133.13,Office Supplies,PO-2026-2653,Standard invoice for office supplies
+INV-0396,REL/2026/UD2LWP,Reliance Retail Limited,2025-12-15,2026-01-14,INR,5816.03,1046.89,6862.92,Utilities,PO-2026-2371,Standard invoice for utilities
+INV-0428,APX/2026/R7LRMY,Apex Solutions Private Limited,2025-12-15,2026-01-14,INR,9480.02,1706.4,11186.42,Marketing,PO-2026-8416,Standard invoice for marketing
+INV-0567,LEN/2026/F87RRQ,Lenovo India Private Limited,2025-12-15,2026-01-14,INR,7164.52,1289.61,8454.13,Travel,PO-2026-7515,Standard invoice for travel
+INV-0834,FDX/2026/A8EZVE,FedEx Express Logistics,2025-12-15,2026-01-14,INR,3992.74,718.69,4711.43,Professional Services,PO-2026-7083,Standard invoice for professional services
+INV-0078,DELL/2026/MAS64R,Dell Technologies Inc,2025-12-16,2026-01-15,INR,5716.8,1029.02,6745.82,Raw Materials,PO-2026-2856,Standard invoice for raw materials
+INV-0017,PWC/2026/REVYKP,PwC India Advisory,2025-12-17,2026-01-16,INR,5336.27,960.53,6296.8,Maintenance,PO-2026-5517,Standard invoice for maintenance
+INV-0197,TCS/2026/A2S3PA,Tata Consultancy Services,2025-12-17,2026-01-16,INR,5367.19,966.09,6333.28,Logistics,PO-2026-5120,Standard invoice for logistics
+INV-0250,ZOHO/2026/YGJT7B,Zoho Corporation Pvt Ltd,2025-12-17,2026-01-16,INR,4948.97,890.81,5839.78,Raw Materials,PO-2026-3571,Standard invoice for raw materials
+INV-0280,DELL/2026/7RY7QV,Dell Technologies Inc,2025-12-17,2026-01-16,INR,5188.23,933.88,6122.11,Raw Materials,PO-2026-1269,Standard invoice for raw materials
+INV-0609,FDX/2026/6453X8,FedEx Express Logistics,2025-12-17,2026-01-16,INR,3600.31,648.06,4248.37,Professional Services,PO-2026-3406,Standard invoice for professional services
+INV-0672,PWC/2026/QHD6XK,PwC India Advisory,2025-12-17,2026-01-16,INR,5210.73,937.93,6148.66,Maintenance,PO-2026-2438,Standard invoice for maintenance
+INV-0813,INFY/2026/6M9NHZ,Infosys Limited,2025-12-17,2026-01-16,INR,8893.56,1600.84,10494.4,Raw Materials,PO-2026-9190,Standard invoice for raw materials
+INV-0910,SMSG/2026/TFDG9L,,2025-12-17,2026-01-16,INR,4350.0,783.0,5133.0,Professional Services,PO-2026-7095,Standard invoice for professional services
+INV-0182,HCL/2026/LGNB77,HCL Technologies Limited,2025-12-18,2026-01-17,INR,6597.1,1187.48,7784.58,Software & Licenses,PO-2026-8044,Standard invoice for software & licenses
+INV-0204,CTS/2026/GCZYS8,Cognizant Technology Solutions,2025-12-18,2026-01-17,INR,4667.57,840.16,5507.73,Travel,PO-2026-9956,Standard invoice for travel
+INV-0380,CTS/2026/X9JPMF,Cognizant Technology Solutions,2025-12-18,2026-01-17,INR,4582.27,824.81,5407.08,Maintenance,PO-2026-7182,Standard invoice for maintenance
+INV-0869,MMT/2026/BFK5BW,MakeMyTrip India Private Limited,2025-12-18,2026-01-17,INR,6848.52,1232.73,8081.25,Utilities,PO-2026-8449,Standard invoice for utilities
+INV-0895,MMT/2026/3D5M9R,,2025-12-18,2026-01-17,INR,6800.0,1224.0,8024.0,Logistics,PO-2026-9862,Standard invoice for logistics
+INV-0067,PWC/2026/79AHP5,PwC India Advisory,2025-12-19,2026-01-18,INR,5344.6,962.03,6306.63,Maintenance,PO-2026-5896,Standard invoice for maintenance
+INV-0339,LTI/2026/G5U5Y7,Larsen and Toubro Infotech,2025-12-19,2026-01-18,INR,4692.11,844.58,5536.69,Logistics,PO-2026-8786,Standard invoice for logistics
+INV-0383,GDJ/2026/7XEF89,Godrej Interio Ltd,2025-12-19,2026-01-18,INR,6046.65,1088.4,7135.05,IT Equipment,PO-2026-9132,Standard invoice for it equipment
+INV-0406,DELL/2026/Q2J7SD,Dell Technologies Inc,2025-12-19,2026-01-18,INR,5475.92,985.67,6461.59,Utilities,PO-2026-6581,Standard invoice for utilities
+INV-0389,LTI/2026/B3GJPW,Larsen and Toubro Infotech,2025-12-20,2026-01-19,INR,4776.09,859.7,5635.79,Logistics,PO-2026-7367,Standard invoice for logistics
+INV-0487,ITC/2026/CAB5G2,ITC Infotech India Ltd,2025-12-20,2026-01-19,INR,6205.02,1116.9,7321.92,Professional Services,PO-2026-7993,Standard invoice for professional services
+INV-0702,WIP/2026/L8EXX5,Wipro Enterprises Limited,2025-12-20,2026-01-19,INR,3686.65,663.6,4350.25,Maintenance,PO-2026-8459,Standard invoice for maintenance
+INV-0853,DELL/2026/Q2J7SD,Dell Technologies Inc,2025-12-20,2026-01-19,INR,5475.92,985.67,6461.59,Utilities,PO-2026-6581,Standard invoice for utilities
+INV-0904,,HP India Sales Pvt Ltd,2025-12-20,2026-01-19,INR,5400.0,972.0,6372.0,Logistics,PO-2026-9770,Standard invoice for logistics
+INV-0077,CTS/2026/GP68PT,Cognizant Technology Solutions,2025-12-21,2026-01-20,INR,4499.89,809.98,5309.87,Maintenance,PO-2026-5232,Standard invoice for maintenance
+INV-0198,WIP/2026/AR8W38,Wipro Enterprises Limited,2025-12-21,2026-01-20,INR,3849.99,693.0,4542.99,Maintenance,PO-2026-6990,Standard invoice for maintenance
+INV-0511,HCL/2026/T2RLQF,HCL Technologies Limited,2025-12-21,2026-01-20,INR,7060.93,1270.97,8331.9,Logistics,PO-2026-5519,Standard invoice for logistics
+INV-0608,DELL/2026/Q462N3,Dell Technologies Inc,2025-12-21,2026-01-20,INR,5576.01,1003.68,6579.69,Utilities,PO-2026-2087,Standard invoice for utilities
+INV-0708,DELL/2026/LN82QV,Dell Technologies Inc,2025-12-21,2026-01-20,INR,5701.44,1026.26,6727.7,Utilities,PO-2026-7178,Standard invoice for utilities
+INV-0949,ORCL/2026/ERWJE5,Oracle India Private Limited,2025-12-21,2026-01-20,INR,4000.0,720.0,4931.27,Raw Materials,PO-2026-2258,Standard invoice for raw materials
+INV-0388,KPMG/2026/3SBCFE,KPMG Advisory Services,2025-12-22,2026-01-21,INR,7987.26,1437.71,9424.97,Marketing,PO-2026-6856,Standard invoice for marketing
+INV-0438,KPMG/2026/4KBQ6K,KPMG Advisory Services,2025-12-22,2026-01-21,INR,7213.73,1298.47,8512.2,Marketing,PO-2026-7936,Standard invoice for marketing
+INV-0579,AC/2026/JV9Y6S,Acme Pvt Ltd,2025-12-22,2026-01-21,INR,7295.92,1313.27,8609.19,Professional Services,PO-2026-2345,Standard invoice for professional services
+INV-0724,SMSG/2026/KXB8MB,Samsung India Electronics,2025-12-22,2026-01-21,INR,4739.86,853.17,5593.03,Office Supplies,PO-2026-9564,Standard invoice for office supplies
+INV-0786,HCL/2026/24D5X8,HCL Technologies Limited,2025-12-22,2026-01-21,INR,6377.83,1148.01,7525.84,Software & Licenses,PO-2026-1901,Standard invoice for software & licenses
+INV-0860,LTI/2026/B3GJPW,Larsen and Toubro Infotech Pvt Ltd,2025-12-22,2026-01-21,INR,4743.58,853.84,5597.42,Logistics,PO-2026-7367,Standard invoice for logistics
+INV-0968,PSYS/2026/E2HRP8,Persistent Systems Ltd,2025-12-22,2026-01-21,INR,138759.63,24976.73,163736.36,Marketing,PO-2026-5818,Standard invoice for marketing
+INV-0057,HP/2026/WBNFJY,HP India Sales Pvt Ltd,2025-12-23,2026-01-22,INR,5485.27,987.35,6472.62,Maintenance,PO-2026-1761,Standard invoice for maintenance
+INV-0219,PWC/2026/SZMSMP,PwC India Advisory,2025-12-23,2026-01-22,INR,4728.08,851.05,5579.13,Maintenance,PO-2026-7391,Standard invoice for maintenance
+INV-0519,MSFT/2026/W3V8YC,Microsoft India Pvt Ltd,2025-12-23,2026-01-22,INR,7214.53,1298.62,8513.15,Professional Services,PO-2026-2284,Standard invoice for professional services
+INV-0523,REL/2026/LMLKNW,Reliance Retail Limited,2025-12-23,2026-01-22,INR,5204.02,936.72,6140.74,Raw Materials,PO-2026-2457,Standard invoice for raw materials
+INV-0611,HCL/2026/UNRJQL,HCL Technologies Limited,2025-12-23,2026-01-22,INR,6131.39,1103.65,7235.04,Logistics,PO-2026-5514,Standard invoice for logistics
+INV-0725,SIEM/2026/U4SEPT,Siemens Industry Software,2025-12-23,2026-01-22,INR,6296.25,1133.33,7429.58,IT Equipment,PO-2026-6599,Standard invoice for it equipment
+INV-0850,WIP/2026/AR8W38,Wipro Enterprises Limited,2025-12-23,2026-01-22,INR,3849.99,693.0,4542.99,Maintenance,PO-2026-6990,Standard invoice for maintenance
+INV-0518,MMT/2026/2QYF3W,MakeMyTrip India Pvt Ltd,2025-12-24,2026-01-23,INR,6913.33,1244.4,8157.73,Utilities,PO-2026-2863,Standard invoice for utilities
+INV-0656,BD/2026/BKFYPE,Blue Dart Express Ltd,2025-12-24,2026-01-23,INR,5649.09,1016.84,6665.93,Software & Licenses,PO-2026-8894,Standard invoice for software & licenses
+INV-0776,TCS/2026/732HXN,Tata Consultancy Services,2025-12-24,2026-01-23,INR,5711.87,1028.14,6740.01,Software & Licenses,PO-2026-1314,Standard invoice for software & licenses
+INV-0814,ITC/2026/JEZ3R3,ITC Infotech India Ltd,2025-12-24,2026-01-23,INR,7075.98,1273.68,8349.66,Office Supplies,PO-2026-5055,Standard invoice for office supplies
+INV-0039,MSFT/2026/4WHBHS,Microsoft India Pvt Ltd,2025-12-25,2026-01-24,INR,7446.4,1340.35,8786.75,Office Supplies,PO-2026-3958,Standard invoice for office supplies
+INV-0371,REL/2026/CEF535,Reliance Retail Limited,2025-12-25,2026-01-24,INR,5746.19,1034.31,6780.5,Raw Materials,PO-2026-1593,Standard invoice for raw materials
+INV-0550,SIEM/2026/PR8AYD,Siemens Industry Software,2025-12-25,2026-01-24,INR,5923.13,1066.16,6989.29,Marketing,PO-2026-8391,Standard invoice for marketing
+INV-0706,BD/2026/TVCL7Z,Blue Dart Express Ltd,2025-12-25,2026-01-24,INR,5251.91,945.34,6197.25,Software & Licenses,PO-2026-7763,Standard invoice for software & licenses
+INV-0712,HP/2026/F5RY76,HP India Sales Pvt Ltd,2025-12-25,2026-01-24,INR,5023.0,904.14,5927.14,Maintenance,PO-2026-7042,Standard invoice for maintenance
+INV-0765,KPMG/2026/NHMZ3M,KPMG Advisory Services,2025-12-25,2026-01-24,INR,8374.68,1507.44,9882.12,IT Equipment,PO-2026-6571,Standard invoice for it equipment
+INV-0774,SMSG/2026/UT4LST,Samsung India Electronics,2025-12-25,2026-01-24,INR,4315.48,776.79,5092.27,Office Supplies,PO-2026-6612,Standard invoice for office supplies
+INV-0861,KPMG/2026/3SBCFE,KPMG Advisory Services Pvt Ltd,2025-12-25,2026-01-24,INR,7939.21,1429.06,9368.27,Marketing,PO-2026-6856,Standard invoice for marketing
+INV-0474,TCS/2026/JFRBW9,Tata Consultancy Services,2025-12-26,2026-01-25,INR,6016.93,1083.05,7099.98,Software & Licenses,PO-2026-6007,Standard invoice for software & licenses
+INV-0650,SIEM/2026/TCWHMJ,Siemens Industry Software,2025-12-26,2026-01-25,INR,6377.61,1147.97,7525.58,Marketing,PO-2026-1222,Standard invoice for marketing
+INV-0689,ITC/2026/LL569N,ITC Infotech India Ltd,2025-12-26,2026-01-25,INR,6550.91,1179.16,7730.07,Professional Services,PO-2026-2730,Standard invoice for professional services
+INV-0175,AC/2026/MZZGWS,Acme Pvt Ltd,2025-12-27,2026-01-26,INR,7001.16,1260.21,8261.37,Professional Services,PO-2026-3678,Standard invoice for professional services
+INV-0767,LEN/2026/8AVK99,Lenovo India Private Limited,2025-12-27,2026-01-26,INR,7083.3,1274.99,8358.29,Travel,PO-2026-4910,Standard invoice for travel
+INV-0188,LEN/2026/EEQJ6W,Lenovo India Private Limited,2025-12-28,2026-01-27,INR,7552.37,1359.43,8911.8,Maintenance,PO-2026-6053,Standard invoice for maintenance
+INV-0240,MMT/2026/KQEC9J,MakeMyTrip India Pvt Ltd,2025-12-28,2026-01-27,INR,6771.02,1218.78,7989.8,Raw Materials,PO-2026-8135,Standard invoice for raw materials
+INV-0410,HP/2026/XARAWG,HP India Sales Pvt Ltd,2025-12-28,2026-01-27,INR,4862.02,875.16,5737.18,Maintenance,PO-2026-2621,Standard invoice for maintenance
+INV-0497,SMSG/2026/W6UHL2,Samsung India Electronics,2025-12-28,2026-01-27,INR,4682.53,842.86,5525.39,Professional Services,PO-2026-8702,Standard invoice for professional services
+INV-0659,FDX/2026/P6S7G4,FedEx Express Logistics,2025-12-28,2026-01-27,INR,3726.3,670.73,4397.03,Professional Services,PO-2026-2250,Standard invoice for professional services
+INV-0821,AC/2026/MZZGWS,Acme Pvt Ltd,2025-12-28,2026-01-27,INR,7001.16,1260.21,8261.37,Professional Services,PO-2026-3678,Standard invoice for professional services
+INV-0841,LEN/2026/EEQJ6W,Lenovo India Private Limited,2025-12-28,2026-01-27,INR,7552.37,1359.43,8911.8,Maintenance,PO-2026-6053,Standard invoice for maintenance
+INV-0847,LEN/2026/EEQJ6W,Lenovo India Private Limited,2025-12-28,2026-01-27,INR,7552.37,1359.43,8911.8,Maintenance,PO-2026-6053,Standard invoice for maintenance
+INV-0723,REL/2026/HFDC63,Reliance Retail Limited,2026-01-13,2026-02-12,INR,4975.88,895.66,5871.54,Raw Materials,PO-2026-1984,Standard invoice for raw materials
+INV-0506,BD/2026/2KUAL9,Blue Dart Express Ltd,2026-01-14,2026-02-13,INR,5460.22,982.84,6443.06,Software & Licenses,PO-2026-3930,Standard invoice for software & licenses
+INV-0714,ITC/2026/REWAW6,ITC Infotech India Ltd,2026-01-14,2026-02-13,INR,6681.12,1202.6,7883.72,Office Supplies,PO-2026-1192,Standard invoice for office supplies
+INV-0626,TCS/2026/9MZJBL,Tata Consultancy Services,2026-01-15,2026-02-14,INR,6179.31,1112.28,7291.59,Software & Licenses,PO-2026-9141,Standard invoice for software & licenses
+INV-0008,INFY/2026/8SXYPE,Infosys Limited,2026-01-16,2026-02-15,INR,9125.47,1642.58,10768.05,Raw Materials,PO-2026-6179,Standard invoice for raw materials
+INV-0058,INFY/2026/V435RA,Infosys Limited,2026-01-16,2026-02-15,INR,9186.0,1653.48,10839.48,Raw Materials,PO-2026-4607,Standard invoice for raw materials
+INV-0201,AC/2026/QQP3JF,Acme Pvt Ltd,2026-01-16,2026-02-15,INR,7052.6,1269.47,8322.07,Office Supplies,PO-2026-6107,Standard invoice for office supplies
+INV-0225,ZOHO/2026/WB7PWP,Zoho Corporation Pvt Ltd,2026-01-16,2026-02-15,INR,5529.77,995.36,6525.13,Utilities,PO-2026-4271,Standard invoice for utilities
+INV-0343,ORCL/2026/SV7F6V,Oracle India Private Limited,2026-01-16,2026-02-15,INR,3641.96,655.55,4297.51,IT Equipment,PO-2026-3762,Standard invoice for it equipment
+INV-0460,HP/2026/WCFVGW,HP India Sales Pvt Ltd,2026-01-16,2026-02-15,INR,5693.28,1024.79,6718.07,Maintenance,PO-2026-5460,Standard invoice for maintenance
+INV-0512,HP/2026/JRS6DB,HP India Sales Pvt Ltd,2026-01-16,2026-02-15,INR,4979.26,896.27,5875.53,Maintenance,PO-2026-2337,Standard invoice for maintenance
+INV-0694,MSFT/2026/TZNPWB,Microsoft India Pvt Ltd,2026-01-16,2026-02-15,INR,7649.12,1376.84,9025.96,Office Supplies,PO-2026-9740,Standard invoice for office supplies
+INV-0736,HCL/2026/KN4ANX,HCL Technologies Limited,2026-01-16,2026-02-15,INR,7068.98,1272.42,8341.4,Software & Licenses,PO-2026-5521,Standard invoice for software & licenses
+INV-0007,HP/2026/JP7RSA,HP India Sales Pvt Ltd,2026-01-17,2026-02-16,INR,5743.58,1033.84,6777.42,Maintenance,PO-2026-7575,Standard invoice for maintenance
+INV-0193,PWC/2026/K46QAP,PwC India Advisory,2026-01-17,2026-02-16,INR,5379.7,968.35,6348.05,Travel,PO-2026-4947,Standard invoice for travel
+INV-0514,ITC/2026/K35XCG,ITC Infotech India Ltd,2026-01-17,2026-02-16,INR,6754.62,1215.83,7970.45,Office Supplies,PO-2026-6707,Standard invoice for office supplies
+INV-0787,HP/2026/2YF3YH,HP India Sales Pvt Ltd,2026-01-17,2026-02-16,INR,5906.98,1063.26,6970.24,Travel,PO-2026-7784,Standard invoice for travel
+INV-0791,LTI/2026/TKCLWD,Larsen and Toubro Infotech,2026-01-17,2026-02-16,INR,4991.55,898.48,5890.03,Logistics,PO-2026-1777,Standard invoice for logistics
+INV-0060,KPMG/2026/G29E98,KPMG Advisory Services,2026-01-18,2026-02-17,INR,8172.66,1471.08,9643.74,IT Equipment,PO-2026-4631,Standard invoice for it equipment
+INV-0127,BD/2026/N78JGB,Blue Dart Express Ltd,2026-01-18,2026-02-17,INR,5232.19,941.79,6173.98,Logistics,PO-2026-6288,Standard invoice for logistics
+INV-0369,PSYS/2026/9J38YU,Persistent Systems Ltd,2026-01-18,2026-02-17,INR,7249.22,1304.86,8554.08,Logistics,PO-2026-2535,Standard invoice for logistics
+INV-0507,CTS/2026/A2G486,Cognizant Technology Solutions,2026-01-18,2026-02-17,INR,4640.32,835.26,5475.58,Travel,PO-2026-8470,Standard invoice for travel
+INV-0524,SMSG/2026/3SUYEM,Samsung India Electronics,2026-01-18,2026-02-17,INR,4010.63,721.91,4732.54,Office Supplies,PO-2026-4981,Standard invoice for office supplies
+INV-0575,SIEM/2026/TXAHWH,Siemens Industry Software,2026-01-18,2026-02-17,INR,5985.01,1077.3,7062.31,IT Equipment,PO-2026-9668,Standard invoice for it equipment
+INV-0755,APX/2026/ARAN74,Apex Solutions Private Limited,2026-01-18,2026-02-17,INR,8457.78,1522.4,9980.18,IT Equipment,PO-2026-3524,Standard invoice for it equipment
+INV-0990,PSYS/2026/YQEKM4,Persistent Systems Ltd,2026-01-18,2026-02-17,INR,6800.0,1224.0,8024.0,Entertainment,PO-2026-7036,Standard invoice for office supplies
+INV-0242,ORCL/2026/SK7448,Oracle India Private Limited,2026-01-19,2026-02-18,INR,3869.43,696.5,4565.93,IT Equipment,PO-2026-7752,Standard invoice for it equipment
+INV-0720,ORCL/2026/M4G44T,Oracle India Private Limited,2026-01-19,2026-02-18,INR,3851.52,693.27,4544.79,Marketing,PO-2026-4863,Standard invoice for marketing
+INV-0829,KPMG/2026/G29E98,KPMG Advisory Services,2026-01-19,2026-02-18,INR,8172.66,1471.08,9643.74,IT Equipment,PO-2026-4631,Standard invoice for it equipment
+INV-0025,APX/2026/LRD334,Apex Solutions Private Limited,2026-01-20,2026-02-19,INR,8018.73,1443.37,9462.1,Marketing,PO-2026-3106,Standard invoice for marketing
+INV-0264,LEN/2026/XYSSM2,Lenovo India Private Limited,2026-01-20,2026-02-19,INR,8350.47,1503.08,9853.55,Travel,PO-2026-4804,Standard invoice for travel
+INV-0809,FDX/2026/EU5QPV,FedEx Express Logistics,2026-01-20,2026-02-19,INR,3763.94,677.51,4441.45,Professional Services,PO-2026-2058,Standard invoice for professional services
+INV-0220,REL/2026/J9P93P,Reliance Retail Limited,2026-01-21,2026-02-20,INR,4891.29,880.43,5771.72,Raw Materials,PO-2026-7186,Standard invoice for raw materials
+INV-0559,FDX/2026/QHSPXN,FedEx Express Logistics,2026-01-21,2026-02-20,INR,4188.53,753.94,4942.47,Professional Services,PO-2026-8570,Standard invoice for professional services
+INV-0684,FDX/2026/5K95M8,FedEx Express Logistics,2026-01-21,2026-02-20,INR,3954.6,711.83,4666.43,Office Supplies,PO-2026-9599,Standard invoice for office supplies
+INV-0797,PWC/2026/6EMKXK,PwC India Advisory,2026-01-21,2026-02-20,INR,5134.17,924.15,6058.32,Travel,PO-2026-2890,Standard invoice for travel
+INV-0107,HCL/2026/M7HSBV,HCL Technologies Limited,2026-01-22,2026-02-21,INR,6350.97,1143.17,7494.14,Logistics,PO-2026-1106,Standard invoice for logistics
+INV-0147,TCS/2026/ZSMN3W,Tata Consultancy Services,2026-01-22,2026-02-21,INR,5381.27,968.63,6349.9,Logistics,PO-2026-1726,Standard invoice for logistics
+INV-0202,APX/2026/RQVCCM,Apex Solutions Private Limited,2026-01-22,2026-02-21,INR,8543.04,1537.75,10080.79,IT Equipment,PO-2026-3595,Standard invoice for it equipment
+INV-0333,GDJ/2026/L5WVB5,Godrej Interio Ltd,2026-01-22,2026-02-21,INR,6878.52,1238.13,8116.65,IT Equipment,PO-2026-6034,Standard invoice for it equipment
+INV-0557,CTS/2026/VQYFS2,Cognizant Technology Solutions,2026-01-22,2026-02-21,INR,4679.48,842.31,5521.79,Travel,PO-2026-3147,Standard invoice for travel
+INV-0105,FDX/2026/TG9K99,FedEx Express Logistics,2026-01-23,2026-02-22,INR,3732.7,671.89,4404.59,Professional Services,PO-2026-3431,Standard invoice for professional services
+INV-0149,ZOHO/2026/ZUYR29,Zoho Corporation Pvt Ltd,2026-01-23,2026-02-22,INR,5100.41,918.07,6018.48,Raw Materials,PO-2026-2439,Standard invoice for raw materials
+INV-0238,LTI/2026/CR7LDZ,Larsen and Toubro Infotech,2026-01-23,2026-02-22,INR,5038.13,906.86,5944.99,Logistics,PO-2026-3138,Standard invoice for logistics
+INV-0329,BD/2026/B2H7KJ,Blue Dart Express Ltd,2026-01-23,2026-02-22,INR,5348.53,962.74,6311.27,Logistics,PO-2026-7095,Standard invoice for logistics
+INV-0342,MSFT/2026/F23XES,Microsoft India Pvt Ltd,2026-01-23,2026-02-22,INR,7269.57,1308.52,8578.09,Office Supplies,PO-2026-9184,Standard invoice for office supplies
+INV-0614,ITC/2026/RMP8WT,ITC Infotech India Ltd,2026-01-23,2026-02-22,INR,7168.54,1290.34,8458.88,Office Supplies,PO-2026-9195,Standard invoice for office supplies
+INV-0982,GDJ/2026/EYZAHE,Godrej Interio Ltd,2026-01-23,2026-02-22,INR,6450.0,1161.0,7611.0,Personal Expense,PO-2026-3890,Standard invoice for maintenance
+INV-0119,REL/2026/EVK2PD,Reliance Retail Limited,2026-01-24,2026-02-23,INR,5867.3,1056.11,6923.41,Raw Materials,PO-2026-4567,Standard invoice for raw materials
+INV-0603,ZOHO/2026/MVPJ2V,Zoho Corporation Pvt Ltd,2026-01-24,2026-02-23,INR,4691.42,844.46,5535.88,Raw Materials,PO-2026-9507,Standard invoice for raw materials
+INV-0733,DELL/2026/PBCCGH,Dell Technologies Inc,2026-01-24,2026-02-23,INR,5766.99,1038.06,6805.05,Raw Materials,PO-2026-5375,Standard invoice for raw materials
+INV-0909,,Cognizant Technology Solutions,2026-01-24,2026-02-23,INR,4700.0,846.0,5546.0,Raw Materials,PO-2026-4301,Standard invoice for raw materials
+INV-0548,REL/2026/UGPMVK,Reliance Retail Limited,2026-01-25,2026-02-24,INR,5251.8,945.32,6197.12,Utilities,PO-2026-2793,Standard invoice for utilities
+INV-0606,BD/2026/Y94AKY,Blue Dart Express Ltd,2026-01-25,2026-02-24,INR,5328.81,959.19,6288.0,Software & Licenses,PO-2026-9261,Standard invoice for software & licenses
+INV-0951,ITC/2026/42UH8W,ITC Infotech India Ltd,2026-01-25,2026-02-24,INR,6800.0,1224.0,8964.32,IT Equipment,PO-2026-9555,Standard invoice for it equipment
+INV-0255,DELL/2026/5V8TQ2,Dell Technologies Inc,2026-01-26,2026-02-25,INR,4958.51,892.53,5851.04,Utilities,PO-2026-1086,Standard invoice for utilities
+INV-0746,PSYS/2026/QDU55U,Persistent Systems Ltd,2026-01-26,2026-02-25,INR,6455.1,1161.92,7617.02,Software & Licenses,PO-2026-3703,Standard invoice for software & licenses
+INV-0161,KPMG/2026/BKWAAF,KPMG Advisory Services,2026-01-27,2026-02-26,INR,8578.66,1544.16,10122.82,IT Equipment,PO-2026-7481,Standard invoice for it equipment
+INV-0452,AC/2026/THAK3F,Acme Pvt Ltd,2026-01-27,2026-02-26,INR,6779.01,1220.22,7999.23,Office Supplies,PO-2026-9004,Standard invoice for office supplies
+INV-0653,ZOHO/2026/P7THH9,Zoho Corporation Pvt Ltd,2026-01-27,2026-02-26,INR,5373.98,967.32,6341.3,Raw Materials,PO-2026-9830,Standard invoice for raw materials
+INV-0772,PWC/2026/KFA35S,PwC India Advisory,2026-01-27,2026-02-26,INR,4919.94,885.59,5805.53,Maintenance,PO-2026-9967,Standard invoice for maintenance
+INV-0091,PSYS/2026/68Q8WB,Persistent Systems Ltd,2026-01-28,2026-02-27,INR,6183.94,1113.11,7297.05,Software & Licenses,PO-2026-6517,Standard invoice for software & licenses
+INV-0179,DELL/2026/5ZDZ9B,Dell Technologies Inc,2026-01-28,2026-02-27,INR,5903.42,1062.62,6966.04,Raw Materials,PO-2026-8847,Standard invoice for raw materials
+INV-0282,GDJ/2026/TP9MMB,Godrej Interio Ltd,2026-01-28,2026-02-27,INR,7080.73,1274.53,8355.26,IT Equipment,PO-2026-4137,Standard invoice for it equipment
+INV-0387,ITC/2026/SEWZS6,ITC Infotech India Ltd,2026-01-28,2026-02-27,INR,6767.25,1218.11,7985.36,Professional Services,PO-2026-4393,Standard invoice for professional services
+INV-0578,ZOHO/2026/PMBWBX,Zoho Corporation Pvt Ltd,2026-01-28,2026-02-27,INR,4596.92,827.45,5424.37,Utilities,PO-2026-4696,Standard invoice for utilities
+INV-0766,LTI/2026/AYMPGC,Larsen and Toubro Infotech,2026-01-28,2026-02-27,INR,4798.73,863.77,5662.5,Software & Licenses,PO-2026-7709,Standard invoice for software & licenses
+INV-0843,GDJ/2026/TP9MMB,Godrej Interio Ltd,2026-01-28,2026-02-27,INR,7080.73,1274.53,8355.26,IT Equipment,PO-2026-4137,Standard invoice for it equipment
+INV-0879,DELL/2026/5ZDZ9B,Dell Technologies Technologies Inc,2026-01-28,2026-02-27,INR,5926.64,1066.8,6993.44,Raw Materials,PO-2026-8847,Standard invoice for raw materials
+INV-0082,HP/2026/TELANF,HP India Sales Pvt Ltd,2026-02-13,2026-03-15,INR,5909.62,1063.73,6973.35,Travel,PO-2026-5959,Standard invoice for travel
+INV-0272,SIEM/2026/S4GRFB,Siemens Industry Software,2026-02-13,2026-03-15,INR,6665.58,1199.8,7865.38,IT Equipment,PO-2026-6810,Standard invoice for it equipment
+INV-0108,HP/2026/PUQNRB,HP India Sales Pvt Ltd,2026-02-14,2026-03-16,INR,5723.6,1030.25,6753.85,Maintenance,PO-2026-8370,Standard invoice for maintenance
+INV-0361,INFY/2026/5VW5XS,Infosys Limited,2026-02-14,2026-03-16,INR,8324.41,1498.39,9822.8,Raw Materials,PO-2026-1802,Standard invoice for raw materials
+INV-0439,LTI/2026/2P6QXM,Larsen and Toubro Infotech,2026-02-14,2026-03-16,INR,4582.43,824.84,5407.27,Logistics,PO-2026-5683,Standard invoice for logistics
+INV-0440,LEN/2026/QR93AA,Lenovo India Private Limited,2026-02-14,2026-03-16,INR,8392.75,1510.69,9903.44,Maintenance,PO-2026-9710,Standard invoice for maintenance
+INV-0489,LTI/2026/TLR64V,Larsen and Toubro Infotech,2026-02-14,2026-03-16,INR,4250.28,765.05,5015.33,Logistics,PO-2026-6780,Standard invoice for logistics
+INV-0700,SIEM/2026/FAGEQR,Siemens Industry Software,2026-02-14,2026-03-16,INR,6968.03,1254.25,8222.28,Marketing,PO-2026-4056,Standard invoice for marketing
+INV-0859,SIEM/2026/S4GRFB,Siemens Industry Software Pvt Ltd,2026-02-14,2026-03-16,INR,6680.82,1202.55,7883.37,IT Equipment,PO-2026-6810,Standard invoice for it equipment
+INV-0092,PWC/2026/CWJAVB,PwC India Advisory,2026-02-15,2026-03-17,INR,5439.47,979.1,6418.57,Travel,PO-2026-8071,Standard invoice for travel
+INV-0368,ORCL/2026/367PCX,Oracle India Private Limited,2026-02-15,2026-03-17,INR,3891.28,700.43,4591.71,Marketing,PO-2026-8532,Standard invoice for marketing
+INV-0377,AC/2026/4JFGK6,Acme Pvt Ltd,2026-02-15,2026-03-17,INR,7192.94,1294.73,8487.67,Professional Services,PO-2026-3589,Standard invoice for professional services
+INV-0709,FDX/2026/PLFXSR,FedEx Express Logistics,2026-02-15,2026-03-17,INR,3797.11,683.48,4480.59,Professional Services,PO-2026-1797,Standard invoice for professional services
+INV-0743,MMT/2026/9XNY5E,MakeMyTrip India Pvt Ltd,2026-02-15,2026-03-17,INR,7056.57,1270.18,8326.75,Raw Materials,PO-2026-4204,Standard invoice for raw materials
+INV-0760,GDJ/2026/BXGTFA,Godrej Interio Ltd,2026-02-15,2026-03-17,INR,6862.8,1235.3,8098.1,Marketing,PO-2026-3001,Standard invoice for marketing
+INV-0033,INFY/2026/8MZPAY,Infosys Limited,2026-02-16,2026-03-18,INR,8538.56,1536.94,10075.5,Utilities,PO-2026-5427,Standard invoice for utilities
+INV-0210,INFY/2026/2BQJSD,Infosys Limited,2026-02-16,2026-03-18,INR,9739.99,1753.2,11493.19,Raw Materials,PO-2026-4542,Standard invoice for raw materials
+INV-0381,DELL/2026/RBCHNC,Dell Technologies Inc,2026-02-16,2026-03-18,INR,5837.79,1050.8,6888.59,Raw Materials,PO-2026-1001,Standard invoice for raw materials
+INV-0102,BD/2026/EVKPJQ,Blue Dart Express Ltd,2026-02-17,2026-03-19,INR,5613.31,1010.4,6623.71,Software & Licenses,PO-2026-4963,Standard invoice for software & licenses
+INV-0245,REL/2026/R9M8AZ,Reliance Retail Limited,2026-02-17,2026-03-19,INR,5287.08,951.67,6238.75,Utilities,PO-2026-1400,Standard invoice for utilities
+INV-0424,TCS/2026/9TTL6L,Tata Consultancy Services,2026-02-17,2026-03-19,INR,5764.05,1037.53,6801.58,Software & Licenses,PO-2026-8719,Standard invoice for software & licenses
+INV-0565,KPMG/2026/P5B7H2,KPMG Advisory Services,2026-02-17,2026-03-19,INR,8573.12,1543.16,10116.28,IT Equipment,PO-2026-1467,Standard invoice for it equipment
+INV-0089,MSFT/2026/HB2FJM,Microsoft India Pvt Ltd,2026-02-18,2026-03-20,INR,7774.53,1399.42,9173.95,Office Supplies,PO-2026-8981,Standard invoice for office supplies
+INV-0221,SMSG/2026/MCM3AU,Samsung India Electronics,2026-02-18,2026-03-20,INR,4275.53,769.6,5045.13,Office Supplies,PO-2026-8965,Standard invoice for office supplies
+INV-0425,WIP/2026/JN3FZU,Wipro Enterprises Limited,2026-02-18,2026-03-20,INR,4063.95,731.51,4795.46,Travel,PO-2026-4475,Standard invoice for travel
+INV-0687,HP/2026/EDPY8Y,HP India Sales Pvt Ltd,2026-02-18,2026-03-20,INR,5257.33,946.32,6203.65,Travel,PO-2026-9420,Standard invoice for travel
+INV-0795,ORCL/2026/LFZGZX,Oracle India Private Limited,2026-02-18,2026-03-20,INR,3922.01,705.96,4627.97,IT Equipment,PO-2026-2928,Standard invoice for it equipment
+INV-0891,WIP/2026/C4VJDH,Wipro Enterprises Limited,2026-02-18,2026-03-20,INR,4000.0,720.0,,Maintenance,PO-2026-7513,Standard invoice for maintenance
+INV-0199,ZOHO/2026/9SBN9E,Zoho Corporation Pvt Ltd,2026-02-19,2026-03-21,INR,4608.33,829.5,5437.83,Raw Materials,PO-2026-1412,Standard invoice for raw materials
+INV-0251,AC/2026/LVBUFH,Acme Pvt Ltd,2026-02-19,2026-03-21,INR,6435.65,1158.42,7594.07,Office Supplies,PO-2026-1141,Standard invoice for office supplies
+INV-0398,SIEM/2026/CK9H3N,Siemens Industry Software,2026-02-19,2026-03-21,INR,6018.14,1083.27,7101.41,Marketing,PO-2026-6916,Standard invoice for marketing
+INV-0437,ITC/2026/TWEZG2,ITC Infotech India Ltd,2026-02-19,2026-03-21,INR,7237.9,1302.82,8540.72,Professional Services,PO-2026-1467,Standard invoice for professional services
+INV-0470,PWC/2026/AQLFNE,PwC India Advisory,2026-02-19,2026-03-21,INR,5299.27,953.87,6253.14,Maintenance,PO-2026-6487,Standard invoice for maintenance
+INV-0634,FDX/2026/65VGHE,FedEx Express Logistics,2026-02-19,2026-03-21,INR,4015.02,722.7,4737.72,Office Supplies,PO-2026-6921,Standard invoice for office supplies
+INV-0635,GDJ/2026/HMC48B,Godrej Interio Ltd,2026-02-19,2026-03-21,INR,7001.64,1260.3,8261.94,IT Equipment,PO-2026-8334,Standard invoice for it equipment
+INV-0180,FDX/2026/Z72CWF,FedEx Express Logistics,2026-02-20,2026-03-22,INR,3788.36,681.9,4470.26,Office Supplies,PO-2026-1994,Standard invoice for office supplies
+INV-0313,KPMG/2026/2JATZU,KPMG Advisory Services,2026-02-20,2026-03-22,INR,8066.19,1451.91,9518.1,IT Equipment,PO-2026-9241,Standard invoice for it equipment
+INV-0695,ORCL/2026/QFYZ7T,Oracle India Private Limited,2026-02-20,2026-03-22,INR,4052.41,729.43,4781.84,IT Equipment,PO-2026-5299,Standard invoice for it equipment
+INV-0790,KPMG/2026/NL6E73,KPMG Advisory Services,2026-02-20,2026-03-22,INR,7126.78,1282.82,8409.6,Marketing,PO-2026-6861,Standard invoice for marketing
+INV-0213,LTI/2026/9CDY7L,Larsen and Toubro Infotech,2026-02-21,2026-03-23,INR,4520.08,813.61,5333.69,Software & Licenses,PO-2026-9764,Standard invoice for software & licenses
+INV-0330,CTS/2026/6QLRQ8,Cognizant Technology Solutions,2026-02-21,2026-03-23,INR,4979.14,896.25,5875.39,Maintenance,PO-2026-8813,Standard invoice for maintenance
+INV-0680,APX/2026/TKFMZ8,Apex Solutions Private Limited,2026-02-21,2026-03-23,INR,8379.58,1508.32,9887.9,Marketing,PO-2026-5506,Standard invoice for marketing
+INV-0747,PWC/2026/QWSTC3,PwC India Advisory,2026-02-21,2026-03-23,INR,4774.86,859.47,5634.33,Travel,PO-2026-9772,Standard invoice for travel
+INV-0045,SIEM/2026/LJBU3F,Siemens Industry Software,2026-02-22,2026-03-24,INR,6503.1,1170.56,7673.66,Marketing,PO-2026-6280,Standard invoice for marketing
+INV-0384,HCL/2026/YLP9LH,HCL Technologies Limited,2026-02-22,2026-03-24,INR,6322.19,1137.99,7460.18,Software & Licenses,PO-2026-1793,Standard invoice for software & licenses
+INV-0591,LTI/2026/SBCQKM,Larsen and Toubro Infotech,2026-02-22,2026-03-24,INR,4344.82,782.07,5126.89,Logistics,PO-2026-9730,Standard invoice for logistics
+INV-0771,PSYS/2026/3LLC4U,Persistent Systems Ltd,2026-02-22,2026-03-24,INR,6702.01,1206.36,7908.37,Logistics,PO-2026-6998,Standard invoice for logistics
+INV-0773,REL/2026/YDWHG5,Reliance Retail Limited,2026-02-22,2026-03-24,INR,4938.91,889.0,5827.91,Raw Materials,PO-2026-5418,Standard invoice for raw materials
+INV-0902,BD/2026/A724RV,Blue Dart Express Ltd,2026-02-22,2026-03-24,INR,5750.0,1035.0,,Logistics,PO-2026-1539,Standard invoice for logistics
+INV-0988,BD/2026/HQM8G3,Blue Dart Express Ltd,2026-02-22,2026-03-24,INR,5750.0,1035.0,6785.0,Hospitality Gaming,PO-2026-5913,Standard invoice for logistics
+INV-0029,FDX/2026/ZFWSJ4,FedEx Express Logistics,2026-02-23,2026-03-25,INR,3729.11,671.24,4400.35,Office Supplies,PO-2026-7134,Standard invoice for office supplies
+INV-0228,BD/2026/C596AS,Blue Dart Express Ltd,2026-02-23,2026-03-25,INR,5322.57,958.06,6280.63,Logistics,PO-2026-4585,Standard invoice for logistics
+INV-0505,APX/2026/9EX8Z8,Apex Solutions Private Limited,2026-02-23,2026-03-25,INR,8549.95,1538.99,10088.94,IT Equipment,PO-2026-5038,Standard invoice for it equipment
+INV-0745,ORCL/2026/FXZFDT,Oracle India Private Limited,2026-02-23,2026-03-25,INR,4026.33,724.74,4751.07,IT Equipment,PO-2026-3433,Standard invoice for it equipment
+INV-0921,MMT/2026/2SGL9J,MakeMyTrip India Pvt Ltd,2026-02-23,2026-03-25,INR,6800.0,1224.0,-4213.14,Software & Licenses,PO-2026-5176,Standard invoice for software & licenses
+INV-0003,DELL/2026/4Q4XXG,Dell Technologies Inc,2026-02-24,2026-03-26,INR,5918.31,1065.3,6983.61,Utilities,PO-2026-8286,Standard invoice for utilities
+INV-0573,REL/2026/9ZL9R3,Reliance Retail Limited,2026-02-24,2026-03-26,INR,5685.57,1023.4,6708.97,Raw Materials,PO-2026-6266,Standard invoice for raw materials
+INV-0602,WIP/2026/62QKM5,Wipro Enterprises Limited,2026-02-24,2026-03-26,INR,3885.53,699.4,4584.93,Maintenance,PO-2026-2038,Standard invoice for maintenance
+INV-0775,SIEM/2026/TCEFQU,Siemens Industry Software,2026-02-24,2026-03-26,INR,6333.29,1139.99,7473.28,IT Equipment,PO-2026-2070,Standard invoice for it equipment
+INV-0106,GDJ/2026/DNVWNV,Godrej Interio Ltd,2026-02-25,2026-03-27,INR,6699.75,1205.95,7905.7,Marketing,PO-2026-7753,Standard invoice for marketing
+INV-0192,PSYS/2026/5QA2VK,Persistent Systems Ltd,2026-02-25,2026-03-27,INR,7247.1,1304.48,8551.58,Software & Licenses,PO-2026-9468,Standard invoice for software & licenses
+INV-0227,APX/2026/7MQDR8,Apex Solutions Private Limited,2026-02-25,2026-03-27,INR,8721.25,1569.83,10291.08,Marketing,PO-2026-6143,Standard invoice for marketing
+INV-0414,LTI/2026/RRD2WX,Larsen and Toubro Infotech,2026-02-25,2026-03-27,INR,5141.04,925.39,6066.43,Software & Licenses,PO-2026-7297,Standard invoice for software & licenses
+INV-0825,APX/2026/7MQDR8,Apex Solutions Private Limited,2026-02-25,2026-03-27,INR,8721.25,1569.83,10291.08,Marketing,PO-2026-6143,Standard invoice for marketing
+INV-0827,PSYS/2026/5QA2VK,Persistent Systems Ltd,2026-02-25,2026-03-27,INR,7247.1,1304.48,8551.58,Software & Licenses,PO-2026-9468,Standard invoice for software & licenses
+INV-0023,ZOHO/2026/G66EXF,Zoho Corporation Pvt Ltd,2026-02-26,2026-03-28,INR,5083.34,915.0,5998.34,Utilities,PO-2026-8889,Standard invoice for utilities
+INV-0150,AC/2026/5ZFQH2,Acme Pvt Ltd,2026-02-26,2026-03-28,INR,7102.11,1278.38,8380.49,Office Supplies,PO-2026-9299,Standard invoice for office supplies
+INV-0620,ORCL/2026/MH3MTY,Oracle India Private Limited,2026-02-26,2026-03-28,INR,4274.01,769.32,5043.33,Marketing,PO-2026-7128,Standard invoice for marketing
+INV-0783,DELL/2026/UWQRYV,Dell Technologies Inc,2026-02-26,2026-03-28,INR,5001.45,900.26,5901.71,Raw Materials,PO-2026-8720,Standard invoice for raw materials
+INV-0054,FDX/2026/QUZPLD,FedEx Express Logistics,2026-02-27,2026-03-29,INR,3810.9,685.96,4496.86,Professional Services,PO-2026-1967,Standard invoice for professional services
+INV-0075,APX/2026/F9PP5Y,Apex Solutions Private Limited,2026-02-27,2026-03-29,INR,9674.52,1741.41,11415.93,Marketing,PO-2026-6603,Standard invoice for marketing
+INV-0233,HCL/2026/TZSGNF,HCL Technologies Limited,2026-02-27,2026-03-29,INR,6211.83,1118.13,7329.96,Software & Licenses,PO-2026-6196,Standard invoice for software & licenses
+INV-0491,MMT/2026/PPKP9C,MakeMyTrip India Pvt Ltd,2026-02-27,2026-03-29,INR,7020.55,1263.7,8284.25,Raw Materials,PO-2026-7380,Standard invoice for raw materials
+INV-0545,ORCL/2026/P52YAY,Oracle India Private Limited,2026-02-27,2026-03-29,INR,3833.24,689.98,4523.22,IT Equipment,PO-2026-2129,Standard invoice for it equipment
+INV-0166,ORCL/2026/TD45VD,Oracle India Private Limited,2026-02-28,2026-03-30,INR,4340.06,781.21,5121.27,Marketing,PO-2026-8581,Standard invoice for marketing
+INV-0253,BD/2026/QL5K43,Blue Dart Express Ltd,2026-02-28,2026-03-30,INR,5484.15,987.15,6471.3,Software & Licenses,PO-2026-1580,Standard invoice for software & licenses
+INV-0295,REL/2026/9EVZBM,Reliance Retail Limited,2026-02-28,2026-03-30,INR,5804.85,1044.87,6849.72,Utilities,PO-2026-1311,Standard invoice for utilities
+INV-0678,ZOHO/2026/ABFLMR,Zoho Corporation Pvt Ltd,2026-02-28,2026-03-30,INR,5048.72,908.77,5957.49,Utilities,PO-2026-2281,Standard invoice for utilities
+INV-0111,KPMG/2026/N6M8HU,KPMG Advisory Services,2026-03-13,2026-04-12,INR,7232.98,1301.94,8534.92,IT Equipment,PO-2026-2231,Standard invoice for it equipment
+INV-0112,LTI/2026/GRN9FS,Larsen and Toubro Infotech,2026-03-13,2026-04-12,INR,4742.63,853.67,5596.3,Software & Licenses,PO-2026-5308,Standard invoice for software & licenses
+INV-0373,SIEM/2026/RLJT9V,Siemens Industry Software,2026-03-13,2026-04-12,INR,6444.73,1160.05,7604.78,IT Equipment,PO-2026-5482,Standard invoice for it equipment
+INV-0376,ZOHO/2026/UXTDUY,Zoho Corporation Pvt Ltd,2026-03-13,2026-04-12,INR,5161.86,929.13,6090.99,Utilities,PO-2026-7752,Standard invoice for utilities
+INV-0399,TCS/2026/YKJL9R,Tata Consultancy Services,2026-03-13,2026-04-12,INR,5184.52,933.21,6117.73,Logistics,PO-2026-3104,Standard invoice for logistics
+INV-0458,GDJ/2026/LQNQM4,Godrej Interio Ltd,2026-03-13,2026-04-12,INR,5870.24,1056.64,6926.88,Marketing,PO-2026-6477,Standard invoice for marketing
+INV-0563,INFY/2026/42L5JZ,Infosys Limited,2026-03-13,2026-04-12,INR,9111.33,1640.04,10751.37,Raw Materials,PO-2026-7319,Standard invoice for raw materials
+INV-0621,PSYS/2026/65VS3F,Persistent Systems Ltd,2026-03-13,2026-04-12,INR,6993.61,1258.85,8252.46,Logistics,PO-2026-6940,Standard invoice for logistics
+INV-0944,SIEM/2026/KTKKGC,Siemens Industry Software,2026-03-13,2026-04-12,INR,6450.0,1161.0,6369.12,Raw Materials,PO-2026-1610,Standard invoice for raw materials
+INV-0178,CTS/2026/LJEKNL,Cognizant Technology Solutions,2026-03-14,2026-04-13,INR,4291.78,772.52,5064.3,Maintenance,PO-2026-7824,Standard invoice for maintenance
+INV-0431,DELL/2026/6K54SG,Dell Technologies Inc,2026-03-14,2026-04-13,INR,5196.24,935.32,6131.56,Raw Materials,PO-2026-6815,Standard invoice for raw materials
+INV-0960,TCS/2026/2TMYEU,Tata Consultancy Services,2026-03-14,2026-04-13,INR,5750.0,1035.0,7090.2,Maintenance,PO-2026-7576,Standard invoice for maintenance
+INV-0059,ITC/2026/8L23SV,ITC Infotech India Ltd,2026-03-15,2026-04-14,INR,6875.84,1237.65,8113.49,Office Supplies,PO-2026-2056,Standard invoice for office supplies
+INV-0134,INFY/2026/DQCNC9,Infosys Limited,2026-03-15,2026-04-14,INR,8502.08,1530.37,10032.45,Utilities,PO-2026-4151,Standard invoice for utilities
+INV-0194,REL/2026/NXALS8,Reliance Retail Limited,2026-03-15,2026-04-14,INR,5301.77,954.32,6256.09,Utilities,PO-2026-4239,Standard invoice for utilities
+INV-0433,GDJ/2026/ARZJGC,Godrej Interio Ltd,2026-03-15,2026-04-14,INR,6054.59,1089.83,7144.42,IT Equipment,PO-2026-6641,Standard invoice for it equipment
+INV-0462,ITC/2026/BNFZHK,ITC Infotech India Ltd,2026-03-15,2026-04-14,INR,7237.33,1302.72,8540.05,Office Supplies,PO-2026-2143,Standard invoice for office supplies
+INV-0555,APX/2026/UVD4JE,Apex Solutions Private Limited,2026-03-15,2026-04-14,INR,9469.49,1704.51,11174.0,IT Equipment,PO-2026-9023,Standard invoice for it equipment
+INV-0123,WIP/2026/K5H7VL,Wipro Enterprises Limited,2026-03-16,2026-04-15,INR,4128.81,743.19,4872.0,Travel,PO-2026-7441,Standard invoice for travel
+INV-0451,ZOHO/2026/47HEZV,Zoho Corporation Pvt Ltd,2026-03-16,2026-04-15,INR,5214.31,938.58,6152.89,Raw Materials,PO-2026-7740,Standard invoice for raw materials
+INV-0583,DELL/2026/A76SE5,Dell Technologies Inc,2026-03-16,2026-04-15,INR,5527.06,994.87,6521.93,Raw Materials,PO-2026-9122,Standard invoice for raw materials
+INV-0858,ZOHO/2026/UXTDUY,Zoho Corporation Pvt Ltd,2026-03-16,2026-04-15,INR,5161.86,929.13,6090.99,Utilities,PO-2026-7752,Standard invoice for utilities
+INV-0880,ITC/2026/8L23SV,ITC Infotech India Limited,2026-03-16,2026-04-15,INR,6836.96,1230.65,8067.61,Office Supplies,PO-2026-2056,Standard invoice for office supplies
+INV-0884,TCS/2026/YKJL9R,Tata Consultancy Services Pvt Ltd,2026-03-16,2026-04-15,INR,5202.2,936.4,6138.6,Logistics,PO-2026-3104,Standard invoice for logistics
+INV-0985,GDJ/2026/VB4QVG,Godrej Interio Ltd,2026-03-16,2026-04-15,INR,6450.0,1161.0,7611.0,Entertainment,PO-2026-9604,Standard invoice for professional services
+INV-0047,WIP/2026/226TZA,Wipro Enterprises Limited,2026-03-17,2026-04-16,INR,3731.15,671.61,4402.76,Maintenance,PO-2026-8608,Standard invoice for maintenance
+INV-0288,LTI/2026/4TZ37J,Larsen and Toubro Infotech,2026-03-17,2026-04-16,INR,4355.03,783.91,5138.94,Logistics,PO-2026-7407,Standard invoice for logistics
+INV-0604,AC/2026/LJUKFD,Acme Pvt Ltd,2026-03-17,2026-04-16,INR,6700.82,1206.15,7906.97,Office Supplies,PO-2026-4565,Standard invoice for office supplies
+INV-0612,HP/2026/499C9D,HP India Sales Pvt Ltd,2026-03-17,2026-04-16,INR,5703.55,1026.64,6730.19,Maintenance,PO-2026-1479,Standard invoice for maintenance
+INV-0997,ITC/2026/VS9HS5,ITC Infotech India Ltd,2026-03-17,2026-04-16,INR,52302.18,9414.39,61716.57,Marketing,PO-2026-5247,Standard invoice for marketing
+INV-0052,CTS/2026/PTL6XR,Cognizant Technology Solutions,2026-03-18,2026-04-17,INR,4414.7,794.65,5209.35,Travel,PO-2026-5847,Standard invoice for travel
+INV-0076,BD/2026/TR6GG2,Blue Dart Express Ltd,2026-03-18,2026-04-17,INR,5307.42,955.34,6262.76,Logistics,PO-2026-1054,Standard invoice for logistics
+INV-0104,DELL/2026/Q8KQVR,Dell Technologies Inc,2026-03-18,2026-04-17,INR,4969.79,894.56,5864.35,Utilities,PO-2026-5415,Standard invoice for utilities
+INV-0118,PWC/2026/PPCYSP,PwC India Advisory,2026-03-18,2026-04-17,INR,4556.08,820.09,5376.17,Maintenance,PO-2026-1052,Standard invoice for maintenance
+INV-0174,ZOHO/2026/D7BDHW,Zoho Corporation Pvt Ltd,2026-03-18,2026-04-17,INR,4932.94,887.93,5820.87,Utilities,PO-2026-4453,Standard invoice for utilities
+INV-0561,HCL/2026/P3YYET,HCL Technologies Limited,2026-03-18,2026-04-17,INR,6372.33,1147.02,7519.35,Logistics,PO-2026-4114,Standard invoice for logistics
+INV-0781,BD/2026/6F2BD5,Blue Dart Express Ltd,2026-03-18,2026-04-17,INR,5272.87,949.12,6221.99,Logistics,PO-2026-5617,Standard invoice for logistics
+INV-0141,ORCL/2026/KP6W7A,Oracle India Private Limited,2026-03-19,2026-04-18,INR,3622.18,651.99,4274.17,IT Equipment,PO-2026-8091,Standard invoice for it equipment
+INV-0148,WIP/2026/2K4TGN,Wipro Enterprises Limited,2026-03-19,2026-04-18,INR,4086.34,735.54,4821.88,Maintenance,PO-2026-7150,Standard invoice for maintenance
+INV-0254,CTS/2026/XC8U63,Cognizant Technology Solutions,2026-03-19,2026-04-18,INR,4921.66,885.9,5807.56,Travel,PO-2026-7893,Standard invoice for travel
+INV-0417,MSFT/2026/42KDPM,Microsoft India Pvt Ltd,2026-03-19,2026-04-18,INR,6684.69,1203.24,7887.93,Professional Services,PO-2026-8663,Standard invoice for professional services
+INV-0675,SIEM/2026/8GT4KM,Siemens Industry Software,2026-03-19,2026-04-18,INR,6958.4,1252.51,8210.91,IT Equipment,PO-2026-8032,Standard invoice for it equipment
+INV-0818,MMT/2026/XUPK2Y,MakeMyTrip India Pvt Ltd,2026-03-19,2026-04-18,INR,7470.76,1344.74,8815.5,Utilities,PO-2026-2099,Standard invoice for utilities
+INV-0304,BD/2026/9N62BF,Blue Dart Express Ltd,2026-03-20,2026-04-19,INR,5916.66,1065.0,6981.66,Software & Licenses,PO-2026-2974,Standard invoice for software & licenses
+INV-0666,LTI/2026/J9NDA7,Larsen and Toubro Infotech,2026-03-20,2026-04-19,INR,5060.71,910.93,5971.64,Software & Licenses,PO-2026-4081,Standard invoice for software & licenses
+INV-0063,MMT/2026/J64BRA,MakeMyTrip India Pvt Ltd,2026-03-21,2026-04-20,INR,7257.66,1306.38,8564.04,Utilities,PO-2026-5755,Standard invoice for utilities
+INV-0086,LTI/2026/GZS3K5,Larsen and Toubro Infotech,2026-03-21,2026-04-20,INR,4950.97,891.17,5842.14,Logistics,PO-2026-7325,Standard invoice for logistics
+INV-0218,PSYS/2026/6KJK6S,Persistent Systems Ltd,2026-03-21,2026-04-20,INR,7458.74,1342.57,8801.31,Logistics,PO-2026-4235,Standard invoice for logistics
+INV-0347,SMSG/2026/N92P7B,Samsung India Electronics,2026-03-21,2026-04-20,INR,4394.14,790.95,5185.09,Professional Services,PO-2026-5093,Standard invoice for professional services
+INV-0682,CTS/2026/4MTVP3,Cognizant Technology Solutions,2026-03-21,2026-04-20,INR,4585.95,825.47,5411.42,Maintenance,PO-2026-2828,Standard invoice for maintenance
+INV-0833,ORCL/2026/KP6W7A,Oracle India Private Limited,2026-03-21,2026-04-20,INR,3622.18,651.99,4274.17,IT Equipment,PO-2026-8091,Standard invoice for it equipment
+INV-0866,ZOHO/2026/D7BDHW,Zoho Corporation Private Limited,2026-03-21,2026-04-20,INR,4949.79,890.96,5840.75,Utilities,PO-2026-4453,Standard invoice for utilities
+INV-0883,PWC/2026/PPCYSP,PwC India Advisory Pvt Ltd,2026-03-21,2026-04-20,INR,4524.11,814.34,5338.45,Maintenance,PO-2026-1052,Standard invoice for maintenance
+INV-0918,MSFT/2026/GRPVXV,Microsoft India Pvt Ltd,2026-03-21,2026-04-20,INR,7150.0,1287.0,0.0,Office Supplies,PO-2026-1779,Standard invoice for office supplies
+INV-0999,DELL/2026/B5V5VY,Dell Technologies Inc,2026-03-21,2026-04-20,INR,39669.53,7140.51,46810.04,Maintenance,PO-2026-5867,Standard invoice for maintenance
+INV-0048,ZOHO/2026/6S6WAM,Zoho Corporation Pvt Ltd,2026-03-22,2026-04-21,INR,4763.35,857.4,5620.75,Raw Materials,PO-2026-2962,Standard invoice for raw materials
+INV-0209,HP/2026/M8KB6P,HP India Sales Pvt Ltd,2026-03-22,2026-04-21,INR,5215.43,938.78,6154.21,Maintenance,PO-2026-2466,Standard invoice for maintenance
+INV-0407,FDX/2026/H2ZWWP,FedEx Express Logistics,2026-03-22,2026-04-21,INR,3828.07,689.05,4517.12,Professional Services,PO-2026-1384,Standard invoice for professional services
+INV-0486,INFY/2026/FZHNQG,Infosys Limited,2026-03-22,2026-04-21,INR,9499.8,1709.96,11209.76,Utilities,PO-2026-7335,Standard invoice for utilities
+INV-0857,ORCL/2026/KP6W7A,Oracle India Private Limited,2026-03-22,2026-04-21,INR,3622.18,651.99,4274.17,IT Equipment,PO-2026-8091,Standard invoice for it equipment
+INV-0062,LEN/2026/Z997XL,Lenovo India Private Limited,2026-03-23,2026-04-22,INR,8017.37,1443.13,9460.5,Travel,PO-2026-1975,Standard invoice for travel
+INV-0153,CTS/2026/DXDB5H,Cognizant Technology Solutions,2026-03-23,2026-04-22,INR,5122.23,922.0,6044.23,Travel,PO-2026-7485,Standard invoice for travel
+INV-0566,LTI/2026/UH6CFL,Larsen and Toubro Infotech,2026-03-23,2026-04-22,INR,4919.95,885.59,5805.54,Software & Licenses,PO-2026-4087,Standard invoice for software & licenses
+INV-0826,PSYS/2026/6KJK6S,Persistent Systems Ltd,2026-03-23,2026-04-22,INR,7458.74,1342.57,8801.31,Logistics,PO-2026-4235,Standard invoice for logistics
+INV-0275,ZOHO/2026/2M368X,Zoho Corporation Pvt Ltd,2026-03-24,2026-04-23,INR,5180.21,932.44,6112.65,Utilities,PO-2026-3310,Standard invoice for utilities
+INV-0415,LEN/2026/E8B622,Lenovo India Private Limited,2026-03-24,2026-04-23,INR,7201.68,1296.3,8497.98,Travel,PO-2026-7981,Standard invoice for travel
+INV-0475,WIP/2026/DAXCXK,Wipro Enterprises Limited,2026-03-24,2026-04-23,INR,3910.25,703.85,4614.1,Travel,PO-2026-6377,Standard invoice for travel
+INV-0691,LTI/2026/4NEECK,Larsen and Toubro Infotech,2026-03-24,2026-04-23,INR,4982.97,896.93,5879.9,Logistics,PO-2026-4818,Standard invoice for logistics
+INV-0831,LTI/2026/GZS3K5,Larsen and Toubro Infotech,2026-03-24,2026-04-23,INR,4950.97,891.17,5842.14,Logistics,PO-2026-7325,Standard invoice for logistics
+INV-0978,CTS/2026/UBBWAC,Cognizant Technology Solutions,2026-03-24,2026-04-23,INR,161292.45,29032.64,190325.09,Travel,PO-2026-5139,Standard invoice for travel
+INV-0995,ZOHO/2026/LLKVHG,Zoho Corporation Pvt Ltd,2026-03-24,2026-04-23,INR,60092.08,10816.58,70908.66,Logistics,PO-2026-7619,Standard invoice for logistics
+INV-0509,FDX/2026/GMDB64,FedEx Express Logistics,2026-03-25,2026-04-24,INR,4108.11,739.46,4847.57,Professional Services,PO-2026-1102,Standard invoice for professional services
+INV-0520,ORCL/2026/9KSCXS,Oracle India Private Limited,2026-03-25,2026-04-24,INR,3729.11,671.24,4400.35,Marketing,PO-2026-8421,Standard invoice for marketing
+INV-0732,CTS/2026/YYMFUR,Cognizant Technology Solutions,2026-03-25,2026-04-24,INR,4480.0,806.4,5286.4,Maintenance,PO-2026-6970,Standard invoice for maintenance
+INV-0785,GDJ/2026/8N8WQ8,Godrej Interio Ltd,2026-03-25,2026-04-24,INR,5950.96,1071.17,7022.13,IT Equipment,PO-2026-9127,Standard invoice for it equipment
+INV-0084,ITC/2026/RL6YNS,ITC Infotech India Ltd,2026-03-26,2026-04-25,INR,6176.15,1111.71,7287.86,Professional Services,PO-2026-5132,Standard invoice for professional services
+INV-0492,MSFT/2026/YSRAME,Microsoft India Pvt Ltd,2026-03-26,2026-04-25,INR,6920.59,1245.71,8166.3,Office Supplies,PO-2026-6396,Standard invoice for office supplies
+INV-0050,APX/2026/VWM7DS,Apex Solutions Private Limited,2026-03-27,2026-04-26,INR,9643.49,1735.83,11379.32,IT Equipment,PO-2026-1654,Standard invoice for it equipment
+INV-0130,FDX/2026/Q4Z25P,FedEx Express Logistics,2026-03-27,2026-04-26,INR,3752.14,675.39,4427.53,Office Supplies,PO-2026-8251,Standard invoice for office supplies
+INV-0249,WIP/2026/9WQKN5,Wipro Enterprises Limited,2026-03-27,2026-04-26,INR,4212.75,758.29,4971.04,Maintenance,PO-2026-9422,Standard invoice for maintenance
+INV-0643,MMT/2026/KREQH2,MakeMyTrip India Pvt Ltd,2026-03-27,2026-04-26,INR,7115.89,1280.86,8396.75,Raw Materials,PO-2026-6442,Standard invoice for raw materials
+INV-0740,KPMG/2026/F6QSBM,KPMG Advisory Services,2026-03-27,2026-04-26,INR,8126.97,1462.85,9589.82,Marketing,PO-2026-9799,Standard invoice for marketing
+INV-0312,ITC/2026/KMWYJC,ITC Infotech India Ltd,2026-03-28,2026-04-27,INR,6193.15,1114.77,7307.92,Office Supplies,PO-2026-7079,Standard invoice for office supplies
+INV-0397,SMSG/2026/GC8MVK,Samsung India Electronics,2026-03-28,2026-04-27,INR,4001.4,720.25,4721.65,Professional Services,PO-2026-3812,Standard invoice for professional services
+INV-0409,HCL/2026/J7KD2H,HCL Technologies Limited,2026-03-28,2026-04-27,INR,7244.8,1304.06,8548.86,Logistics,PO-2026-7406,Standard invoice for logistics
+INV-0764,ITC/2026/VXQA3A,ITC Infotech India Ltd,2026-03-28,2026-04-27,INR,6951.98,1251.36,8203.34,Office Supplies,PO-2026-6042,Standard invoice for office supplies
+INV-0852,FDX/2026/Q4Z25P,FedEx Express Logistics,2026-03-28,2026-04-27,INR,3752.14,675.39,4427.53,Office Supplies,PO-2026-8251,Standard invoice for office supplies
+INV-0155,FDX/2026/SYZ2E3,FedEx Express Logistics,2026-04-13,2026-05-13,INR,3743.49,673.83,4417.32,Professional Services,PO-2026-9234,Standard invoice for professional services
+INV-0256,FDX/2026/GTGWQE,FedEx Express Logistics,2026-04-13,2026-05-13,INR,3852.73,693.49,4546.22,Professional Services,PO-2026-1367,Standard invoice for professional services
+INV-0263,LTI/2026/WRQ3X3,Larsen and Toubro Infotech,2026-04-13,2026-05-13,INR,4571.74,822.91,5394.65,Software & Licenses,PO-2026-2966,Standard invoice for software & licenses
+INV-0061,LTI/2026/CPSUEA,Larsen and Toubro Infotech,2026-04-14,2026-05-14,INR,4404.14,792.75,5196.89,Software & Licenses,PO-2026-1525,Standard invoice for software & licenses
+INV-0276,AC/2026/ZXLQ2E,Acme Pvt Ltd,2026-04-14,2026-05-14,INR,6509.01,1171.62,7680.63,Professional Services,PO-2026-9053,Standard invoice for professional services
+INV-0338,KPMG/2026/ZG54L4,KPMG Advisory Services,2026-04-14,2026-05-14,INR,8273.73,1489.27,9763.0,Marketing,PO-2026-9230,Standard invoice for marketing
+INV-0669,MSFT/2026/7T46SP,Microsoft India Pvt Ltd,2026-04-14,2026-05-14,INR,7694.09,1384.94,9079.03,Professional Services,PO-2026-1153,Standard invoice for professional services
+INV-0977,HP/2026/37XXFU,HP India Sales Pvt Ltd,2026-04-14,2026-05-14,INR,166902.47,30042.45,196944.92,IT Equipment,PO-2026-8948,Standard invoice for it equipment
+INV-0064,MSFT/2026/QMSZKU,Microsoft India Pvt Ltd,2026-04-15,2026-05-15,INR,7473.02,1345.14,8818.16,Professional Services,PO-2026-4268,Standard invoice for professional services
+INV-0302,AC/2026/4RZBJM,Acme Pvt Ltd,2026-04-15,2026-05-15,INR,6618.12,1191.26,7809.38,Office Supplies,PO-2026-7718,Standard invoice for office supplies
+INV-0510,GDJ/2026/KUU9W6,Godrej Interio Ltd,2026-04-15,2026-05-15,INR,6214.83,1118.67,7333.5,Marketing,PO-2026-3932,Standard invoice for marketing
+INV-0576,TCS/2026/LHEB3Q,Tata Consultancy Services,2026-04-15,2026-05-15,INR,6323.66,1138.26,7461.92,Software & Licenses,PO-2026-1136,Standard invoice for software & licenses
+INV-0632,CTS/2026/VFX3BT,Cognizant Technology Solutions,2026-04-15,2026-05-15,INR,4667.09,840.08,5507.17,Maintenance,PO-2026-5145,Standard invoice for maintenance
+INV-0848,AC/2026/4RZBJM,Acme Pvt Ltd,2026-04-15,2026-05-15,INR,6618.12,1191.26,7809.38,Office Supplies,PO-2026-7718,Standard invoice for office supplies
+INV-0867,FDX/2026/GTGWQE,FedEx Express Logistics Pvt Ltd,2026-04-15,2026-05-15,INR,3878.52,698.13,4576.65,Professional Services,PO-2026-1367,Standard invoice for professional services
+INV-0928,ZOHO/2026/MKKPRF,Zoho Corporation Pvt Ltd,2026-04-15,2026-05-15,INR,5050.0,909.0,0.0,Logistics,PO-2026-1380,Standard invoice for logistics
+INV-0979,GDJ/2026/YPVVJJ,Godrej Interio Ltd,2026-04-15,2026-05-15,INR,276685.93,49803.47,326489.4,IT Equipment,PO-2026-2176,Standard invoice for it equipment
+INV-0230,DELL/2026/4NSSUU,Dell Technologies Inc,2026-04-16,2026-05-16,INR,5389.15,970.05,6359.2,Raw Materials,PO-2026-5744,Standard invoice for raw materials
+INV-0667,LEN/2026/6EMQ5V,Lenovo India Private Limited,2026-04-16,2026-05-16,INR,7074.79,1273.46,8348.25,Travel,PO-2026-2141,Standard invoice for travel
+INV-0698,REL/2026/U4TZYP,Reliance Retail Limited,2026-04-16,2026-05-16,INR,5800.13,1044.02,6844.15,Utilities,PO-2026-1879,Standard invoice for utilities
+INV-0828,LTI/2026/WRQ3X3,Larsen and Toubro Infotech,2026-04-16,2026-05-16,INR,4571.74,822.91,5394.65,Software & Licenses,PO-2026-2966,Standard invoice for software & licenses
+INV-0116,ORCL/2026/EQ5D93,Oracle India Private Limited,2026-04-17,2026-05-17,INR,3672.93,661.13,4334.06,Marketing,PO-2026-5182,Standard invoice for marketing
+INV-0645,ORCL/2026/SUNK28,Oracle India Private Limited,2026-04-17,2026-05-17,INR,3967.47,714.14,4681.61,IT Equipment,PO-2026-7281,Standard invoice for it equipment
+INV-0244,PWC/2026/K2K3LT,PwC India Advisory,2026-04-18,2026-05-18,INR,5403.8,972.68,6376.48,Travel,PO-2026-9730,Standard invoice for travel
+INV-0742,LEN/2026/CWBL25,Lenovo India Private Limited,2026-04-18,2026-05-18,INR,8573.86,1543.29,10117.15,Maintenance,PO-2026-5622,Standard invoice for maintenance
+INV-0290,MMT/2026/BGGCQ3,MakeMyTrip India Pvt Ltd,2026-04-19,2026-05-19,INR,6935.39,1248.37,8183.76,Raw Materials,PO-2026-6515,Standard invoice for raw materials
+INV-0412,ITC/2026/KL322Z,ITC Infotech India Ltd,2026-04-19,2026-05-19,INR,6577.6,1183.97,7761.57,Office Supplies,PO-2026-4005,Standard invoice for office supplies
+INV-0167,PSYS/2026/XRLJ6B,Persistent Systems Ltd,2026-04-20,2026-05-20,INR,7229.48,1301.31,8530.79,Logistics,PO-2026-8605,Standard invoice for logistics
+INV-0522,PWC/2026/FDUWZV,PwC India Advisory,2026-04-20,2026-05-20,INR,5273.96,949.31,6223.27,Maintenance,PO-2026-5640,Standard invoice for maintenance
+INV-0629,AC/2026/Q8J4FT,Acme Pvt Ltd,2026-04-20,2026-05-20,INR,7166.66,1290.0,8456.66,Professional Services,PO-2026-6469,Standard invoice for professional services
+INV-0952,HCL/2026/3G27L9,HCL Technologies Limited,2026-04-20,2026-05-20,INR,6800.0,1224.0,9000.5,Maintenance,PO-2026-6382,Standard invoice for maintenance
+INV-0103,CTS/2026/WQDHL3,Cognizant Technology Solutions,2026-04-21,2026-05-21,INR,4642.45,835.64,5478.09,Travel,PO-2026-7781,Standard invoice for travel
+INV-0136,KPMG/2026/M3EETX,KPMG Advisory Services,2026-04-21,2026-05-21,INR,7988.13,1437.86,9425.99,Marketing,PO-2026-7077,Standard invoice for marketing
+INV-0444,PSYS/2026/JUFMXX,Persistent Systems Ltd,2026-04-21,2026-05-21,INR,6281.06,1130.59,7411.65,Software & Licenses,PO-2026-9367,Standard invoice for software & licenses
+INV-0495,PWC/2026/VF7DD9,PwC India Advisory,2026-04-21,2026-05-21,INR,5189.65,934.14,6123.79,Travel,PO-2026-6243,Standard invoice for travel
+INV-0527,WIP/2026/U8YZZG,Wipro Enterprises Limited,2026-04-21,2026-05-21,INR,4204.2,756.76,4960.96,Travel,PO-2026-3817,Standard invoice for travel
+INV-0613,INFY/2026/SND3TA,Infosys Limited,2026-04-21,2026-05-21,INR,8358.24,1504.48,9862.72,Raw Materials,PO-2026-7266,Standard invoice for raw materials
+INV-0024,AC/2026/5NFFQ9,Acme Pvt Ltd,2026-04-22,2026-05-22,INR,7103.81,1278.69,8382.5,Professional Services,PO-2026-5803,Standard invoice for professional services
+INV-0266,MSFT/2026/A9NDV6,Microsoft India Pvt Ltd,2026-04-22,2026-05-22,INR,7729.4,1391.29,9120.69,Professional Services,PO-2026-4218,Standard invoice for professional services
+INV-0445,PWC/2026/TGQ2TU,PwC India Advisory,2026-04-22,2026-05-22,INR,5104.59,918.83,6023.42,Travel,PO-2026-8242,Standard invoice for travel
+INV-0729,AC/2026/5U3JCX,Acme Pvt Ltd,2026-04-22,2026-05-22,INR,6842.73,1231.69,8074.42,Professional Services,PO-2026-4265,Standard invoice for professional services
+INV-0735,GDJ/2026/XEPHPF,Godrej Interio Ltd,2026-04-22,2026-05-22,INR,6282.1,1130.78,7412.88,IT Equipment,PO-2026-5241,Standard invoice for it equipment
+INV-0152,BD/2026/6QYCNS,Blue Dart Express Ltd,2026-04-23,2026-05-23,INR,5656.76,1018.22,6674.98,Software & Licenses,PO-2026-3257,Standard invoice for software & licenses
+INV-0335,HP/2026/GMP72P,HP India Sales Pvt Ltd,2026-04-23,2026-05-23,INR,4867.11,876.08,5743.19,Travel,PO-2026-3985,Standard invoice for travel
+INV-0337,ITC/2026/VNGNTG,ITC Infotech India Ltd,2026-04-23,2026-05-23,INR,7232.89,1301.92,8534.81,Professional Services,PO-2026-6179,Standard invoice for professional services
+INV-0364,LTI/2026/VVUCAM,Larsen and Toubro Infotech,2026-04-23,2026-05-23,INR,4795.11,863.12,5658.23,Software & Licenses,PO-2026-4227,Standard invoice for software & licenses
+INV-0882,KPMG/2026/M3EETX,KPMG Advisory Services Pvt Ltd,2026-04-23,2026-05-23,INR,8010.45,1441.88,9452.33,Marketing,PO-2026-7077,Standard invoice for marketing
+INV-0394,PSYS/2026/J3JC9N,Persistent Systems Ltd,2026-04-24,2026-05-24,INR,6497.59,1169.57,7667.16,Software & Licenses,PO-2026-9673,Standard invoice for software & licenses
+INV-0466,MMT/2026/NAGA6M,MakeMyTrip India Pvt Ltd,2026-04-24,2026-05-24,INR,6708.21,1207.48,7915.69,Utilities,PO-2026-1207,Standard invoice for utilities
+INV-0553,ZOHO/2026/HF7MY9,Zoho Corporation Pvt Ltd,2026-04-24,2026-05-24,INR,4763.05,857.35,5620.4,Raw Materials,PO-2026-2331,Standard invoice for raw materials
+INV-0647,PWC/2026/2CYEVD,PwC India Advisory,2026-04-24,2026-05-24,INR,5244.49,944.01,6188.5,Travel,PO-2026-6354,Standard invoice for travel
+INV-0657,CTS/2026/SGNQ3Z,Cognizant Technology Solutions,2026-04-24,2026-05-24,INR,5045.78,908.24,5954.02,Travel,PO-2026-2120,Standard invoice for travel
+INV-0804,AC/2026/Q6CG97,Acme Pvt Ltd,2026-04-24,2026-05-24,INR,7159.18,1288.65,8447.83,Office Supplies,PO-2026-2310,Standard invoice for office supplies
+INV-0808,DELL/2026/QACMSL,Dell Technologies Inc,2026-04-24,2026-05-24,INR,5512.64,992.28,6504.92,Utilities,PO-2026-7081,Standard invoice for utilities
+INV-0855,LTI/2026/VVUCAM,Larsen and Toubro Infotech,2026-04-24,2026-05-24,INR,4795.11,863.12,5658.23,Software & Licenses,PO-2026-4227,Standard invoice for software & licenses
+INV-0911,INFY/2026/RF4HAX,,2026-04-24,2026-05-24,INR,8900.0,1602.0,10502.0,Professional Services,PO-2026-1305,Standard invoice for professional services
+INV-0088,MMT/2026/UTQ333,MakeMyTrip India Pvt Ltd,2026-04-25,2026-05-25,INR,7447.94,1340.63,8788.57,Raw Materials,PO-2026-4622,Standard invoice for raw materials
+INV-0159,INFY/2026/K9RYYD,Infosys Limited,2026-04-25,2026-05-25,INR,9529.32,1715.28,11244.6,Raw Materials,PO-2026-7292,Standard invoice for raw materials
+INV-0737,HP/2026/RJ3KGS,HP India Sales Pvt Ltd,2026-04-25,2026-05-25,INR,5467.12,984.08,6451.2,Travel,PO-2026-2825,Standard invoice for travel
+INV-0894,,Lenovo India Private Limited,2026-04-25,2026-05-25,INR,7850.0,1413.0,9263.0,Utilities,PO-2026-9045,Standard invoice for utilities
+INV-0943,INFY/2026/T9VYQX,Infosys Limited,2026-04-25,2026-05-25,INR,8900.0,1602.0,8622.64,IT Equipment,PO-2026-6604,Standard invoice for it equipment
+INV-0983,ITC/2026/PUA4RB,Titan Enterprise Solutions Ltd,2026-04-25,2026-05-25,INR,6800.0,1224.0,8024.0,Utilities,PO-2026-1178,Standard invoice for utilities
+INV-0426,ZOHO/2026/76XR5T,Zoho Corporation Pvt Ltd,2026-04-26,2026-05-26,INR,4717.53,849.16,5566.69,Utilities,PO-2026-8765,Standard invoice for utilities
+INV-0993,ITC/2026/DARRJW,ITC Infotech India Ltd,2026-04-26,2026-05-26,INR,52696.24,9485.32,62181.56,Utilities,PO-2026-8210,Standard invoice for utilities
+INV-0124,ZOHO/2026/NPQNDM,Zoho Corporation Pvt Ltd,2026-04-27,2026-05-27,INR,5135.19,924.33,6059.52,Utilities,PO-2026-5482,Standard invoice for utilities
+INV-0587,HP/2026/G63XAD,HP India Sales Pvt Ltd,2026-04-27,2026-05-27,INR,5129.61,923.33,6052.94,Travel,PO-2026-4385,Standard invoice for travel
+INV-0596,PSYS/2026/CJPEGK,Persistent Systems Ltd,2026-04-27,2026-05-27,INR,6669.71,1200.55,7870.26,Software & Licenses,PO-2026-8340,Standard invoice for software & licenses
+INV-0741,LTI/2026/KKKVUM,Larsen and Toubro Infotech,2026-04-27,2026-05-27,INR,5016.45,902.96,5919.41,Logistics,PO-2026-2559,Standard invoice for logistics
+INV-0593,MMT/2026/LC8F5M,MakeMyTrip India Pvt Ltd,2026-04-28,2026-05-28,INR,7473.89,1345.3,8819.19,Raw Materials,PO-2026-9560,Standard invoice for raw materials
+INV-0125,AC/2026/UM2NMJ,Acme Pvt Ltd,2026-05-13,2026-06-12,INR,6950.04,1251.01,8201.05,Professional Services,PO-2026-7709,Standard invoice for professional services
+INV-0190,MSFT/2026/NBMAUM,Microsoft India Pvt Ltd,2026-05-13,2026-06-12,INR,7251.29,1305.23,8556.52,Office Supplies,PO-2026-7293,Standard invoice for office supplies
+INV-0273,TCS/2026/6KDGDX,Tata Consultancy Services,2026-05-13,2026-06-12,INR,5712.11,1028.18,6740.29,Software & Licenses,PO-2026-2844,Standard invoice for software & licenses
+INV-0456,DELL/2026/2PQCQW,Dell Technologies Inc,2026-05-13,2026-06-12,INR,4932.65,887.88,5820.53,Utilities,PO-2026-5670,Standard invoice for utilities
+INV-0679,AC/2026/HPM5KZ,Acme Pvt Ltd,2026-05-13,2026-06-12,INR,7694.12,1384.94,9079.06,Professional Services,PO-2026-8544,Standard invoice for professional services
+INV-0699,SMSG/2026/MVM4VB,Samsung India Electronics,2026-05-13,2026-06-12,INR,4233.19,761.97,4995.16,Professional Services,PO-2026-1703,Standard invoice for professional services
+INV-0769,MSFT/2026/8XSD48,Microsoft India Pvt Ltd,2026-05-13,2026-06-12,INR,7647.97,1376.63,9024.6,Professional Services,PO-2026-4005,Standard invoice for professional services
+INV-0031,HCL/2026/KDT95L,HCL Technologies Limited,2026-05-14,2026-06-13,INR,7377.65,1327.98,8705.63,Software & Licenses,PO-2026-6783,Standard invoice for software & licenses
+INV-0158,HP/2026/B2VR9B,HP India Sales Pvt Ltd,2026-05-14,2026-06-13,INR,5075.38,913.57,5988.95,Maintenance,PO-2026-9903,Standard invoice for maintenance
+INV-0284,HP/2026/TPGDVB,HP India Sales Pvt Ltd,2026-05-14,2026-06-13,INR,5430.38,977.47,6407.85,Travel,PO-2026-9075,Standard invoice for travel
+INV-0463,KPMG/2026/X2BAEE,KPMG Advisory Services,2026-05-14,2026-06-13,INR,7877.79,1418.0,9295.79,IT Equipment,PO-2026-1224,Standard invoice for it equipment
+INV-0917,SMSG/2026/Y467YB,Samsung India Electronics,2026-05-14,2026-06-13,INR,4350.0,783.0,INVALID_AMOUNT,IT Equipment,PO-2026-9271,Standard invoice for it equipment
+INV-0961,LEN/2026/CHMZEC,Lenovo India Private Limited,2026-05-14,2026-06-13,INR,7850.0,1413.0,10564.85,Professional Services,PO-2026-2909,Standard invoice for professional services
+INV-0095,SIEM/2026/FG2N9W,Siemens Industry Software,2026-05-15,2026-06-14,INR,5829.44,1049.3,6878.74,Marketing,PO-2026-4374,Standard invoice for marketing
+INV-0205,DELL/2026/CS8D6J,Dell Technologies Inc,2026-05-15,2026-06-14,INR,5261.13,947.0,6208.13,Utilities,PO-2026-1126,Standard invoice for utilities
+INV-0222,SIEM/2026/NVXWXH,Siemens Industry Software,2026-05-15,2026-06-14,INR,6995.39,1259.17,8254.56,IT Equipment,PO-2026-7217,Standard invoice for it equipment
+INV-0236,ITC/2026/RRS9LK,ITC Infotech India Ltd,2026-05-15,2026-06-14,INR,6159.9,1108.78,7268.68,Professional Services,PO-2026-2845,Standard invoice for professional services
+INV-0012,LEN/2026/2RPXBK,Lenovo India Private Limited,2026-05-16,2026-06-15,INR,7753.37,1395.61,9148.98,Travel,PO-2026-6014,Standard invoice for travel
+INV-0430,CTS/2026/Q839BD,Cognizant Technology Solutions,2026-05-16,2026-06-15,INR,4977.22,895.9,5873.12,Maintenance,PO-2026-2638,Standard invoice for maintenance
+INV-0508,DELL/2026/XYQMVW,Dell Technologies Inc,2026-05-16,2026-06-15,INR,4986.26,897.53,5883.79,Utilities,PO-2026-8966,Standard invoice for utilities
+INV-0686,HCL/2026/8D2Y2A,HCL Technologies Limited,2026-05-16,2026-06-15,INR,6226.23,1120.72,7346.95,Software & Licenses,PO-2026-3614,Standard invoice for software & licenses
+INV-0721,PSYS/2026/CHVM5U,Persistent Systems Ltd,2026-05-16,2026-06-15,INR,7172.37,1291.03,8463.4,Logistics,PO-2026-1940,Standard invoice for logistics
+INV-0016,PSYS/2026/WELU28,Persistent Systems Ltd,2026-05-17,2026-06-16,INR,6862.29,1235.21,8097.5,Logistics,PO-2026-2722,Standard invoice for logistics
+INV-0096,TCS/2026/C29USH,Tata Consultancy Services,2026-05-17,2026-06-16,INR,5964.72,1073.65,7038.37,Logistics,PO-2026-4969,Standard invoice for logistics
+INV-0615,KPMG/2026/G7MCRY,KPMG Advisory Services,2026-05-17,2026-06-16,INR,8397.9,1511.62,9909.52,IT Equipment,PO-2026-4844,Standard invoice for it equipment
+INV-0627,WIP/2026/6C8WZG,Wipro Enterprises Limited,2026-05-17,2026-06-16,INR,4233.66,762.06,4995.72,Travel,PO-2026-7375,Standard invoice for travel
+INV-0842,HCL/2026/KDT95L,HCL Technologies Limited,2026-05-17,2026-06-16,INR,7377.65,1327.98,8705.63,Software & Licenses,PO-2026-6783,Standard invoice for software & licenses
+INV-0310,HP/2026/YTLBY6,HP India Sales Pvt Ltd,2026-05-18,2026-06-17,INR,4974.28,895.37,5869.65,Maintenance,PO-2026-4598,Standard invoice for maintenance
+INV-0455,CTS/2026/QQL5MM,Cognizant Technology Solutions,2026-05-18,2026-06-17,INR,4382.91,788.92,5171.83,Travel,PO-2026-1104,Standard invoice for travel
+INV-0464,LTI/2026/9QKRAT,Larsen and Toubro Infotech,2026-05-18,2026-06-17,INR,4714.33,848.58,5562.91,Software & Licenses,PO-2026-3951,Standard invoice for software & licenses
+INV-0471,REL/2026/7NJGBT,Reliance Retail Limited,2026-05-18,2026-06-17,INR,5458.81,982.59,6441.4,Raw Materials,PO-2026-6108,Standard invoice for raw materials
+INV-0100,MSFT/2026/0112,,2026-05-18,2026-06-18,INR,25000.0,4500.0,29500.0,Software & Licenses,PO-2026-0112,Cloud subscription enterprise seat renewal
+INV-0056,HCL/2026/NTLPD2,HCL Technologies Limited,2026-05-19,2026-06-18,INR,6697.23,1205.5,7902.73,Logistics,PO-2026-9940,Standard invoice for logistics
+INV-0277,APX/2026/CB4N8Q,Apex Solutions Private Limited,2026-05-19,2026-06-18,INR,8754.89,1575.88,10330.77,Marketing,PO-2026-9991,Standard invoice for marketing
+INV-0278,BD/2026/XNPR8U,Blue Dart Express Ltd,2026-05-19,2026-06-18,INR,5255.98,946.08,6202.06,Logistics,PO-2026-6988,Standard invoice for logistics
+INV-0422,SMSG/2026/9MWPA2,Samsung India Electronics,2026-05-19,2026-06-18,INR,4651.35,837.24,5488.59,Office Supplies,PO-2026-6296,Standard invoice for office supplies
+INV-0577,WIP/2026/4UFYW2,Wipro Enterprises Limited,2026-05-19,2026-06-18,INR,3800.09,684.02,4484.11,Travel,PO-2026-2777,Standard invoice for travel
+INV-0607,CTS/2026/TAKDRH,Cognizant Technology Solutions,2026-05-19,2026-06-18,INR,4977.7,895.99,5873.69,Travel,PO-2026-9010,Standard invoice for travel
+INV-0610,GDJ/2026/RJQBV7,Godrej Interio Ltd,2026-05-19,2026-06-18,INR,5933.05,1067.95,7001.0,Marketing,PO-2026-1319,Standard invoice for marketing
+INV-0692,LEN/2026/F5Q2VW,Lenovo India Private Limited,2026-05-19,2026-06-18,INR,8309.75,1495.75,9805.5,Maintenance,PO-2026-8260,Standard invoice for maintenance
+INV-0956,ORCL/2026/UNMYWV,Oracle India Private Limited,2026-05-19,2026-06-18,INR,4000.0,720.0,4354.38,Maintenance,PO-2026-4633,Standard invoice for maintenance
+INV-0401,ZOHO/2026/4EMBZ6,Zoho Corporation Pvt Ltd,2026-05-20,2026-06-19,INR,5207.37,937.33,6144.7,Raw Materials,PO-2026-3401,Standard invoice for raw materials
+INV-0581,BD/2026/984SVH,Blue Dart Express Ltd,2026-05-20,2026-06-19,INR,5313.46,956.42,6269.88,Logistics,PO-2026-8470,Standard invoice for logistics
+INV-0945,PWC/2026/8YXRJY,PwC India Advisory,2026-05-20,2026-06-19,INR,5050.0,909.0,6920.98,Utilities,PO-2026-3993,Standard invoice for utilities
+INV-0154,DELL/2026/JXAKF7,Dell Technologies Inc,2026-05-21,2026-06-20,INR,5356.59,964.19,6320.78,Utilities,PO-2026-3184,Standard invoice for utilities
+INV-0269,PWC/2026/NFXHQJ,PwC India Advisory,2026-05-21,2026-06-20,INR,4647.17,836.49,5483.66,Maintenance,PO-2026-6629,Standard invoice for maintenance
+INV-0363,KPMG/2026/8MPZAB,KPMG Advisory Services,2026-05-21,2026-06-20,INR,7872.46,1417.04,9289.5,IT Equipment,PO-2026-4571,Standard invoice for it equipment
+INV-0441,MMT/2026/72KKB8,MakeMyTrip India Pvt Ltd,2026-05-21,2026-06-20,INR,6252.1,1125.38,7377.48,Raw Materials,PO-2026-8671,Standard invoice for raw materials
+INV-0778,ZOHO/2026/9X5LX8,Zoho Corporation Pvt Ltd,2026-05-21,2026-06-20,INR,5185.39,933.37,6118.76,Utilities,PO-2026-8403,Standard invoice for utilities
+INV-0121,SIEM/2026/4SSJTJ,Siemens Industry Software,2026-05-22,2026-06-21,INR,6338.3,1140.89,7479.19,IT Equipment,PO-2026-7728,Standard invoice for it equipment
+INV-0260,INFY/2026/8QHP4L,Infosys Limited,2026-05-22,2026-06-21,INR,9741.86,1753.53,11495.39,Raw Materials,PO-2026-6375,Standard invoice for raw materials
+INV-0624,SMSG/2026/7D2L6A,Samsung India Electronics,2026-05-22,2026-06-21,INR,4575.47,823.58,5399.05,Office Supplies,PO-2026-8623,Standard invoice for office supplies
+INV-0863,BD/2026/XNPR8U,Blue Dart Express Limited,2026-05-22,2026-06-21,INR,5237.02,942.66,6179.68,Logistics,PO-2026-6988,Standard invoice for logistics
+INV-0019,SMSG/2026/C4W78A,Samsung India Electronics,2026-05-23,2026-06-22,INR,4509.03,811.63,5320.66,Office Supplies,PO-2026-4064,Standard invoice for office supplies
+INV-0673,REL/2026/BNHVRE,Reliance Retail Limited,2026-05-23,2026-06-22,INR,4987.81,897.81,5885.62,Raw Materials,PO-2026-2136,Standard invoice for raw materials
+INV-0784,FDX/2026/Z53SM9,FedEx Express Logistics,2026-05-23,2026-06-22,INR,3662.16,659.19,4321.35,Office Supplies,PO-2026-9236,Standard invoice for office supplies
+INV-0292,ORCL/2026/JDHLFR,Oracle India Private Limited,2026-05-24,2026-06-23,INR,3761.69,677.1,4438.79,IT Equipment,PO-2026-3778,Standard invoice for it equipment
+INV-0341,MMT/2026/CBJJDS,MakeMyTrip India Pvt Ltd,2026-05-24,2026-06-23,INR,6578.74,1184.17,7762.91,Raw Materials,PO-2026-5967,Standard invoice for raw materials
+INV-0344,PSYS/2026/LXQ9AE,Persistent Systems Ltd,2026-05-24,2026-06-23,INR,7370.29,1326.65,8696.94,Software & Licenses,PO-2026-1524,Standard invoice for software & licenses
+INV-0449,TCS/2026/7VJ727,Tata Consultancy Services,2026-05-24,2026-06-23,INR,5313.96,956.51,6270.47,Logistics,PO-2026-3623,Standard invoice for logistics
+INV-0571,PSYS/2026/H6NDSQ,Persistent Systems Ltd,2026-05-24,2026-06-23,INR,7315.92,1316.87,8632.79,Logistics,PO-2026-1247,Standard invoice for logistics
+INV-0590,KPMG/2026/UXBLLN,KPMG Advisory Services,2026-05-24,2026-06-23,INR,7494.31,1348.98,8843.29,Marketing,PO-2026-9571,Standard invoice for marketing
+INV-0605,APX/2026/98X4LD,Apex Solutions Private Limited,2026-05-24,2026-06-23,INR,8671.69,1560.9,10232.59,IT Equipment,PO-2026-7247,Standard invoice for it equipment
+INV-0713,INFY/2026/R4XJ8J,Infosys Limited,2026-05-24,2026-06-23,INR,9686.37,1743.55,11429.92,Raw Materials,PO-2026-7874,Standard invoice for raw materials
+INV-0779,AC/2026/XK79XE,Acme Pvt Ltd,2026-05-24,2026-06-23,INR,7799.59,1403.93,9203.52,Professional Services,PO-2026-7898,Standard invoice for professional services
+INV-0986,BD/2026/6GP7X3,Apex Offshore Holdings,2026-05-24,2026-06-23,INR,5750.0,1035.0,6785.0,Utilities,PO-2026-2018,Standard invoice for utilities
+INV-0006,HCL/2026/6T5P35,HCL Technologies Limited,2026-05-25,2026-06-24,INR,7366.79,1326.02,8692.81,Logistics,PO-2026-4410,Standard invoice for logistics
+INV-0403,APX/2026/QWZ524,Apex Solutions Private Limited,2026-05-25,2026-06-24,INR,9305.55,1675.0,10980.55,IT Equipment,PO-2026-9468,Standard invoice for it equipment
+INV-0418,ORCL/2026/24HT32,Oracle India Private Limited,2026-05-25,2026-06-24,INR,4122.92,742.13,4865.05,Marketing,PO-2026-6753,Standard invoice for marketing
+INV-0435,HP/2026/V2GTZ4,HP India Sales Pvt Ltd,2026-05-25,2026-06-24,INR,5738.27,1032.89,6771.16,Travel,PO-2026-4489,Standard invoice for travel
+INV-0448,SIEM/2026/PKZJWM,Siemens Industry Software,2026-05-25,2026-06-24,INR,5882.62,1058.87,6941.49,Marketing,PO-2026-6133,Standard invoice for marketing
+INV-0481,DELL/2026/PRNZCL,Dell Technologies Inc,2026-05-25,2026-06-24,INR,5799.28,1043.87,6843.15,Raw Materials,PO-2026-6331,Standard invoice for raw materials
+INV-0005,GDJ/2026/EWYK5M,Godrej Interio Ltd,2026-05-26,2026-06-25,INR,5921.98,1065.96,6987.94,Marketing,PO-2026-1933,Standard invoice for marketing
+INV-0046,TCS/2026/M9GZAV,Tata Consultancy Services,2026-05-26,2026-06-25,INR,5584.01,1005.12,6589.13,Logistics,PO-2026-4790,Standard invoice for logistics
+INV-0097,WIP/2026/LRDAN8,Wipro Enterprises Limited,2026-05-26,2026-06-25,INR,4136.67,744.6,4881.27,Maintenance,PO-2026-4995,Standard invoice for maintenance
+INV-0283,HCL/2026/5K8MDP,HCL Technologies Limited,2026-05-26,2026-06-25,INR,7395.8,1331.24,8727.04,Software & Licenses,PO-2026-2212,Standard invoice for software & licenses
+INV-0796,PSYS/2026/JRQGQE,Persistent Systems Ltd,2026-05-26,2026-06-25,INR,6479.31,1166.28,7645.59,Software & Licenses,PO-2026-9677,Standard invoice for software & licenses
+INV-0856,SMSG/2026/C4W78A,Samsung India Electronics,2026-05-26,2026-06-25,INR,4509.03,811.63,5320.66,Office Supplies,PO-2026-4064,Standard invoice for office supplies
+INV-0040,ORCL/2026/M3TJ5M,Oracle India Private Limited,2026-05-27,2026-06-26,INR,4039.04,727.03,4766.07,IT Equipment,PO-2026-8936,Standard invoice for it equipment
+INV-0633,DELL/2026/GWU3FH,Dell Technologies Inc,2026-05-27,2026-06-26,INR,5012.47,902.24,5914.71,Raw Materials,PO-2026-3155,Standard invoice for raw materials
+INV-0793,MMT/2026/TH3UTV,MakeMyTrip India Pvt Ltd,2026-05-27,2026-06-26,INR,6800.9,1224.16,8025.06,Raw Materials,PO-2026-5594,Standard invoice for raw materials
+INV-0887,ORCL/2026/JDHLFR,Oracle India Pvt Ltd,2026-05-27,2026-06-26,INR,3750.16,675.03,4425.19,IT Equipment,PO-2026-3778,Standard invoice for it equipment
+INV-0955,HP/2026/QD8FKF,HP India Sales Pvt Ltd,2026-05-27,2026-06-26,INR,5400.0,972.0,7326.07,Logistics,PO-2026-8686,Standard invoice for logistics
+INV-0163,LEN/2026/EQSCEV,Lenovo India Private Limited,2026-05-28,2026-06-27,INR,7096.97,1277.45,8374.42,Travel,PO-2026-7710,Standard invoice for travel
+INV-0454,BD/2026/MXVB2E,Blue Dart Express Ltd,2026-05-28,2026-06-27,INR,5943.21,1069.78,7012.99,Software & Licenses,PO-2026-1563,Standard invoice for software & licenses
+INV-0756,BD/2026/MWZR9L,Blue Dart Express Ltd,2026-05-28,2026-06-27,INR,5672.17,1020.99,6693.16,Software & Licenses,PO-2026-4656,Standard invoice for software & licenses
+INV-0899,,Cognizant Technology Solutions,2026-05-28,2026-06-27,INR,4700.0,846.0,5546.0,Utilities,PO-2026-8201,Standard invoice for utilities
+INV-0071,TCS/2026/FY2XPV,Tata Consultancy Services,2026-06-13,2026-07-13,INR,5520.75,993.74,6514.49,Software & Licenses,PO-2026-5171,Standard invoice for software & licenses
+INV-0085,KPMG/2026/HFGDRN,KPMG Advisory Services,2026-06-13,2026-07-13,INR,7848.36,1412.7,9261.06,Marketing,PO-2026-2213,Standard invoice for marketing
+INV-0181,GDJ/2026/MPTB5W,Godrej Interio Ltd,2026-06-13,2026-07-13,INR,6801.26,1224.23,8025.49,IT Equipment,PO-2026-9859,Standard invoice for it equipment
+INV-0332,FDX/2026/Z9BLF6,FedEx Express Logistics,2026-06-13,2026-07-13,INR,4022.64,724.08,4746.72,Office Supplies,PO-2026-5453,Standard invoice for office supplies
+INV-0552,WIP/2026/QJT2KX,Wipro Enterprises Limited,2026-06-13,2026-07-13,INR,4345.64,782.22,5127.86,Maintenance,PO-2026-5088,Standard invoice for maintenance
+INV-0562,HP/2026/DNZPDT,HP India Sales Pvt Ltd,2026-06-14,2026-07-14,INR,5895.0,1061.1,6956.1,Maintenance,PO-2026-8168,Standard invoice for maintenance
+INV-0649,SMSG/2026/JRZTMA,Samsung India Electronics,2026-06-14,2026-07-14,INR,4218.28,759.29,4977.57,Professional Services,PO-2026-5186,Standard invoice for professional services
+INV-0685,GDJ/2026/VYWY7E,Godrej Interio Ltd,2026-06-14,2026-07-14,INR,6119.89,1101.58,7221.47,IT Equipment,PO-2026-2606,Standard invoice for it equipment
+INV-0962,DELL/2026/GW2JL9,Dell Technologies Inc,2026-06-14,2026-07-14,INR,5400.0,972.0,7182.22,Software & Licenses,PO-2026-9418,Standard invoice for software & licenses
+INV-0500,TCS/2026/0890,Tata Consultancy Services,2026-06-15,2026-07-15,INR,45000.0,8100.0,53100.0,Professional Services,PO-2026-0890,IT enterprise cloud migration milestone 1
+INV-0164,MMT/2026/LRZUVG,MakeMyTrip India Pvt Ltd,2026-06-15,2026-07-15,INR,7119.24,1281.46,8400.7,Utilities,PO-2026-6228,Standard invoice for utilities
+INV-0419,PSYS/2026/WJJC24,Persistent Systems Ltd,2026-06-15,2026-07-15,INR,7099.81,1277.97,8377.78,Logistics,PO-2026-8571,Standard invoice for logistics
+INV-0546,PSYS/2026/M5LNCT,Persistent Systems Ltd,2026-06-15,2026-07-15,INR,6844.88,1232.08,8076.96,Software & Licenses,PO-2026-3213,Standard invoice for software & licenses
+INV-0677,WIP/2026/FWZ87P,Wipro Enterprises Limited,2026-06-15,2026-07-15,INR,3867.58,696.16,4563.74,Travel,PO-2026-8799,Standard invoice for travel
+INV-0294,PWC/2026/MKTTBC,PwC India Advisory,2026-06-16,2026-07-16,INR,4589.63,826.13,5415.76,Travel,PO-2026-6379,Standard invoice for travel
+INV-0324,TCS/2026/AYZPZB,Tata Consultancy Services,2026-06-16,2026-07-16,INR,5775.87,1039.66,6815.53,Software & Licenses,PO-2026-2939,Standard invoice for software & licenses
+INV-0996,LTI/2026/RWTXUY,Larsen and Toubro Infotech,2026-06-16,2026-07-16,INR,62262.33,11207.22,73469.55,Professional Services,PO-2026-9144,Standard invoice for professional services
+INV-0183,HP/2026/FMFMYC,HP India Sales Pvt Ltd,2026-06-17,2026-07-17,INR,5509.26,991.67,6500.93,Travel,PO-2026-2385,Standard invoice for travel
+INV-0184,INFY/2026/JDSGDA,Infosys Limited,2026-06-17,2026-07-17,INR,9454.12,1701.74,11155.86,Utilities,PO-2026-4889,Standard invoice for utilities
+INV-0301,ZOHO/2026/W97W4Y,Zoho Corporation Pvt Ltd,2026-06-17,2026-07-17,INR,4879.05,878.23,5757.28,Raw Materials,PO-2026-2927,Standard invoice for raw materials
+INV-0538,INFY/2026/Q2GEU7,Infosys Limited,2026-06-17,2026-07-17,INR,8891.02,1600.38,10491.4,Utilities,PO-2026-7783,Standard invoice for utilities
+INV-0501,TCS/2026/0890,Tata Consultancy Services,2026-06-17,2026-07-17,INR,45000.0,8100.0,53100.0,Professional Services,PO-2026-0890,IT enterprise cloud migration duplicate claim
+INV-0888,MMT/2026/2MQWKJ,,2026-06-17,2026-07-17,INR,6800.0,1224.0,8024.0,Marketing,PO-2026-8880,Standard invoice for marketing
+INV-0654,AC/2026/SK5538,Acme Pvt Ltd,2026-06-18,2026-07-18,INR,7265.06,1307.71,8572.77,Office Supplies,PO-2026-4625,Standard invoice for office supplies
+INV-0751,TCS/2026/6RA4S7,Tata Consultancy Services,2026-06-18,2026-07-18,INR,5277.13,949.88,6227.01,Logistics,PO-2026-3145,Standard invoice for logistics
+INV-0027,CTS/2026/FTUTDY,Cognizant Technology Solutions,2026-06-19,2026-07-19,INR,4765.64,857.82,5623.46,Maintenance,PO-2026-2217,Standard invoice for maintenance
+INV-0257,GDJ/2026/SPL293,Godrej Interio Ltd,2026-06-19,2026-07-19,INR,6804.65,1224.84,8029.49,Marketing,PO-2026-2863,Standard invoice for marketing
+INV-0730,APX/2026/Q3YGAL,Apex Solutions Private Limited,2026-06-19,2026-07-19,INR,8213.84,1478.49,9692.33,Marketing,PO-2026-6820,Standard invoice for marketing
+INV-0835,HP/2026/FMFMYC,HP India Sales Pvt Ltd,2026-06-19,2026-07-19,INR,5509.26,991.67,6500.93,Travel,PO-2026-2385,Standard invoice for travel
+INV-0915,,Godrej Interio Ltd,2026-06-19,2026-07-19,INR,6450.0,1161.0,7611.0,Utilities,PO-2026-5735,Standard invoice for utilities
+INV-0970,LTI/2026/A39CBN,Larsen and Toubro Infotech,2026-06-19,2026-07-19,INR,251871.83,45336.93,297208.76,Marketing,PO-2026-8442,Standard invoice for marketing
+INV-0160,ITC/2026/6KHCAA,ITC Infotech India Ltd,2026-06-20,2026-07-20,INR,7408.69,1333.56,8742.25,Office Supplies,PO-2026-5273,Standard invoice for office supplies
+INV-0307,FDX/2026/3LRRD8,FedEx Express Logistics,2026-06-20,2026-07-20,INR,4316.35,776.94,5093.29,Professional Services,PO-2026-7877,Standard invoice for professional services
+INV-0749,SMSG/2026/L5XP4C,Samsung India Electronics,2026-06-20,2026-07-20,INR,4150.01,747.0,4897.01,Professional Services,PO-2026-7963,Standard invoice for professional services
+INV-0822,GDJ/2026/SPL293,Godrej Interio Ltd,2026-06-20,2026-07-20,INR,6804.65,1224.84,8029.49,Marketing,PO-2026-2863,Standard invoice for marketing
+INV-0015,ORCL/2026/U7C3HV,Oracle India Private Limited,2026-06-21,2026-07-21,INR,4134.78,744.26,4879.04,Marketing,PO-2026-7400,Standard invoice for marketing
+INV-0032,HP/2026/LGQ96X,HP India Sales Pvt Ltd,2026-06-21,2026-07-21,INR,5280.17,950.43,6230.6,Travel,PO-2026-2172,Standard invoice for travel
+INV-0317,MSFT/2026/43LBHK,Microsoft India Pvt Ltd,2026-06-21,2026-07-21,INR,6656.36,1198.14,7854.5,Professional Services,PO-2026-6531,Standard invoice for professional services
+INV-0484,HCL/2026/UA8QZ7,HCL Technologies Limited,2026-06-21,2026-07-21,INR,6327.48,1138.95,7466.43,Software & Licenses,PO-2026-7633,Standard invoice for software & licenses
+INV-0004,FDX/2026/739SCL,FedEx Express Logistics,2026-06-22,2026-07-22,INR,3830.08,689.41,4519.49,Professional Services,PO-2026-4617,Standard invoice for professional services
+INV-0109,INFY/2026/ST4HY6,Infosys Limited,2026-06-22,2026-07-22,INR,9435.89,1698.46,11134.35,Raw Materials,PO-2026-1787,Standard invoice for raw materials
+INV-0122,TCS/2026/5JY2UF,Tata Consultancy Services,2026-06-22,2026-07-22,INR,6270.57,1128.7,7399.27,Software & Licenses,PO-2026-7974,Standard invoice for software & licenses
+INV-0391,MMT/2026/KJGWV3,MakeMyTrip India Pvt Ltd,2026-06-22,2026-07-22,INR,6255.08,1125.91,7380.99,Raw Materials,PO-2026-4154,Standard invoice for raw materials
+INV-0642,LEN/2026/GPMVMZ,Lenovo India Private Limited,2026-06-22,2026-07-22,INR,7613.25,1370.38,8983.63,Maintenance,PO-2026-1917,Standard invoice for maintenance
+INV-0065,ORCL/2026/WST59V,Oracle India Private Limited,2026-06-23,2026-07-23,INR,3991.39,718.45,4709.84,Marketing,PO-2026-8537,Standard invoice for marketing
+INV-0305,CTS/2026/RN34GU,Cognizant Technology Solutions,2026-06-23,2026-07-23,INR,4332.26,779.81,5112.07,Travel,PO-2026-1663,Standard invoice for travel
+INV-0340,LEN/2026/E8V5CD,Lenovo India Private Limited,2026-06-23,2026-07-23,INR,8059.89,1450.78,9510.67,Maintenance,PO-2026-4331,Standard invoice for maintenance
+INV-0473,SIEM/2026/WNQPRQ,Siemens Industry Software,2026-06-23,2026-07-23,INR,6083.14,1094.97,7178.11,IT Equipment,PO-2026-5011,Standard invoice for it equipment
+INV-0663,INFY/2026/8Y4ETK,Infosys Limited,2026-06-23,2026-07-23,INR,9502.49,1710.45,11212.94,Raw Materials,PO-2026-7641,Standard invoice for raw materials
+INV-0830,CTS/2026/RN34GU,Cognizant Technology Solutions,2026-06-23,2026-07-23,INR,4332.26,779.81,5112.07,Travel,PO-2026-1663,Standard invoice for travel
+INV-0836,INFY/2026/ST4HY6,Infosys Limited,2026-06-23,2026-07-23,INR,9435.89,1698.46,11134.35,Raw Materials,PO-2026-1787,Standard invoice for raw materials
+INV-0959,PWC/2026/KAAE2C,PwC India Advisory,2026-06-23,2026-07-23,INR,5050.0,909.0,5437.67,Travel,PO-2026-4437,Standard invoice for travel
+INV-0093,REL/2026/ZFWUH4,Reliance Retail Limited,2026-06-24,2026-07-24,INR,5106.56,919.18,6025.74,Utilities,PO-2026-6399,Standard invoice for utilities
+INV-0450,WIP/2026/CWRJ9R,Wipro Enterprises Limited,2026-06-24,2026-07-24,INR,4145.65,746.22,4891.87,Maintenance,PO-2026-5808,Standard invoice for maintenance
+INV-0715,KPMG/2026/9JKZHF,KPMG Advisory Services,2026-06-24,2026-07-24,INR,8303.71,1494.67,9798.38,IT Equipment,PO-2026-5574,Standard invoice for it equipment
+INV-0066,PSYS/2026/XMCT32,Persistent Systems Ltd,2026-06-25,2026-07-25,INR,6977.54,1255.96,8233.5,Logistics,PO-2026-5529,Standard invoice for logistics
+INV-0223,TCS/2026/HAJQNX,Tata Consultancy Services,2026-06-25,2026-07-25,INR,5925.97,1066.67,6992.64,Software & Licenses,PO-2026-1861,Standard invoice for software & licenses
+INV-0348,SIEM/2026/L2PWEW,Siemens Industry Software,2026-06-25,2026-07-25,INR,5933.83,1068.09,7001.92,Marketing,PO-2026-8643,Standard invoice for marketing
+INV-0671,PSYS/2026/L8CWXL,Persistent Systems Ltd,2026-06-25,2026-07-25,INR,7410.87,1333.96,8744.83,Logistics,PO-2026-7442,Standard invoice for logistics
+INV-0844,TCS/2026/5JY2UF,Tata Consultancy Services,2026-06-25,2026-07-25,INR,6270.57,1128.7,7399.27,Software & Licenses,PO-2026-7974,Standard invoice for software & licenses
+INV-0165,MSFT/2026/6GBER5,Microsoft India Pvt Ltd,2026-06-26,2026-07-26,INR,6610.9,1189.96,7800.86,Professional Services,PO-2026-4034,Standard invoice for professional services
+INV-0728,ZOHO/2026/8UGUAU,Zoho Corporation Pvt Ltd,2026-06-26,2026-07-26,INR,4602.03,828.37,5430.4,Utilities,PO-2026-3473,Standard invoice for utilities
+INV-0186,KPMG/2026/8Y36YG,KPMG Advisory Services,2026-06-27,2026-07-27,INR,7827.28,1408.91,9236.19,Marketing,PO-2026-9522,Standard invoice for marketing
+INV-0794,MSFT/2026/PEY4PE,Microsoft India Pvt Ltd,2026-06-27,2026-07-27,INR,7482.99,1346.94,8829.93,Office Supplies,PO-2026-2510,Standard invoice for office supplies
+INV-0877,SIEM/2026/L2PWEW,Siemens Industry Software Pvt Ltd,2026-06-27,2026-07-27,INR,5950.32,1071.06,7021.38,Marketing,PO-2026-8643,Standard invoice for marketing
+INV-0296,SMSG/2026/REH2F4,Samsung India Electronics,2026-06-28,2026-07-28,INR,4639.68,835.14,5474.82,Professional Services,PO-2026-9440,Standard invoice for professional services
+INV-0807,CTS/2026/ZQVQBH,Cognizant Technology Solutions,2026-06-28,2026-07-28,INR,4603.89,828.7,5432.59,Travel,PO-2026-8171,Standard invoice for travel
+INV-0170,SMSG/2026/H99NE3,Samsung India Electronics,2026-07-13,2026-08-12,INR,4779.11,860.24,5639.35,Office Supplies,PO-2026-8960,Standard invoice for office supplies
+INV-0540,KPMG/2026/5W99QY,KPMG Advisory Services,2026-07-13,2026-08-12,INR,7623.83,1372.29,8996.12,Marketing,PO-2026-7064,Standard invoice for marketing
+INV-0043,REL/2026/Z9AG5U,Reliance Retail Limited,2026-07-14,2026-08-13,INR,5891.99,1060.56,6952.55,Utilities,PO-2026-7183,Standard invoice for utilities
+INV-0390,LEN/2026/2LATLJ,Lenovo India Private Limited,2026-07-14,2026-08-13,INR,8289.63,1492.13,9781.76,Maintenance,PO-2026-2902,Standard invoice for maintenance
+INV-0719,MSFT/2026/U975KQ,Microsoft India Pvt Ltd,2026-07-14,2026-08-13,INR,6781.61,1220.69,8002.3,Professional Services,PO-2026-4522,Standard invoice for professional services
+INV-0763,INFY/2026/DSCY5C,Infosys Limited,2026-07-14,2026-08-13,INR,9718.37,1749.31,11467.68,Raw Materials,PO-2026-7510,Standard invoice for raw materials
+INV-0002,CTS/2026/TZ22UH,Cognizant Technology Solutions,2026-07-15,2026-08-14,INR,4334.09,780.14,5114.23,Travel,PO-2026-3623,Standard invoice for travel
+INV-0592,LEN/2026/NZX74V,Lenovo India Private Limited,2026-07-15,2026-08-14,INR,7339.12,1321.04,8660.16,Maintenance,PO-2026-1196,Standard invoice for maintenance
+INV-0638,INFY/2026/T9XVVS,Infosys Limited,2026-07-15,2026-08-14,INR,9584.85,1725.27,11310.12,Utilities,PO-2026-4109,Standard invoice for utilities
+INV-0717,LEN/2026/EEXFLR,Lenovo India Private Limited,2026-07-15,2026-08-14,INR,7959.0,1432.62,9391.62,Travel,PO-2026-2596,Standard invoice for travel
+INV-0798,REL/2026/8U7QGW,Reliance Retail Limited,2026-07-16,2026-08-15,INR,5313.2,956.38,6269.58,Utilities,PO-2026-4114,Standard invoice for utilities
+INV-0035,KPMG/2026/DEMWWA,KPMG Advisory Services,2026-07-17,2026-08-16,INR,7623.88,1372.3,8996.18,Marketing,PO-2026-9398,Standard invoice for marketing
+INV-0137,LTI/2026/RG28R7,Larsen and Toubro Infotech,2026-07-17,2026-08-16,INR,4815.82,866.85,5682.67,Logistics,PO-2026-8784,Standard invoice for logistics
+INV-0252,APX/2026/95U3YD,Apex Solutions Private Limited,2026-07-17,2026-08-16,INR,8264.28,1487.57,9751.85,IT Equipment,PO-2026-5545,Standard invoice for it equipment
+INV-0897,MMT/2026/HVWSDK,,2026-07-17,2026-08-16,INR,6800.0,1224.0,8024.0,Logistics,PO-2026-4876,Standard invoice for logistics
+INV-0094,SMSG/2026/NCBPTQ,Samsung India Electronics,2026-07-18,2026-08-17,INR,4064.27,731.57,4795.84,Professional Services,PO-2026-9490,Standard invoice for professional services
+INV-0286,ITC/2026/UN8ENF,ITC Infotech India Ltd,2026-07-18,2026-08-17,INR,6276.13,1129.7,7405.83,Professional Services,PO-2026-1865,Standard invoice for professional services
+INV-0862,APX/2026/95U3YD,Apex Solutions Pvt Ltd,2026-07-18,2026-08-17,INR,8224.84,1480.47,9705.31,IT Equipment,PO-2026-5545,Standard invoice for it equipment
+INV-0020,SIEM/2026/Q7RQVF,Siemens Industry Software,2026-07-19,2026-08-18,INR,6364.35,1145.58,7509.93,IT Equipment,PO-2026-1439,Standard invoice for it equipment
+INV-0279,CTS/2026/JUDSJ7,Cognizant Technology Solutions,2026-07-19,2026-08-18,INR,4991.6,898.49,5890.09,Maintenance,PO-2026-7878,Standard invoice for maintenance
+INV-0748,REL/2026/PWRK74,Reliance Retail Limited,2026-07-19,2026-08-18,INR,5313.21,956.38,6269.59,Utilities,PO-2026-3151,Standard invoice for utilities
+INV-0889,,Lenovo India Private Limited,2026-07-19,2026-08-18,INR,7850.0,1413.0,9263.0,Travel,PO-2026-1053,Standard invoice for travel
+INV-0350,WIP/2026/772GH9,Wipro Enterprises Limited,2026-07-20,2026-08-19,INR,3910.55,703.9,4614.45,Maintenance,PO-2026-9829,Standard invoice for maintenance
+INV-0421,REL/2026/QVXKM4,Reliance Retail Limited,2026-07-20,2026-08-19,INR,5066.68,912.0,5978.68,Raw Materials,PO-2026-7454,Standard invoice for raw materials
+INV-0423,SIEM/2026/9QLV7B,Siemens Industry Software,2026-07-20,2026-08-19,INR,6874.91,1237.48,8112.39,IT Equipment,PO-2026-5473,Standard invoice for it equipment
+INV-0434,HCL/2026/CB5G5E,HCL Technologies Limited,2026-07-20,2026-08-19,INR,6308.63,1135.55,7444.18,Software & Licenses,PO-2026-8235,Standard invoice for software & licenses
+INV-0404,BD/2026/ZHKA57,Blue Dart Express Ltd,2026-07-21,2026-08-20,INR,5317.23,957.1,6274.33,Software & Licenses,PO-2026-2225,Standard invoice for software & licenses
+INV-0515,KPMG/2026/KJLSPB,KPMG Advisory Services,2026-07-21,2026-08-20,INR,7694.44,1385.0,9079.44,IT Equipment,PO-2026-7434,Standard invoice for it equipment
+INV-0913,SIEM/2026/QS7FXP,Siemens Industry Software,2026-07-21,2026-08-20,INR,6450.0,1161.0,,Marketing,PO-2026-5679,Standard invoice for marketing
+INV-0923,ZOHO/2026/DT2QHH,Zoho Corporation Pvt Ltd,2026-07-21,2026-08-20,INR,5050.0,909.0,-1883.26,Office Supplies,PO-2026-8143,Standard invoice for office supplies
+INV-0924,CTS/2026/27FFJS,Cognizant Technology Solutions,2026-07-21,2026-08-20,INR,4700.0,846.0,-4591.26,Professional Services,PO-2026-2008,Standard invoice for professional services
+INV-0120,SMSG/2026/C6C2JP,Samsung India Electronics,2026-07-22,2026-08-21,INR,4118.52,741.33,4859.85,Office Supplies,PO-2026-1109,Standard invoice for office supplies
+INV-0322,SMSG/2026/R2FKLU,Samsung India Electronics,2026-07-22,2026-08-21,INR,4405.53,793.0,5198.53,Office Supplies,PO-2026-8350,Standard invoice for office supplies
+INV-0543,MMT/2026/WZHVHD,MakeMyTrip India Pvt Ltd,2026-07-22,2026-08-21,INR,6480.97,1166.57,7647.54,Raw Materials,PO-2026-9302,Standard invoice for raw materials
+INV-0837,SMSG/2026/C6C2JP,Samsung India Electronics,2026-07-22,2026-08-21,INR,4118.52,741.33,4859.85,Office Supplies,PO-2026-1109,Standard invoice for office supplies
+INV-0916,APX/2026/DJQMBY,Apex Solutions Private Limited,2026-07-22,2026-08-21,INR,8900.0,1602.0,,Marketing,PO-2026-4566,Standard invoice for marketing
+INV-0300,INFY/2026/0772,Infosys Limited,2026-07-22,2026-08-22,INR,200000.0,36000.0,236000.0,Professional Services,PO-2026-0772,Global ERP consolidation master retainership
+INV-0246,SMSG/2026/6CX3YF,Samsung India Electronics,2026-07-23,2026-08-22,INR,4385.81,789.45,5175.26,Professional Services,PO-2026-2261,Standard invoice for professional services
+INV-0346,REL/2026/6YYX2Z,Reliance Retail Limited,2026-07-23,2026-08-22,INR,5623.08,1012.15,6635.23,Utilities,PO-2026-7351,Standard invoice for utilities
+INV-0349,TCS/2026/XFSNNK,Tata Consultancy Services,2026-07-23,2026-08-22,INR,6058.14,1090.47,7148.61,Logistics,PO-2026-1456,Standard invoice for logistics
+INV-0640,KPMG/2026/J6XQEU,KPMG Advisory Services,2026-07-23,2026-08-22,INR,7559.25,1360.66,8919.91,Marketing,PO-2026-8572,Standard invoice for marketing
+INV-0989,ITC/2026/J5N5SQ,ITC Infotech India Ltd,2026-07-23,2026-08-22,INR,6800.0,1224.0,8024.0,Entertainment,PO-2026-9362,Standard invoice for it equipment
+INV-0087,LEN/2026/5UM5FS,Lenovo India Private Limited,2026-07-24,2026-08-23,INR,8330.17,1499.43,9829.6,Maintenance,PO-2026-9132,Standard invoice for maintenance
+INV-0483,GDJ/2026/ZJLHTR,Godrej Interio Ltd,2026-07-24,2026-08-23,INR,5974.41,1075.39,7049.8,IT Equipment,PO-2026-2384,Standard invoice for it equipment
+INV-0529,AC/2026/CWUTLA,Acme Pvt Ltd,2026-07-24,2026-08-23,INR,6440.42,1159.28,7599.7,Professional Services,PO-2026-1658,Standard invoice for professional services
+INV-0646,PSYS/2026/3XZFKH,Persistent Systems Ltd,2026-07-24,2026-08-23,INR,6333.8,1140.08,7473.88,Software & Licenses,PO-2026-4408,Standard invoice for software & licenses
+INV-0919,MSFT/2026/QC8C3S,Microsoft India Pvt Ltd,2026-07-24,2026-08-23,INR,7150.0,1287.0,0.0,Travel,PO-2026-4615,Standard invoice for travel
+INV-0981,LEN/2026/7A3F86,Lenovo India Private Limited,2026-07-24,2026-08-23,INR,258973.72,46615.27,305588.99,Marketing,PO-2026-3082,Standard invoice for marketing
+INV-0053,DELL/2026/Q572M4,Dell Technologies Inc,2026-07-25,2026-08-24,INR,5089.91,916.18,6006.09,Utilities,PO-2026-4583,Standard invoice for utilities
+INV-0598,REL/2026/T99228,Reliance Retail Limited,2026-07-25,2026-08-24,INR,5310.35,955.86,6266.21,Utilities,PO-2026-6849,Standard invoice for utilities
+INV-0753,ZOHO/2026/YAU6RA,Zoho Corporation Pvt Ltd,2026-07-25,2026-08-24,INR,4570.72,822.73,5393.45,Raw Materials,PO-2026-1821,Standard invoice for raw materials
+INV-0759,FDX/2026/2RBFYJ,FedEx Express Logistics,2026-07-25,2026-08-24,INR,4007.94,721.43,4729.37,Professional Services,PO-2026-4803,Standard invoice for professional services
+INV-0800,SIEM/2026/ER4825,Siemens Industry Software,2026-07-25,2026-08-24,INR,6301.88,1134.34,7436.22,Marketing,PO-2026-4041,Standard invoice for marketing
+INV-0001,BD/2026/DSS5DH,Blue Dart Express Ltd,2026-07-26,2026-08-25,INR,6075.88,1093.66,7169.54,Software & Licenses,PO-2026-4221,Standard invoice for software & licenses
+INV-0195,SMSG/2026/KBTFX6,Samsung India Electronics,2026-07-26,2026-08-25,INR,4063.7,731.47,4795.17,Professional Services,PO-2026-2479,Standard invoice for professional services
+INV-0525,SIEM/2026/56ZMDB,Siemens Industry Software,2026-07-26,2026-08-25,INR,5906.69,1063.2,6969.89,IT Equipment,PO-2026-3203,Standard invoice for it equipment
+INV-0526,TCS/2026/C6WD7D,Tata Consultancy Services,2026-07-26,2026-08-25,INR,5912.25,1064.2,6976.45,Software & Licenses,PO-2026-9425,Standard invoice for software & licenses
+INV-0585,GDJ/2026/7QAJYE,Godrej Interio Ltd,2026-07-26,2026-08-25,INR,6890.62,1240.31,8130.93,IT Equipment,PO-2026-8809,Standard invoice for it equipment
+INV-0674,SMSG/2026/AGU2F5,Samsung India Electronics,2026-07-26,2026-08-25,INR,4210.85,757.95,4968.8,Office Supplies,PO-2026-4567,Standard invoice for office supplies
+INV-0805,APX/2026/TE7BRB,Apex Solutions Private Limited,2026-07-26,2026-08-25,INR,8816.41,1586.95,10403.36,IT Equipment,PO-2026-1814,Standard invoice for it equipment
+INV-0817,LEN/2026/3YW62W,Lenovo India Private Limited,2026-07-26,2026-08-25,INR,7843.56,1411.84,9255.4,Travel,PO-2026-6936,Standard invoice for travel
+INV-0881,LEN/2026/5UM5FS,Lenovo India Pvt Ltd,2026-07-26,2026-08-25,INR,8276.12,1489.7,9765.82,Maintenance,PO-2026-9132,Standard invoice for maintenance
+INV-0890,SIEM/2026/JXAXPE,,2026-07-26,2026-08-25,INR,6450.0,1161.0,7611.0,Office Supplies,PO-2026-8641,Standard invoice for office supplies
+INV-0972,TCS/2026/9LZK5D,Tata Consultancy Services,2026-07-26,2026-08-25,INR,206532.88,37175.92,243708.8,Professional Services,PO-2026-7587,Standard invoice for professional services
+INV-0055,GDJ/2026/TJLE2J,Godrej Interio Ltd,2026-07-27,2026-08-26,INR,6621.82,1191.93,7813.75,Marketing,PO-2026-2379,Standard invoice for marketing
+INV-0081,HCL/2026/CBSQD3,HCL Technologies Limited,2026-07-27,2026-08-26,INR,6954.15,1251.75,8205.9,Software & Licenses,PO-2026-1658,Standard invoice for software & licenses
+INV-0168,PWC/2026/DR3S94,PwC India Advisory,2026-07-27,2026-08-26,INR,4742.91,853.72,5596.63,Maintenance,PO-2026-5287,Standard invoice for maintenance
+INV-0229,CTS/2026/94AFMW,Cognizant Technology Solutions,2026-07-27,2026-08-26,INR,4732.54,851.86,5584.4,Maintenance,PO-2026-3640,Standard invoice for maintenance
+INV-0289,LEN/2026/9LAJHL,Lenovo India Private Limited,2026-07-27,2026-08-26,INR,7728.6,1391.15,9119.75,Maintenance,PO-2026-1831,Standard invoice for maintenance
+INV-0468,ORCL/2026/ZJT9GV,Oracle India Private Limited,2026-07-27,2026-08-26,INR,4335.52,780.39,5115.91,Marketing,PO-2026-9810,Standard invoice for marketing
+INV-0101,APX/2026/ZYUHR8,Apex Solutions Private Limited,2026-07-28,2026-08-27,INR,8211.38,1478.05,9689.43,IT Equipment,PO-2026-3431,Standard invoice for it equipment
+INV-0285,INFY/2026/694ZRB,Infosys Limited,2026-07-28,2026-08-27,INR,9243.9,1663.9,10907.8,Utilities,PO-2026-5678,Standard invoice for utilities
+INV-0318,ORCL/2026/7K2NDE,Oracle India Private Limited,2026-07-28,2026-08-27,INR,4268.36,768.3,5036.66,Marketing,PO-2026-9852,Standard invoice for marketing
+INV-0436,INFY/2026/3H6MMR,Infosys Limited,2026-07-28,2026-08-27,INR,8010.44,1441.88,9452.32,Utilities,PO-2026-6559,Standard invoice for utilities
+INV-0472,SMSG/2026/BRSQPA,Samsung India Electronics,2026-07-28,2026-08-27,INR,4047.5,728.55,4776.05,Office Supplies,PO-2026-9090,Standard invoice for office supplies
+INV-0570,ORCL/2026/Y66HXV,Oracle India Private Limited,2026-07-28,2026-08-27,INR,3962.88,713.32,4676.2,Marketing,PO-2026-8581,Standard invoice for marketing
+INV-0146,SIEM/2026/JHHG9Q,Siemens Industry Software,2026-08-13,2026-09-12,INR,5961.42,1073.06,7034.48,Marketing,PO-2026-3595,Standard invoice for marketing
+INV-0211,ITC/2026/D3C3PJ,ITC Infotech India Ltd,2026-08-13,2026-09-12,INR,6873.74,1237.27,8111.01,Office Supplies,PO-2026-4001,Standard invoice for office supplies
+INV-0281,FDX/2026/ZVBQ8T,FedEx Express Logistics,2026-08-13,2026-09-12,INR,3997.62,719.57,4717.19,Office Supplies,PO-2026-3739,Standard invoice for office supplies
+INV-0768,MMT/2026/Y4N6WD,MakeMyTrip India Pvt Ltd,2026-08-13,2026-09-12,INR,7192.49,1294.65,8487.14,Utilities,PO-2026-1971,Standard invoice for utilities
+INV-0854,FDX/2026/ZVBQ8T,FedEx Express Logistics,2026-08-13,2026-09-12,INR,3997.62,719.57,4717.19,Office Supplies,PO-2026-3739,Standard invoice for office supplies
+INV-0069,SMSG/2026/ZGVYEE,Samsung India Electronics,2026-08-14,2026-09-13,INR,4612.61,830.27,5442.88,Office Supplies,PO-2026-7755,Standard invoice for office supplies
+INV-0090,ORCL/2026/BYWYDQ,Oracle India Private Limited,2026-08-14,2026-09-13,INR,3884.54,699.22,4583.76,IT Equipment,PO-2026-4147,Standard invoice for it equipment
+INV-0128,CTS/2026/M5VQXT,Cognizant Technology Solutions,2026-08-14,2026-09-13,INR,4501.74,810.31,5312.05,Maintenance,PO-2026-1656,Standard invoice for maintenance
+INV-0151,APX/2026/Q85Z4Y,Apex Solutions Private Limited,2026-08-14,2026-09-13,INR,8501.07,1530.19,10031.26,IT Equipment,PO-2026-2045,Standard invoice for it equipment
+INV-0328,APX/2026/Q9YLR3,Apex Solutions Private Limited,2026-08-14,2026-09-13,INR,9076.18,1633.71,10709.89,Marketing,PO-2026-4138,Standard invoice for marketing
+INV-0558,DELL/2026/FFAGER,Dell Technologies Inc,2026-08-14,2026-09-13,INR,5706.59,1027.19,6733.78,Utilities,PO-2026-7557,Standard invoice for utilities
+INV-0542,LEN/2026/DWRMA7,Lenovo India Private Limited,2026-08-15,2026-09-14,INR,8368.15,1506.27,9874.42,Maintenance,PO-2026-6427,Standard invoice for maintenance
+INV-0668,MMT/2026/DP8DT4,MakeMyTrip India Pvt Ltd,2026-08-15,2026-09-14,INR,6438.1,1158.86,7596.96,Utilities,PO-2026-5153,Standard invoice for utilities
+INV-0727,WIP/2026/UBJLXK,Wipro Enterprises Limited,2026-08-15,2026-09-14,INR,3672.64,661.08,4333.72,Travel,PO-2026-2939,Standard invoice for travel
+INV-0780,APX/2026/LRY7Y6,Apex Solutions Private Limited,2026-08-15,2026-09-14,INR,9579.66,1724.34,11304.0,Marketing,PO-2026-4170,Standard invoice for marketing
+INV-0801,TCS/2026/63PNJM,Tata Consultancy Services,2026-08-15,2026-09-14,INR,5361.87,965.14,6327.01,Logistics,PO-2026-7965,Standard invoice for logistics
+INV-0113,LEN/2026/9DNQMS,Lenovo India Private Limited,2026-08-16,2026-09-15,INR,7718.69,1389.36,9108.05,Travel,PO-2026-9969,Standard invoice for travel
+INV-0718,MMT/2026/5TA6KA,MakeMyTrip India Pvt Ltd,2026-08-16,2026-09-15,INR,6948.77,1250.78,8199.55,Utilities,PO-2026-9869,Standard invoice for utilities
+INV-0792,LEN/2026/CYDBHU,Lenovo India Private Limited,2026-08-16,2026-09-15,INR,8314.72,1496.65,9811.37,Maintenance,PO-2026-1550,Standard invoice for maintenance
+INV-0912,ZOHO/2026/XHSMFT,Zoho Corporation Pvt Ltd,2026-08-16,2026-09-15,INR,5050.0,909.0,,Professional Services,PO-2026-5889,Standard invoice for professional services
+INV-0214,LEN/2026/CDMRZH,Lenovo India Private Limited,2026-08-17,2026-09-16,INR,8254.15,1485.75,9739.9,Travel,PO-2026-2058,Standard invoice for travel
+INV-0696,PSYS/2026/43EWH5,Persistent Systems Ltd,2026-08-17,2026-09-16,INR,6126.8,1102.82,7229.62,Software & Licenses,PO-2026-9435,Standard invoice for software & licenses
+INV-0731,BD/2026/EG2DYG,Blue Dart Express Ltd,2026-08-17,2026-09-16,INR,5513.45,992.42,6505.87,Logistics,PO-2026-9846,Standard invoice for logistics
+INV-0824,LEN/2026/9DNQMS,Lenovo India Private Limited,2026-08-17,2026-09-16,INR,7718.69,1389.36,9108.05,Travel,PO-2026-9969,Standard invoice for travel
+INV-0169,REL/2026/TCJQ9X,Reliance Retail Limited,2026-08-18,2026-09-17,INR,5266.14,947.91,6214.05,Raw Materials,PO-2026-1022,Standard invoice for raw materials
+INV-0191,ORCL/2026/BPYHS7,Oracle India Private Limited,2026-08-18,2026-09-17,INR,3910.96,703.97,4614.93,IT Equipment,PO-2026-3615,Standard invoice for it equipment
+INV-0758,DELL/2026/HL3WG6,Dell Technologies Inc,2026-08-18,2026-09-17,INR,5575.36,1003.56,6578.92,Utilities,PO-2026-5333,Standard invoice for utilities
+INV-0386,INFY/2026/GY2J3L,Infosys Limited,2026-08-19,2026-09-18,INR,9719.92,1749.59,11469.51,Utilities,PO-2026-7827,Standard invoice for utilities
+INV-0574,SMSG/2026/EFVVSN,Samsung India Electronics,2026-08-19,2026-09-18,INR,4240.08,763.21,5003.29,Office Supplies,PO-2026-9199,Standard invoice for office supplies
+INV-0595,ORCL/2026/7HBPD7,Oracle India Private Limited,2026-08-19,2026-09-18,INR,4212.36,758.22,4970.58,IT Equipment,PO-2026-4856,Standard invoice for it equipment
+INV-0690,KPMG/2026/MEB47C,KPMG Advisory Services,2026-08-19,2026-09-18,INR,7130.5,1283.49,8413.99,Marketing,PO-2026-7200,Standard invoice for marketing
+INV-0761,HCL/2026/725HNM,HCL Technologies Limited,2026-08-19,2026-09-18,INR,7303.79,1314.68,8618.47,Logistics,PO-2026-8089,Standard invoice for logistics
+INV-0900,MSFT/2026/FFKAVN,,2026-08-19,2026-09-18,INR,7150.0,1287.0,8437.0,Utilities,PO-2026-5554,Standard invoice for utilities
+INV-0922,REL/2026/YQV8BX,Reliance Retail Limited,2026-08-19,2026-09-18,INR,5400.0,972.0,0.0,Raw Materials,PO-2026-4265,Standard invoice for raw materials
+INV-0969,ZOHO/2026/DMC9MY,Zoho Corporation Pvt Ltd,2026-08-19,2026-09-18,INR,136536.9,24576.64,161113.54,Office Supplies,PO-2026-2995,Standard invoice for office supplies
+INV-0051,BD/2026/MC932J,Blue Dart Express Ltd,2026-08-20,2026-09-19,INR,5368.59,966.35,6334.94,Software & Licenses,PO-2026-3868,Standard invoice for software & licenses
+INV-0248,TCS/2026/4NZKAM,Tata Consultancy Services,2026-08-20,2026-09-19,INR,5233.65,942.06,6175.71,Logistics,PO-2026-5513,Standard invoice for logistics
+INV-0270,REL/2026/9RXGGK,Reliance Retail Limited,2026-08-20,2026-09-19,INR,5315.82,956.85,6272.67,Raw Materials,PO-2026-3021,Standard invoice for raw materials
+INV-0416,MMT/2026/SEH738,MakeMyTrip India Pvt Ltd,2026-08-20,2026-09-19,INR,7040.27,1267.25,8307.52,Utilities,PO-2026-8888,Standard invoice for utilities
+INV-0967,WIP/2026/GNQGW5,Wipro Enterprises Limited,2026-08-20,2026-09-19,INR,4000.0,720.0,4355.03,IT Equipment,PO-2026-5302,Standard invoice for it equipment
+INV-0948,SIEM/2026/DFCNBY,Siemens Industry Software,2026-08-21,2026-09-20,INR,6450.0,1161.0,7956.2,Logistics,PO-2026-7916,Standard invoice for logistics
+INV-0950,SMSG/2026/W88KDQ,Samsung India Electronics,2026-08-21,2026-09-20,INR,4350.0,783.0,4852.58,Professional Services,PO-2026-6256,Standard invoice for professional services
+INV-0963,PSYS/2026/BZ8KFH,Persistent Systems Ltd,2026-08-21,2026-09-20,INR,6800.0,1224.0,8428.79,Office Supplies,PO-2026-1266,Standard invoice for office supplies
+INV-0009,ITC/2026/QR79TT,ITC Infotech India Ltd,2026-08-22,2026-09-21,INR,6865.48,1235.79,8101.27,Office Supplies,PO-2026-2679,Standard invoice for office supplies
+INV-0630,APX/2026/D5M7HN,Apex Solutions Private Limited,2026-08-22,2026-09-21,INR,8047.63,1448.57,9496.2,Marketing,PO-2026-5028,Standard invoice for marketing
+INV-0660,GDJ/2026/SRCWLD,Godrej Interio Ltd,2026-08-22,2026-09-21,INR,6579.9,1184.38,7764.28,Marketing,PO-2026-2302,Standard invoice for marketing
+INV-0664,ITC/2026/92JWH7,ITC Infotech India Ltd,2026-08-22,2026-09-21,INR,6799.0,1223.82,8022.82,Office Supplies,PO-2026-8705,Standard invoice for office supplies
+INV-0079,FDX/2026/T9QVU7,FedEx Express Logistics,2026-08-23,2026-09-22,INR,4203.92,756.71,4960.63,Office Supplies,PO-2026-6206,Standard invoice for office supplies
+INV-0143,PWC/2026/4URXYB,PwC India Advisory,2026-08-23,2026-09-22,INR,5427.55,976.96,6404.51,Travel,PO-2026-1916,Standard invoice for travel
+INV-0360,HP/2026/T8WCDL,HP India Sales Pvt Ltd,2026-08-23,2026-09-22,INR,5375.99,967.68,6343.67,Maintenance,PO-2026-1665,Standard invoice for maintenance
+INV-0413,KPMG/2026/UPBTN5,KPMG Advisory Services,2026-08-23,2026-09-22,INR,8310.44,1495.88,9806.32,IT Equipment,PO-2026-9656,Standard invoice for it equipment
+INV-0499,TCS/2026/MWQQUV,Tata Consultancy Services,2026-08-23,2026-09-22,INR,5228.24,941.08,6169.32,Logistics,PO-2026-8611,Standard invoice for logistics
+INV-0586,HCL/2026/HT75JH,HCL Technologies Limited,2026-08-23,2026-09-22,INR,7064.44,1271.6,8336.04,Software & Licenses,PO-2026-6814,Standard invoice for software & licenses
+INV-0554,AC/2026/VYB4QA,Acme Pvt Ltd,2026-08-24,2026-09-23,INR,7432.38,1337.83,8770.21,Office Supplies,PO-2026-4634,Standard invoice for office supplies
+INV-0616,LTI/2026/7HMEMJ,Larsen and Toubro Infotech,2026-08-24,2026-09-23,INR,4794.53,863.02,5657.55,Software & Licenses,PO-2026-1149,Standard invoice for software & licenses
+INV-0622,PWC/2026/MZ3XYY,PwC India Advisory,2026-08-24,2026-09-23,INR,5368.83,966.39,6335.22,Maintenance,PO-2026-3666,Standard invoice for maintenance
+INV-0625,SIEM/2026/N2EQAL,Siemens Industry Software,2026-08-24,2026-09-23,INR,6748.04,1214.65,7962.69,IT Equipment,PO-2026-2912,Standard invoice for it equipment
+INV-0036,LTI/2026/NHPHET,Larsen and Toubro Infotech,2026-08-25,2026-09-24,INR,5065.8,911.84,5977.64,Logistics,PO-2026-2371,Standard invoice for logistics
+INV-0068,REL/2026/J5RT4L,Reliance Retail Limited,2026-08-25,2026-09-24,INR,5435.32,978.36,6413.68,Raw Materials,PO-2026-1313,Standard invoice for raw materials
+INV-0815,KPMG/2026/48JYBK,KPMG Advisory Services,2026-08-25,2026-09-24,INR,7121.39,1281.85,8403.24,IT Equipment,PO-2026-6077,Standard invoice for it equipment
+INV-0114,MMT/2026/L6DCLE,MakeMyTrip India Pvt Ltd,2026-08-26,2026-09-25,INR,6255.38,1125.97,7381.35,Utilities,PO-2026-8271,Standard invoice for utilities
+INV-0336,INFY/2026/YP7ZBH,Infosys Limited,2026-08-26,2026-09-25,INR,9032.27,1625.81,10658.08,Utilities,PO-2026-1108,Standard invoice for utilities
+INV-0405,CTS/2026/NLEMJN,Cognizant Technology Solutions,2026-08-26,2026-09-25,INR,4837.38,870.73,5708.11,Travel,PO-2026-6224,Standard invoice for travel
+INV-0516,LTI/2026/2VQD6K,Larsen and Toubro Infotech,2026-08-26,2026-09-25,INR,4296.45,773.36,5069.81,Software & Licenses,PO-2026-4608,Standard invoice for software & licenses
+INV-0762,HP/2026/7D5UCN,HP India Sales Pvt Ltd,2026-08-26,2026-09-25,INR,5843.02,1051.74,6894.76,Maintenance,PO-2026-8965,Standard invoice for maintenance
+INV-0876,HP/2026/T8WCDL,HP India Sales Private Limited,2026-08-26,2026-09-25,INR,5390.55,970.3,6360.85,Maintenance,PO-2026-1665,Standard invoice for maintenance
+INV-0334,HCL/2026/K4XS9Z,HCL Technologies Limited,2026-08-27,2026-09-26,INR,6293.95,1132.91,7426.86,Software & Licenses,PO-2026-7228,Standard invoice for software & licenses
+INV-0446,REL/2026/4T6ELY,Reliance Retail Limited,2026-08-27,2026-09-26,INR,5911.23,1064.02,6975.25,Utilities,PO-2026-7171,Standard invoice for utilities
+INV-0601,TCS/2026/29WW4P,Tata Consultancy Services,2026-08-27,2026-09-26,INR,5972.26,1075.01,7047.27,Logistics,PO-2026-8230,Standard invoice for logistics
+INV-0618,MMT/2026/JJL9TM,MakeMyTrip India Pvt Ltd,2026-08-27,2026-09-26,INR,7278.56,1310.14,8588.7,Utilities,PO-2026-7815,Standard invoice for utilities
+INV-0757,CTS/2026/XR8UJN,Cognizant Technology Solutions,2026-08-27,2026-09-26,INR,4545.07,818.11,5363.18,Travel,PO-2026-1921,Standard invoice for travel
+INV-0074,AC/2026/5CXG4H,Acme Pvt Ltd,2026-08-28,2026-09-27,INR,6739.18,1213.05,7952.23,Professional Services,PO-2026-2289,Standard invoice for professional services
+INV-0326,ZOHO/2026/JZ3W64,Zoho Corporation Pvt Ltd,2026-08-28,2026-09-27,INR,5124.4,922.39,6046.79,Utilities,PO-2026-7150,Standard invoice for utilities
+INV-0375,WIP/2026/2V5M5J,Wipro Enterprises Limited,2026-08-28,2026-09-27,INR,4289.47,772.1,5061.57,Travel,PO-2026-4090,Standard invoice for travel
+INV-0420,PWC/2026/CVAYHR,PwC India Advisory,2026-08-28,2026-09-27,INR,4662.8,839.3,5502.1,Maintenance,PO-2026-5530,Standard invoice for maintenance
+INV-0697,PWC/2026/CFTN9Z,PwC India Advisory,2026-08-28,2026-09-27,INR,5005.35,900.96,5906.31,Travel,PO-2026-7261,Standard invoice for travel
+INV-0840,AC/2026/5CXG4H,Acme Pvt Ltd,2026-08-28,2026-09-27,INR,6739.18,1213.05,7952.23,Professional Services,PO-2026-2289,Standard invoice for professional services
+INV-0846,MMT/2026/L6DCLE,MakeMyTrip India Pvt Ltd,2026-08-28,2026-09-27,INR,6255.38,1125.97,7381.35,Utilities,PO-2026-8271,Standard invoice for utilities
+INV-0865,MMT/2026/L6DCLE,MakeMyTrip India Private Limited,2026-08-28,2026-09-27,INR,6299.42,1133.89,7433.31,Utilities,PO-2026-8271,Standard invoice for utilities
+INV-0885,WIP/2026/2V5M5J,Wipro Enterprises Ltd,2026-08-28,2026-09-27,INR,4311.31,776.04,5087.35,Travel,PO-2026-4090,Standard invoice for travel
+INV-0987,AC/2026/0345,Acme Private Limited,2026-09-02,2026-10-02,INR,8491.53,1528.47,10020.0,Office Supplies,PO-2026-0345,Ergonomic workstations and office setup
+INV-1042,AC/2026/0345,Acme Pvt Ltd,2026-09-03,2026-10-03,INR,8474.58,1525.42,10000.0,Office Supplies,PO-2026-0345,Ergonomic workstations duplicate claim
+INV-0320,PWC/2026/DTQ8B8,PwC India Advisory,2026-09-13,2026-10-13,INR,5269.41,948.49,6217.9,Maintenance,PO-2026-1698,Standard invoice for maintenance
+INV-0408,GDJ/2026/J5G9UZ,Godrej Interio Ltd,2026-09-13,2026-10-13,INR,6121.35,1101.84,7223.19,Marketing,PO-2026-4927,Standard invoice for marketing
+INV-0521,PSYS/2026/VX3YY5,Persistent Systems Ltd,2026-09-13,2026-10-13,INR,7339.49,1321.11,8660.6,Logistics,PO-2026-3064,Standard invoice for logistics
+INV-0564,ITC/2026/KKZKAF,ITC Infotech India Ltd,2026-09-13,2026-10-13,INR,7197.1,1295.48,8492.58,Office Supplies,PO-2026-8036,Standard invoice for office supplies
+INV-0788,INFY/2026/RG6357,Infosys Limited,2026-09-13,2026-10-13,INR,8598.53,1547.74,10146.27,Utilities,PO-2026-6535,Standard invoice for utilities
+INV-0898,APX/2026/99UGKD,Apex Solutions Private Limited,2026-09-13,2026-10-13,INR,8900.0,1602.0,,Professional Services,PO-2026-4576,Standard invoice for professional services
+INV-0131,GDJ/2026/BKJ7TV,Godrej Interio Ltd,2026-09-14,2026-10-14,INR,5893.38,1060.81,6954.19,IT Equipment,PO-2026-2670,Standard invoice for it equipment
+INV-0140,MSFT/2026/D84CLK,Microsoft India Pvt Ltd,2026-09-14,2026-10-14,INR,7759.13,1396.64,9155.77,Office Supplies,PO-2026-4607,Standard invoice for office supplies
+INV-0327,AC/2026/MDUPHE,Acme Pvt Ltd,2026-09-14,2026-10-14,INR,7148.33,1286.7,8435.03,Professional Services,PO-2026-6244,Standard invoice for professional services
+INV-0443,ORCL/2026/CDQLYU,Oracle India Private Limited,2026-09-14,2026-10-14,INR,4251.06,765.19,5016.25,IT Equipment,PO-2026-4488,Standard invoice for it equipment
+INV-0582,CTS/2026/Z3JTJ8,Cognizant Technology Solutions,2026-09-14,2026-10-14,INR,4389.0,790.02,5179.02,Maintenance,PO-2026-7974,Standard invoice for maintenance
+INV-0597,PWC/2026/9CVF2R,PwC India Advisory,2026-09-14,2026-10-14,INR,4906.74,883.21,5789.95,Travel,PO-2026-3631,Standard invoice for travel
+INV-0599,SMSG/2026/HPWJN9,Samsung India Electronics,2026-09-14,2026-10-14,INR,4334.78,780.26,5115.04,Professional Services,PO-2026-5675,Standard invoice for professional services
+INV-0839,MSFT/2026/D84CLK,Microsoft India Pvt Ltd,2026-09-14,2026-10-14,INR,7759.13,1396.64,9155.77,Office Supplies,PO-2026-4607,Standard invoice for office supplies
+INV-0953,SMSG/2026/WP5GP3,Samsung India Electronics,2026-09-14,2026-10-14,INR,4350.0,783.0,5688.31,IT Equipment,PO-2026-7693,Standard invoice for it equipment
+INV-0049,AC/2026/EVE9R5,Acme Pvt Ltd,2026-09-15,2026-10-15,INR,6980.11,1256.42,8236.53,Office Supplies,PO-2026-9473,Standard invoice for office supplies
+INV-0331,DELL/2026/MKGDUJ,Dell Technologies Inc,2026-09-15,2026-10-15,INR,4898.0,881.64,5779.64,Raw Materials,PO-2026-2215,Standard invoice for raw materials
+INV-0117,PSYS/2026/XP9QBR,Persistent Systems Ltd,2026-09-16,2026-10-16,INR,7476.88,1345.84,8822.72,Logistics,PO-2026-5437,Standard invoice for logistics
+INV-0139,MMT/2026/77EQ68,MakeMyTrip India Pvt Ltd,2026-09-16,2026-10-16,INR,6402.65,1152.48,7555.13,Raw Materials,PO-2026-8172,Standard invoice for raw materials
+INV-0352,AC/2026/QWMPSE,Acme Pvt Ltd,2026-09-16,2026-10-16,INR,7403.22,1332.58,8735.8,Office Supplies,PO-2026-3113,Standard invoice for office supplies
+INV-0357,FDX/2026/Q22D6M,FedEx Express Logistics,2026-09-16,2026-10-16,INR,3816.9,687.04,4503.94,Professional Services,PO-2026-3995,Standard invoice for professional services
+INV-0367,MSFT/2026/6JNVNJ,Microsoft India Pvt Ltd,2026-09-16,2026-10-16,INR,7605.53,1369.0,8974.53,Professional Services,PO-2026-5389,Standard invoice for professional services
+INV-0459,HCL/2026/SGRVVC,HCL Technologies Limited,2026-09-16,2026-10-16,INR,6892.46,1240.64,8133.1,Logistics,PO-2026-3984,Standard invoice for logistics
+INV-0658,DELL/2026/GJPD4J,Dell Technologies Inc,2026-09-16,2026-10-16,INR,4966.47,893.96,5860.43,Utilities,PO-2026-6011,Standard invoice for utilities
+INV-0707,CTS/2026/TY2L76,Cognizant Technology Solutions,2026-09-16,2026-10-16,INR,4836.39,870.55,5706.94,Travel,PO-2026-3264,Standard invoice for travel
+INV-0849,PWC/2026/DTQ8B8,PwC India Advisory,2026-09-16,2026-10-16,INR,5269.41,948.49,6217.9,Maintenance,PO-2026-1698,Standard invoice for maintenance
+INV-0083,INFY/2026/ZCVD86,Infosys Limited,2026-09-17,2026-10-17,INR,8556.52,1540.17,10096.69,Utilities,PO-2026-9684,Standard invoice for utilities
+INV-0429,BD/2026/4GQM5H,Blue Dart Express Ltd,2026-09-17,2026-10-17,INR,6025.57,1084.6,7110.17,Logistics,PO-2026-6946,Standard invoice for logistics
+INV-0476,ZOHO/2026/H2ETC4,Zoho Corporation Pvt Ltd,2026-09-17,2026-10-17,INR,4918.18,885.27,5803.45,Utilities,PO-2026-2208,Standard invoice for utilities
+INV-0971,PSYS/2026/WYZBMB,Persistent Systems Ltd,2026-09-17,2026-10-17,INR,246712.22,44408.2,291120.42,Office Supplies,PO-2026-1424,Standard invoice for office supplies
+INV-0992,TCS/2026/3G7QRS,Global Unknown Corp,2026-09-17,2026-10-17,INR,5750.0,1035.0,6785.0,Travel,PO-2026-4392,Standard invoice for travel
+INV-0258,HCL/2026/5RDLUT,HCL Technologies Limited,2026-09-18,2026-10-18,INR,7204.37,1296.79,8501.16,Logistics,PO-2026-4547,Standard invoice for logistics
+INV-0370,PWC/2026/RPSJDB,PwC India Advisory,2026-09-18,2026-10-18,INR,5048.98,908.82,5957.8,Maintenance,PO-2026-4080,Standard invoice for maintenance
+INV-0655,APX/2026/VJRCEK,Apex Solutions Private Limited,2026-09-18,2026-10-18,INR,9736.88,1752.64,11489.52,IT Equipment,PO-2026-1679,Standard invoice for it equipment
+INV-0716,LTI/2026/U7MMYQ,Larsen and Toubro Infotech,2026-09-18,2026-10-18,INR,4878.81,878.19,5757.0,Software & Licenses,PO-2026-8453,Standard invoice for software & licenses
+INV-0954,ITC/2026/M7J4NS,ITC Infotech India Ltd,2026-09-18,2026-10-18,INR,6800.0,1224.0,7431.4,Marketing,PO-2026-2792,Standard invoice for marketing
+INV-0237,KPMG/2026/95UU7G,KPMG Advisory Services,2026-09-19,2026-10-19,INR,7285.71,1311.43,8597.14,Marketing,PO-2026-7976,Standard invoice for marketing
+INV-0457,FDX/2026/EMBEUG,FedEx Express Logistics,2026-09-19,2026-10-19,INR,4399.66,791.94,5191.6,Professional Services,PO-2026-9484,Standard invoice for professional services
+INV-0531,BD/2026/QP2GMT,Blue Dart Express Ltd,2026-09-19,2026-10-19,INR,5546.71,998.41,6545.12,Logistics,PO-2026-8306,Standard invoice for logistics
+INV-0135,ITC/2026/HLCTDT,ITC Infotech India Ltd,2026-09-20,2026-10-20,INR,6751.02,1215.18,7966.2,Professional Services,PO-2026-4786,Standard invoice for professional services
+INV-0142,PSYS/2026/4DRSPL,Persistent Systems Ltd,2026-09-20,2026-10-20,INR,6178.12,1112.06,7290.18,Software & Licenses,PO-2026-8538,Standard invoice for software & licenses
+INV-0532,CTS/2026/D3MLRF,Cognizant Technology Solutions,2026-09-20,2026-10-20,INR,4888.27,879.89,5768.16,Maintenance,PO-2026-9948,Standard invoice for maintenance
+INV-0631,BD/2026/SF4C34,Blue Dart Express Ltd,2026-09-20,2026-10-20,INR,5441.67,979.5,6421.17,Logistics,PO-2026-3136,Standard invoice for logistics
+INV-0920,ITC/2026/477Z6Z,ITC Infotech India Ltd,2026-09-20,2026-10-20,INR,6800.0,1224.0,INVALID_AMOUNT,Raw Materials,PO-2026-1347,Standard invoice for raw materials
+INV-0042,PWC/2026/4Y3WCM,PwC India Advisory,2026-09-21,2026-10-21,INR,4684.34,843.18,5527.52,Travel,PO-2026-7663,Standard invoice for travel
+INV-0138,LEN/2026/K9T9M7,Lenovo India Private Limited,2026-09-21,2026-10-21,INR,7808.78,1405.58,9214.36,Maintenance,PO-2026-8908,Standard invoice for maintenance
+INV-0287,KPMG/2026/QWQ6ZK,KPMG Advisory Services,2026-09-21,2026-10-21,INR,7964.61,1433.63,9398.24,Marketing,PO-2026-4978,Standard invoice for marketing
+INV-0556,BD/2026/B99UU8,Blue Dart Express Ltd,2026-09-21,2026-10-21,INR,5402.68,972.48,6375.16,Software & Licenses,PO-2026-4476,Standard invoice for software & licenses
+INV-0133,HP/2026/JZSEL2,HP India Sales Pvt Ltd,2026-09-22,2026-10-22,INR,4893.52,880.83,5774.35,Travel,PO-2026-6021,Standard invoice for travel
+INV-0171,SIEM/2026/53FS67,Siemens Industry Software,2026-09-22,2026-10-22,INR,6004.1,1080.74,7084.84,IT Equipment,PO-2026-4535,Standard invoice for it equipment
+INV-0239,LEN/2026/DURSGN,Lenovo India Private Limited,2026-09-22,2026-10-22,INR,7823.28,1408.19,9231.47,Maintenance,PO-2026-5002,Standard invoice for maintenance
+INV-0498,SIEM/2026/2C2R5H,Siemens Industry Software,2026-09-22,2026-10-22,INR,5988.8,1077.98,7066.78,Marketing,PO-2026-7938,Standard invoice for marketing
+INV-0722,PWC/2026/WKGFRU,PwC India Advisory,2026-09-22,2026-10-22,INR,4776.56,859.78,5636.34,Maintenance,PO-2026-1848,Standard invoice for maintenance
+INV-0799,SMSG/2026/8MXTFB,Samsung India Electronics,2026-09-22,2026-10-22,INR,4580.45,824.48,5404.93,Professional Services,PO-2026-3023,Standard invoice for professional services
+INV-0914,,Infosys Limited,2026-09-22,2026-10-22,INR,8900.0,1602.0,10502.0,Software & Licenses,PO-2026-7301,Standard invoice for software & licenses
+INV-0038,MMT/2026/TW8SJW,MakeMyTrip India Pvt Ltd,2026-09-23,2026-10-23,INR,6196.51,1115.37,7311.88,Raw Materials,PO-2026-7765,Standard invoice for raw materials
+INV-0187,LTI/2026/BYM7KN,Larsen and Toubro Infotech,2026-09-23,2026-10-23,INR,4499.66,809.94,5309.6,Logistics,PO-2026-7681,Standard invoice for logistics
+INV-0243,PSYS/2026/C36GSW,Persistent Systems Ltd,2026-09-23,2026-10-23,INR,7204.49,1296.81,8501.3,Software & Licenses,PO-2026-9657,Standard invoice for software & licenses
+INV-0478,APX/2026/NEDM88,Apex Solutions Private Limited,2026-09-23,2026-10-23,INR,9481.21,1706.62,11187.83,Marketing,PO-2026-1904,Standard invoice for marketing
+INV-0493,ORCL/2026/AMU4KZ,Oracle India Private Limited,2026-09-23,2026-10-23,INR,3768.58,678.34,4446.92,IT Equipment,PO-2026-7892,Standard invoice for it equipment
+INV-0537,HP/2026/GDKXCG,HP India Sales Pvt Ltd,2026-09-23,2026-10-23,INR,5155.78,928.04,6083.82,Travel,PO-2026-4573,Standard invoice for travel
+INV-0070,SIEM/2026/5JK4E8,Siemens Industry Software,2026-09-24,2026-10-24,INR,5970.11,1074.62,7044.73,IT Equipment,PO-2026-7477,Standard invoice for it equipment
+INV-0231,FDX/2026/Q5WLLP,FedEx Express Logistics,2026-09-24,2026-10-24,INR,3887.55,699.76,4587.31,Office Supplies,PO-2026-6063,Standard invoice for office supplies
+INV-0247,SIEM/2026/M7VBRC,Siemens Industry Software,2026-09-24,2026-10-24,INR,5993.6,1078.85,7072.45,Marketing,PO-2026-6663,Standard invoice for marketing
+INV-0480,CTS/2026/JBDPQM,Cognizant Technology Solutions,2026-09-24,2026-10-24,INR,4759.49,856.71,5616.2,Maintenance,PO-2026-8468,Standard invoice for maintenance
+INV-0517,LEN/2026/BSDEKU,Lenovo India Private Limited,2026-09-24,2026-10-24,INR,7513.35,1352.4,8865.75,Travel,PO-2026-4643,Standard invoice for travel
+INV-0661,HCL/2026/FLYU2B,HCL Technologies Limited,2026-09-24,2026-10-24,INR,6283.52,1131.03,7414.55,Logistics,PO-2026-8030,Standard invoice for logistics
+INV-0964,MSFT/2026/BNBUDL,Microsoft India Pvt Ltd,2026-09-24,2026-10-24,INR,7150.0,1287.0,8992.69,Marketing,PO-2026-5708,Standard invoice for marketing
+INV-0966,SMSG/2026/EA5D89,Samsung India Electronics,2026-09-24,2026-10-24,INR,4350.0,783.0,4627.62,Logistics,PO-2026-1876,Standard invoice for logistics
+INV-0177,BD/2026/MBBFGN,Blue Dart Express Ltd,2026-09-25,2026-10-25,INR,5866.63,1055.99,6922.62,Logistics,PO-2026-5419,Standard invoice for logistics
+INV-0207,GDJ/2026/FNLUGD,Godrej Interio Ltd,2026-09-25,2026-10-25,INR,6085.14,1095.33,7180.47,Marketing,PO-2026-2375,Standard invoice for marketing
+INV-0402,AC/2026/7NZ898,Acme Pvt Ltd,2026-09-25,2026-10-25,INR,7231.9,1301.74,8533.64,Office Supplies,PO-2026-5161,Standard invoice for office supplies
+INV-0461,INFY/2026/GMQRPW,Infosys Limited,2026-09-25,2026-10-25,INR,8214.67,1478.64,9693.31,Raw Materials,PO-2026-6580,Standard invoice for raw materials
+INV-0482,FDX/2026/YDDMXE,FedEx Express Logistics,2026-09-25,2026-10-25,INR,3724.45,670.4,4394.85,Office Supplies,PO-2026-6572,Standard invoice for office supplies
+INV-0925,CTS/2026/LQTY7K,Cognizant Technology Solutions,2026-09-25,2026-10-25,INR,4700.0,846.0,-3421.33,Professional Services,PO-2026-2273,Standard invoice for professional services
+INV-0212,KPMG/2026/46S6V4,KPMG Advisory Services,2026-09-26,2026-10-26,INR,7166.23,1289.92,8456.15,IT Equipment,PO-2026-4527,Standard invoice for it equipment
+INV-0232,GDJ/2026/2WG56Y,Godrej Interio Ltd,2026-09-26,2026-10-26,INR,6434.92,1158.29,7593.21,IT Equipment,PO-2026-9374,Standard invoice for it equipment
+INV-0268,PSYS/2026/YYGKEN,Persistent Systems Ltd,2026-09-26,2026-10-26,INR,7423.56,1336.24,8759.8,Logistics,PO-2026-8698,Standard invoice for logistics
+INV-0411,INFY/2026/GB7N9C,Infosys Limited,2026-09-26,2026-10-26,INR,8752.17,1575.39,10327.56,Raw Materials,PO-2026-8504,Standard invoice for raw materials
+INV-0432,FDX/2026/XCSEEA,FedEx Express Logistics,2026-09-26,2026-10-26,INR,3789.57,682.12,4471.69,Office Supplies,PO-2026-7429,Standard invoice for office supplies
+INV-0551,TCS/2026/9TQ7ZM,Tata Consultancy Services,2026-09-26,2026-10-26,INR,5236.55,942.58,6179.13,Logistics,PO-2026-9303,Standard invoice for logistics
+INV-0670,ORCL/2026/DGFWUG,Oracle India Private Limited,2026-09-26,2026-10-26,INR,4212.97,758.33,4971.3,Marketing,PO-2026-2760,Standard invoice for marketing
+INV-0710,GDJ/2026/YUXPEQ,Godrej Interio Ltd,2026-09-26,2026-10-26,INR,6070.03,1092.61,7162.64,Marketing,PO-2026-4511,Standard invoice for marketing
+INV-0905,REL/2026/BKXV9V,Reliance Retail Limited,2026-09-26,2026-10-26,INR,5400.0,972.0,,Travel,PO-2026-7662,Standard invoice for travel
+INV-0293,PSYS/2026/BB5V49,Persistent Systems Ltd,2026-09-27,2026-10-27,INR,7373.35,1327.2,8700.55,Software & Licenses,PO-2026-8034,Standard invoice for software & licenses
+INV-0490,LEN/2026/V72F7Z,Lenovo India Private Limited,2026-09-27,2026-10-27,INR,8552.57,1539.46,10092.03,Maintenance,PO-2026-5657,Standard invoice for maintenance
+INV-0812,HP/2026/Y8CCTP,HP India Sales Pvt Ltd,2026-09-27,2026-10-27,INR,5097.57,917.56,6015.13,Maintenance,PO-2026-3030,Standard invoice for maintenance
+INV-0851,GDJ/2026/FNLUGD,Godrej Interio Ltd,2026-09-27,2026-10-27,INR,6085.14,1095.33,7180.47,Marketing,PO-2026-2375,Standard invoice for marketing
+INV-0011,LTI/2026/6837MG,Larsen and Toubro Infotech,2026-09-28,2026-10-28,INR,4668.66,840.36,5509.02,Software & Licenses,PO-2026-1800,Standard invoice for software & licenses
+INV-0013,MMT/2026/Y8J7FP,MakeMyTrip India Pvt Ltd,2026-09-28,2026-10-28,INR,7398.59,1331.75,8730.34,Utilities,PO-2026-4621,Standard invoice for utilities
+INV-0196,SIEM/2026/FUTQUH,Siemens Industry Software,2026-09-28,2026-10-28,INR,5919.08,1065.43,6984.51,Marketing,PO-2026-8306,Standard invoice for marketing
+INV-0372,SMSG/2026/WSRH3J,Samsung India Electronics,2026-09-28,2026-10-28,INR,3947.22,710.5,4657.72,Office Supplies,PO-2026-1044,Standard invoice for office supplies
+INV-0541,LTI/2026/H6MAA3,Larsen and Toubro Infotech,2026-09-28,2026-10-28,INR,5108.94,919.61,6028.55,Logistics,PO-2026-5544,Standard invoice for logistics
+INV-0688,INFY/2026/D2N94Z,Infosys Limited,2026-09-28,2026-10-28,INR,8512.25,1532.2,10044.45,Utilities,PO-2026-2532,Standard invoice for utilities
+INV-0832,KPMG/2026/46S6V4,KPMG Advisory Services,2026-09-28,2026-10-28,INR,7166.23,1289.92,8456.15,IT Equipment,PO-2026-4527,Standard invoice for it equipment
+INV-0838,GDJ/2026/2WG56Y,Godrej Interio Ltd,2026-09-28,2026-10-28,INR,6434.92,1158.29,7593.21,IT Equipment,PO-2026-9374,Standard invoice for it equipment
+INV-0934,MMT/2026/CUKNTA,MakeMyTrip India Pvt Ltd,2026-10-15,2026-11-14,INR,6800.0,1224.0,8024.0,Office Supplies,PO-2026-8532,Standard invoice for office supplies
+INV-0935,ZOHO/2026/9YHCPG,Zoho Corporation Pvt Ltd,2026-10-15,2026-11-14,INR,5050.0,909.0,5959.0,Professional Services,PO-2026-2621,Standard invoice for professional services
+INV-0940,LEN/2026/3RC6A7,Lenovo India Private Limited,2026-10-15,2026-11-14,INR,7850.0,1413.0,9263.0,Logistics,PO-2026-8582,Standard invoice for logistics
+INV-0200,DELL/2026/0441,Dell Technologies Inc,2026-11-15,2026-12-15,INR,35000.0,6300.0,41300.0,IT Equipment,PO-2026-0441,High performance server development unit
+INV-0936,APX/2026/C5S8CH,Apex Solutions Private Limited,2026-11-18,2026-12-18,INR,8900.0,1602.0,10502.0,Utilities,PO-2026-3745,Standard invoice for utilities
+INV-0942,TCS/2026/CHDKDA,Tata Consultancy Services,2026-11-25,2026-12-25,INR,5750.0,1035.0,6785.0,Professional Services,PO-2026-4378,Standard invoice for professional services
+INV-0937,HCL/2026/JD4HBB,HCL Technologies Limited,2026-12-14,2027-01-13,INR,6800.0,1224.0,8024.0,Software & Licenses,PO-2026-8933,Standard invoice for software & licenses
+INV-0938,REL/2026/G487JH,Reliance Retail Limited,2026-12-14,2027-01-13,INR,5400.0,972.0,6372.0,Logistics,PO-2026-7720,Standard invoice for logistics
+INV-0939,LTI/2026/KFYYV8,Larsen and Toubro Infotech,2026-12-14,2027-01-13,INR,4700.0,846.0,5546.0,Software & Licenses,PO-2026-2869,Standard invoice for software & licenses
+INV-0941,TCS/2026/KGD3BM,Tata Consultancy Services,2026-12-20,2027-01-19,INR,5750.0,1035.0,6785.0,Utilities,PO-2026-9117,Standard invoice for utilities
+INV-0929,HCL/2026/PZFHTX,HCL Technologies Limited,99/99/9999,2026-02-15,INR,6800.0,1224.0,8024.0,Office Supplies,PO-2026-1692,Standard invoice for office supplies
+INV-0930,HP/2026/HHFG2A,HP India Sales Pvt Ltd,INVALID-DATE,2026-09-18,INR,5400.0,972.0,6372.0,Raw Materials,PO-2026-7155,Standard invoice for raw materials
+INV-0931,MSFT/2026/AGRVPD,Microsoft India Pvt Ltd,not a date,2026-08-23,INR,7150.0,1287.0,8437.0,Raw Materials,PO-2026-7187,Standard invoice for raw materials
+INV-0932,BD/2026/YAKF5B,Blue Dart Express Ltd,2026-02-30,2026-05-17,INR,5750.0,1035.0,6785.0,Logistics,PO-2026-6002,Standard invoice for logistics
+INV-0933,PSYS/2026/FCHAB7,Persistent Systems Ltd,INVALID-DATE,2026-10-25,INR,6800.0,1224.0,8024.0,Logistics,PO-2026-7973,Standard invoice for logistics
+INV-0896,LEN/2026/CFPYM2,Lenovo India Private Limited,,2025-12-24,INR,7850.0,1413.0,9263.0,Software & Licenses,PO-2026-2892,Standard invoice for software & licenses
+INV-0901,SIEM/2026/HEQQVC,Siemens Industry Software,,2026-03-30,INR,6450.0,1161.0,7611.0,Software & Licenses,PO-2026-7327,Standard invoice for software & licenses
+INV-0903,FDX/2026/FNXFRT,FedEx Express Logistics,,2026-07-24,INR,4000.0,720.0,4720.0,Maintenance,PO-2026-4412,Standard invoice for maintenance
+INV-0906,LEN/2026/VBK57V,Lenovo India Private Limited,,2026-09-21,INR,7850.0,1413.0,9263.0,Utilities,PO-2026-1747,Standard invoice for utilities
+INV-0907,SMSG/2026/AK6C37,Samsung India Electronics,,2026-06-24,INR,4350.0,783.0,5133.0,Utilities,PO-2026-4109,Standard invoice for utilities
+INV-0908,AC/2026/5G627N,Acme Pvt Ltd,,2026-07-22,INR,7150.0,1287.0,8437.0,Maintenance,PO-2026-9994,Standard invoice for maintenance

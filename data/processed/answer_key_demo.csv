@@ -1,0 +1,1001 @@
+invoice_id,is_bad,expected_exception_type,matched_record,note
+INV-0099,0,none,,Clean baseline invoice
+INV-0382,0,none,,Clean baseline invoice
+INV-0496,0,none,,Clean baseline invoice
+INV-0560,0,none,,Clean baseline invoice
+INV-0572,0,none,,Clean baseline invoice
+INV-0010,0,none,,Clean baseline invoice
+INV-0259,0,none,,Clean baseline invoice
+INV-0298,0,none,,Clean baseline invoice
+INV-0319,0,none,,Clean baseline invoice
+INV-0750,0,none,,Clean baseline invoice
+INV-0014,0,none,,Clean baseline invoice
+INV-0162,0,none,,Clean baseline invoice
+INV-0208,0,none,,Clean baseline invoice
+INV-0314,0,none,,Clean baseline invoice
+INV-0316,0,none,,Clean baseline invoice
+INV-0528,0,none,,Clean baseline invoice
+INV-0639,0,none,,Clean baseline invoice
+INV-0739,0,none,,Clean baseline invoice
+INV-0018,0,none,,Clean baseline invoice
+INV-0030,0,none,,Clean baseline invoice
+INV-0157,0,none,,Clean baseline invoice
+INV-0442,0,none,,Clean baseline invoice
+INV-0488,0,none,,Clean baseline invoice
+INV-0600,0,none,,Clean baseline invoice
+INV-0878,1,fuzzy_duplicate,INV-0010,Fuzzy duplicate of INV-0010
+INV-0974,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0022,0,none,,Clean baseline invoice
+INV-0427,0,none,,Clean baseline invoice
+INV-0535,0,none,,Clean baseline invoice
+INV-0536,0,none,,Clean baseline invoice
+INV-0864,1,fuzzy_duplicate,INV-0162,Fuzzy duplicate of INV-0162
+INV-0886,1,fuzzy_duplicate,INV-0162,Fuzzy duplicate of INV-0162
+INV-0994,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0073,0,none,,Clean baseline invoice
+INV-0447,0,none,,Clean baseline invoice
+INV-0494,0,none,,Clean baseline invoice
+INV-0701,0,none,,Clean baseline invoice
+INV-0665,0,none,,Clean baseline invoice
+INV-0726,0,none,,Clean baseline invoice
+INV-0504,0,none,,Clean baseline invoice
+INV-0810,0,none,,Clean baseline invoice
+INV-0173,0,none,,Clean baseline invoice
+INV-0315,0,none,,Clean baseline invoice
+INV-0355,0,none,,Clean baseline invoice
+INV-0636,0,none,,Clean baseline invoice
+INV-0235,0,none,,Clean baseline invoice
+INV-0530,0,none,,Clean baseline invoice
+INV-0589,0,none,,Clean baseline invoice
+INV-0693,0,none,,Clean baseline invoice
+INV-0958,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0041,0,none,,Clean baseline invoice
+INV-0172,0,none,,Clean baseline invoice
+INV-0467,0,none,,Clean baseline invoice
+INV-0533,0,none,,Clean baseline invoice
+INV-0803,0,none,,Clean baseline invoice
+INV-0845,1,exact_duplicate,INV-0315,Exact duplicate of INV-0315
+INV-0957,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0549,0,none,,Clean baseline invoice
+INV-0594,0,none,,Clean baseline invoice
+INV-0782,0,none,,Clean baseline invoice
+INV-0110,0,none,,Clean baseline invoice
+INV-0241,0,none,,Clean baseline invoice
+INV-0351,0,none,,Clean baseline invoice
+INV-0588,0,none,,Clean baseline invoice
+INV-0619,0,none,,Clean baseline invoice
+INV-0623,0,none,,Clean baseline invoice
+INV-0637,0,none,,Clean baseline invoice
+INV-0806,0,none,,Clean baseline invoice
+INV-0926,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0392,0,none,,Clean baseline invoice
+INV-0705,0,none,,Clean baseline invoice
+INV-0479,0,none,,Clean baseline invoice
+INV-0580,0,none,,Clean baseline invoice
+INV-0704,0,none,,Clean baseline invoice
+INV-0874,1,fuzzy_duplicate,INV-0110,Fuzzy duplicate of INV-0110
+INV-0893,1,missing_field,,Required field omitted
+INV-0965,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0144,0,none,,Clean baseline invoice
+INV-0502,0,none,,Clean baseline invoice
+INV-0752,0,none,,Clean baseline invoice
+INV-0028,0,none,,Clean baseline invoice
+INV-0156,0,none,,Clean baseline invoice
+INV-0203,0,none,,Clean baseline invoice
+INV-0226,0,none,,Clean baseline invoice
+INV-0539,0,none,,Clean baseline invoice
+INV-0115,0,none,,Clean baseline invoice
+INV-0271,0,none,,Clean baseline invoice
+INV-0644,0,none,,Clean baseline invoice
+INV-0681,0,none,,Clean baseline invoice
+INV-0770,0,none,,Clean baseline invoice
+INV-0816,0,none,,Clean baseline invoice
+INV-0303,0,none,,Clean baseline invoice
+INV-0353,0,none,,Clean baseline invoice
+INV-0485,0,none,,Clean baseline invoice
+INV-0503,0,none,,Clean baseline invoice
+INV-0628,0,none,,Clean baseline invoice
+INV-0651,0,none,,Clean baseline invoice
+INV-0811,0,none,,Clean baseline invoice
+INV-0820,1,exact_duplicate,INV-0203,Exact duplicate of INV-0203
+INV-0044,0,none,,Clean baseline invoice
+INV-0132,0,none,,Clean baseline invoice
+INV-0185,0,none,,Clean baseline invoice
+INV-0299,0,none,,Clean baseline invoice
+INV-0385,0,none,,Clean baseline invoice
+INV-0453,0,none,,Clean baseline invoice
+INV-0465,0,none,,Clean baseline invoice
+INV-0584,0,none,,Clean baseline invoice
+INV-0946,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0034,0,none,,Clean baseline invoice
+INV-0366,0,none,,Clean baseline invoice
+INV-0378,0,none,,Clean baseline invoice
+INV-0703,0,none,,Clean baseline invoice
+INV-0744,0,none,,Clean baseline invoice
+INV-0176,0,none,,Clean baseline invoice
+INV-0323,0,none,,Clean baseline invoice
+INV-0325,0,none,,Clean baseline invoice
+INV-0569,0,none,,Clean baseline invoice
+INV-0738,0,none,,Clean baseline invoice
+INV-0927,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0189,0,none,,Clean baseline invoice
+INV-0224,0,none,,Clean baseline invoice
+INV-0345,0,none,,Clean baseline invoice
+INV-0547,0,none,,Clean baseline invoice
+INV-0568,0,none,,Clean baseline invoice
+INV-0652,0,none,,Clean baseline invoice
+INV-0870,1,fuzzy_duplicate,INV-0323,Fuzzy duplicate of INV-0323
+INV-0875,1,fuzzy_duplicate,INV-0378,Fuzzy duplicate of INV-0378
+INV-0080,0,none,,Clean baseline invoice
+INV-0306,0,none,,Clean baseline invoice
+INV-0354,0,none,,Clean baseline invoice
+INV-0534,0,none,,Clean baseline invoice
+INV-0641,0,none,,Clean baseline invoice
+INV-0872,1,fuzzy_duplicate,INV-0189,Fuzzy duplicate of INV-0189
+INV-0892,1,missing_field,,Required field omitted
+INV-0947,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0973,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0975,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0980,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0216,0,none,,Clean baseline invoice
+INV-0400,0,none,,Clean baseline invoice
+INV-0126,0,none,,Clean baseline invoice
+INV-0308,0,none,,Clean baseline invoice
+INV-0145,0,none,,Clean baseline invoice
+INV-0365,0,none,,Clean baseline invoice
+INV-0683,0,none,,Clean baseline invoice
+INV-0789,0,none,,Clean baseline invoice
+INV-0868,1,fuzzy_duplicate,INV-0126,Fuzzy duplicate of INV-0126
+INV-0098,0,none,,Clean baseline invoice
+INV-0129,0,none,,Clean baseline invoice
+INV-0297,0,none,,Clean baseline invoice
+INV-0311,0,none,,Clean baseline invoice
+INV-0356,0,none,,Clean baseline invoice
+INV-0513,0,none,,Clean baseline invoice
+INV-0777,0,none,,Clean baseline invoice
+INV-0984,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0217,0,none,,Clean baseline invoice
+INV-0309,0,none,,Clean baseline invoice
+INV-0362,0,none,,Clean baseline invoice
+INV-0265,0,none,,Clean baseline invoice
+INV-0267,0,none,,Clean baseline invoice
+INV-0274,0,none,,Clean baseline invoice
+INV-0321,0,none,,Clean baseline invoice
+INV-0395,0,none,,Clean baseline invoice
+INV-0617,0,none,,Clean baseline invoice
+INV-0711,0,none,,Clean baseline invoice
+INV-0734,0,none,,Clean baseline invoice
+INV-0823,1,exact_duplicate,INV-0217,Exact duplicate of INV-0217
+INV-0976,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0261,0,none,,Clean baseline invoice
+INV-0358,0,none,,Clean baseline invoice
+INV-0374,0,none,,Clean baseline invoice
+INV-0379,0,none,,Clean baseline invoice
+INV-0393,0,none,,Clean baseline invoice
+INV-0469,0,none,,Clean baseline invoice
+INV-0544,0,none,,Clean baseline invoice
+INV-0662,0,none,,Clean baseline invoice
+INV-0819,0,none,,Clean baseline invoice
+INV-0871,1,fuzzy_duplicate,INV-0311,Fuzzy duplicate of INV-0311
+INV-0873,1,fuzzy_duplicate,INV-0393,Fuzzy duplicate of INV-0393
+INV-0026,0,none,,Clean baseline invoice
+INV-0234,0,none,,Clean baseline invoice
+INV-0477,0,none,,Clean baseline invoice
+INV-0648,0,none,,Clean baseline invoice
+INV-0676,0,none,,Clean baseline invoice
+INV-0991,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0021,0,none,,Clean baseline invoice
+INV-0072,0,none,,Clean baseline invoice
+INV-0206,0,none,,Clean baseline invoice
+INV-0359,0,none,,Clean baseline invoice
+INV-0754,0,none,,Clean baseline invoice
+INV-0802,0,none,,Clean baseline invoice
+INV-0998,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0037,0,none,,Clean baseline invoice
+INV-0215,0,none,,Clean baseline invoice
+INV-0262,0,none,,Clean baseline invoice
+INV-0291,0,none,,Clean baseline invoice
+INV-0396,0,none,,Clean baseline invoice
+INV-0428,0,none,,Clean baseline invoice
+INV-0567,0,none,,Clean baseline invoice
+INV-0834,1,exact_duplicate,INV-0206,Exact duplicate of INV-0206
+INV-0078,0,none,,Clean baseline invoice
+INV-0017,0,none,,Clean baseline invoice
+INV-0197,0,none,,Clean baseline invoice
+INV-0250,0,none,,Clean baseline invoice
+INV-0280,0,none,,Clean baseline invoice
+INV-0609,0,none,,Clean baseline invoice
+INV-0672,0,none,,Clean baseline invoice
+INV-0813,0,none,,Clean baseline invoice
+INV-0910,1,missing_field,,Required field omitted
+INV-0182,0,none,,Clean baseline invoice
+INV-0204,0,none,,Clean baseline invoice
+INV-0380,0,none,,Clean baseline invoice
+INV-0869,1,fuzzy_duplicate,INV-0215,Fuzzy duplicate of INV-0215
+INV-0895,1,missing_field,,Required field omitted
+INV-0067,0,none,,Clean baseline invoice
+INV-0339,0,none,,Clean baseline invoice
+INV-0383,0,none,,Clean baseline invoice
+INV-0406,0,none,,Clean baseline invoice
+INV-0389,0,none,,Clean baseline invoice
+INV-0487,0,none,,Clean baseline invoice
+INV-0702,0,none,,Clean baseline invoice
+INV-0853,1,exact_duplicate,INV-0406,Exact duplicate of INV-0406
+INV-0904,1,missing_field,,Required field omitted
+INV-0077,0,none,,Clean baseline invoice
+INV-0198,0,none,,Clean baseline invoice
+INV-0511,0,none,,Clean baseline invoice
+INV-0608,0,none,,Clean baseline invoice
+INV-0708,0,none,,Clean baseline invoice
+INV-0949,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0388,0,none,,Clean baseline invoice
+INV-0438,0,none,,Clean baseline invoice
+INV-0579,0,none,,Clean baseline invoice
+INV-0724,0,none,,Clean baseline invoice
+INV-0786,0,none,,Clean baseline invoice
+INV-0860,1,fuzzy_duplicate,INV-0389,Fuzzy duplicate of INV-0389
+INV-0968,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0057,0,none,,Clean baseline invoice
+INV-0219,0,none,,Clean baseline invoice
+INV-0519,0,none,,Clean baseline invoice
+INV-0523,0,none,,Clean baseline invoice
+INV-0611,0,none,,Clean baseline invoice
+INV-0725,0,none,,Clean baseline invoice
+INV-0850,1,exact_duplicate,INV-0198,Exact duplicate of INV-0198
+INV-0518,0,none,,Clean baseline invoice
+INV-0656,0,none,,Clean baseline invoice
+INV-0776,0,none,,Clean baseline invoice
+INV-0814,0,none,,Clean baseline invoice
+INV-0039,0,none,,Clean baseline invoice
+INV-0371,0,none,,Clean baseline invoice
+INV-0550,0,none,,Clean baseline invoice
+INV-0706,0,none,,Clean baseline invoice
+INV-0712,0,none,,Clean baseline invoice
+INV-0765,0,none,,Clean baseline invoice
+INV-0774,0,none,,Clean baseline invoice
+INV-0861,1,fuzzy_duplicate,INV-0388,Fuzzy duplicate of INV-0388
+INV-0474,0,none,,Clean baseline invoice
+INV-0650,0,none,,Clean baseline invoice
+INV-0689,0,none,,Clean baseline invoice
+INV-0175,0,none,,Clean baseline invoice
+INV-0767,0,none,,Clean baseline invoice
+INV-0188,0,none,,Clean baseline invoice
+INV-0240,0,none,,Clean baseline invoice
+INV-0410,0,none,,Clean baseline invoice
+INV-0497,0,none,,Clean baseline invoice
+INV-0659,0,none,,Clean baseline invoice
+INV-0821,1,exact_duplicate,INV-0175,Exact duplicate of INV-0175
+INV-0841,1,exact_duplicate,INV-0188,Exact duplicate of INV-0188
+INV-0847,1,exact_duplicate,INV-0188,Exact duplicate of INV-0188
+INV-0723,0,none,,Clean baseline invoice
+INV-0506,0,none,,Clean baseline invoice
+INV-0714,0,none,,Clean baseline invoice
+INV-0626,0,none,,Clean baseline invoice
+INV-0008,0,none,,Clean baseline invoice
+INV-0058,0,none,,Clean baseline invoice
+INV-0201,0,none,,Clean baseline invoice
+INV-0225,0,none,,Clean baseline invoice
+INV-0343,0,none,,Clean baseline invoice
+INV-0460,0,none,,Clean baseline invoice
+INV-0512,0,none,,Clean baseline invoice
+INV-0694,0,none,,Clean baseline invoice
+INV-0736,0,none,,Clean baseline invoice
+INV-0007,0,none,,Clean baseline invoice
+INV-0193,0,none,,Clean baseline invoice
+INV-0514,0,none,,Clean baseline invoice
+INV-0787,0,none,,Clean baseline invoice
+INV-0791,0,none,,Clean baseline invoice
+INV-0060,0,none,,Clean baseline invoice
+INV-0127,0,none,,Clean baseline invoice
+INV-0369,0,none,,Clean baseline invoice
+INV-0507,0,none,,Clean baseline invoice
+INV-0524,0,none,,Clean baseline invoice
+INV-0575,0,none,,Clean baseline invoice
+INV-0755,0,none,,Clean baseline invoice
+INV-0990,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0242,0,none,,Clean baseline invoice
+INV-0720,0,none,,Clean baseline invoice
+INV-0829,1,exact_duplicate,INV-0060,Exact duplicate of INV-0060
+INV-0025,0,none,,Clean baseline invoice
+INV-0264,0,none,,Clean baseline invoice
+INV-0809,0,none,,Clean baseline invoice
+INV-0220,0,none,,Clean baseline invoice
+INV-0559,0,none,,Clean baseline invoice
+INV-0684,0,none,,Clean baseline invoice
+INV-0797,0,none,,Clean baseline invoice
+INV-0107,0,none,,Clean baseline invoice
+INV-0147,0,none,,Clean baseline invoice
+INV-0202,0,none,,Clean baseline invoice
+INV-0333,0,none,,Clean baseline invoice
+INV-0557,0,none,,Clean baseline invoice
+INV-0105,0,none,,Clean baseline invoice
+INV-0149,0,none,,Clean baseline invoice
+INV-0238,0,none,,Clean baseline invoice
+INV-0329,0,none,,Clean baseline invoice
+INV-0342,0,none,,Clean baseline invoice
+INV-0614,0,none,,Clean baseline invoice
+INV-0982,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0119,0,none,,Clean baseline invoice
+INV-0603,0,none,,Clean baseline invoice
+INV-0733,0,none,,Clean baseline invoice
+INV-0909,1,missing_field,,Required field omitted
+INV-0548,0,none,,Clean baseline invoice
+INV-0606,0,none,,Clean baseline invoice
+INV-0951,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0255,0,none,,Clean baseline invoice
+INV-0746,0,none,,Clean baseline invoice
+INV-0161,0,none,,Clean baseline invoice
+INV-0452,0,none,,Clean baseline invoice
+INV-0653,0,none,,Clean baseline invoice
+INV-0772,0,none,,Clean baseline invoice
+INV-0091,0,none,,Clean baseline invoice
+INV-0179,0,none,,Clean baseline invoice
+INV-0282,0,none,,Clean baseline invoice
+INV-0387,0,none,,Clean baseline invoice
+INV-0578,0,none,,Clean baseline invoice
+INV-0766,0,none,,Clean baseline invoice
+INV-0843,1,exact_duplicate,INV-0282,Exact duplicate of INV-0282
+INV-0879,1,fuzzy_duplicate,INV-0179,Fuzzy duplicate of INV-0179
+INV-0082,0,none,,Clean baseline invoice
+INV-0272,0,none,,Clean baseline invoice
+INV-0108,0,none,,Clean baseline invoice
+INV-0361,0,none,,Clean baseline invoice
+INV-0439,0,none,,Clean baseline invoice
+INV-0440,0,none,,Clean baseline invoice
+INV-0489,0,none,,Clean baseline invoice
+INV-0700,0,none,,Clean baseline invoice
+INV-0859,1,fuzzy_duplicate,INV-0272,Fuzzy duplicate of INV-0272
+INV-0092,0,none,,Clean baseline invoice
+INV-0368,0,none,,Clean baseline invoice
+INV-0377,0,none,,Clean baseline invoice
+INV-0709,0,none,,Clean baseline invoice
+INV-0743,0,none,,Clean baseline invoice
+INV-0760,0,none,,Clean baseline invoice
+INV-0033,0,none,,Clean baseline invoice
+INV-0210,0,none,,Clean baseline invoice
+INV-0381,0,none,,Clean baseline invoice
+INV-0102,0,none,,Clean baseline invoice
+INV-0245,0,none,,Clean baseline invoice
+INV-0424,0,none,,Clean baseline invoice
+INV-0565,0,none,,Clean baseline invoice
+INV-0089,0,none,,Clean baseline invoice
+INV-0221,0,none,,Clean baseline invoice
+INV-0425,0,none,,Clean baseline invoice
+INV-0687,0,none,,Clean baseline invoice
+INV-0795,0,none,,Clean baseline invoice
+INV-0891,1,missing_field,,Required field omitted
+INV-0199,0,none,,Clean baseline invoice
+INV-0251,0,none,,Clean baseline invoice
+INV-0398,0,none,,Clean baseline invoice
+INV-0437,0,none,,Clean baseline invoice
+INV-0470,0,none,,Clean baseline invoice
+INV-0634,0,none,,Clean baseline invoice
+INV-0635,0,none,,Clean baseline invoice
+INV-0180,0,none,,Clean baseline invoice
+INV-0313,0,none,,Clean baseline invoice
+INV-0695,0,none,,Clean baseline invoice
+INV-0790,0,none,,Clean baseline invoice
+INV-0213,0,none,,Clean baseline invoice
+INV-0330,0,none,,Clean baseline invoice
+INV-0680,0,none,,Clean baseline invoice
+INV-0747,0,none,,Clean baseline invoice
+INV-0045,0,none,,Clean baseline invoice
+INV-0384,0,none,,Clean baseline invoice
+INV-0591,0,none,,Clean baseline invoice
+INV-0771,0,none,,Clean baseline invoice
+INV-0773,0,none,,Clean baseline invoice
+INV-0902,1,missing_field,,Required field omitted
+INV-0988,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0029,0,none,,Clean baseline invoice
+INV-0228,0,none,,Clean baseline invoice
+INV-0505,0,none,,Clean baseline invoice
+INV-0745,0,none,,Clean baseline invoice
+INV-0921,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0003,0,none,,Clean baseline invoice
+INV-0573,0,none,,Clean baseline invoice
+INV-0602,0,none,,Clean baseline invoice
+INV-0775,0,none,,Clean baseline invoice
+INV-0106,0,none,,Clean baseline invoice
+INV-0192,0,none,,Clean baseline invoice
+INV-0227,0,none,,Clean baseline invoice
+INV-0414,0,none,,Clean baseline invoice
+INV-0825,1,exact_duplicate,INV-0227,Exact duplicate of INV-0227
+INV-0827,1,exact_duplicate,INV-0192,Exact duplicate of INV-0192
+INV-0023,0,none,,Clean baseline invoice
+INV-0150,0,none,,Clean baseline invoice
+INV-0620,0,none,,Clean baseline invoice
+INV-0783,0,none,,Clean baseline invoice
+INV-0054,0,none,,Clean baseline invoice
+INV-0075,0,none,,Clean baseline invoice
+INV-0233,0,none,,Clean baseline invoice
+INV-0491,0,none,,Clean baseline invoice
+INV-0545,0,none,,Clean baseline invoice
+INV-0166,0,none,,Clean baseline invoice
+INV-0253,0,none,,Clean baseline invoice
+INV-0295,0,none,,Clean baseline invoice
+INV-0678,0,none,,Clean baseline invoice
+INV-0111,0,none,,Clean baseline invoice
+INV-0112,0,none,,Clean baseline invoice
+INV-0373,0,none,,Clean baseline invoice
+INV-0376,0,none,,Clean baseline invoice
+INV-0399,0,none,,Clean baseline invoice
+INV-0458,0,none,,Clean baseline invoice
+INV-0563,0,none,,Clean baseline invoice
+INV-0621,0,none,,Clean baseline invoice
+INV-0944,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0178,0,none,,Clean baseline invoice
+INV-0431,0,none,,Clean baseline invoice
+INV-0960,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0059,0,none,,Clean baseline invoice
+INV-0134,0,none,,Clean baseline invoice
+INV-0194,0,none,,Clean baseline invoice
+INV-0433,0,none,,Clean baseline invoice
+INV-0462,0,none,,Clean baseline invoice
+INV-0555,0,none,,Clean baseline invoice
+INV-0123,0,none,,Clean baseline invoice
+INV-0451,0,none,,Clean baseline invoice
+INV-0583,0,none,,Clean baseline invoice
+INV-0858,1,exact_duplicate,INV-0376,Exact duplicate of INV-0376
+INV-0880,1,fuzzy_duplicate,INV-0059,Fuzzy duplicate of INV-0059
+INV-0884,1,fuzzy_duplicate,INV-0399,Fuzzy duplicate of INV-0399
+INV-0985,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0047,0,none,,Clean baseline invoice
+INV-0288,0,none,,Clean baseline invoice
+INV-0604,0,none,,Clean baseline invoice
+INV-0612,0,none,,Clean baseline invoice
+INV-0997,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0052,0,none,,Clean baseline invoice
+INV-0076,0,none,,Clean baseline invoice
+INV-0104,0,none,,Clean baseline invoice
+INV-0118,0,none,,Clean baseline invoice
+INV-0174,0,none,,Clean baseline invoice
+INV-0561,0,none,,Clean baseline invoice
+INV-0781,0,none,,Clean baseline invoice
+INV-0141,0,none,,Clean baseline invoice
+INV-0148,0,none,,Clean baseline invoice
+INV-0254,0,none,,Clean baseline invoice
+INV-0417,0,none,,Clean baseline invoice
+INV-0675,0,none,,Clean baseline invoice
+INV-0818,0,none,,Clean baseline invoice
+INV-0304,0,none,,Clean baseline invoice
+INV-0666,0,none,,Clean baseline invoice
+INV-0063,0,none,,Clean baseline invoice
+INV-0086,0,none,,Clean baseline invoice
+INV-0218,0,none,,Clean baseline invoice
+INV-0347,0,none,,Clean baseline invoice
+INV-0682,0,none,,Clean baseline invoice
+INV-0833,1,exact_duplicate,INV-0141,Exact duplicate of INV-0141
+INV-0866,1,fuzzy_duplicate,INV-0174,Fuzzy duplicate of INV-0174
+INV-0883,1,fuzzy_duplicate,INV-0118,Fuzzy duplicate of INV-0118
+INV-0918,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0999,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0048,0,none,,Clean baseline invoice
+INV-0209,0,none,,Clean baseline invoice
+INV-0407,0,none,,Clean baseline invoice
+INV-0486,0,none,,Clean baseline invoice
+INV-0857,1,exact_duplicate,INV-0141,Exact duplicate of INV-0141
+INV-0062,0,none,,Clean baseline invoice
+INV-0153,0,none,,Clean baseline invoice
+INV-0566,0,none,,Clean baseline invoice
+INV-0826,1,exact_duplicate,INV-0218,Exact duplicate of INV-0218
+INV-0275,0,none,,Clean baseline invoice
+INV-0415,0,none,,Clean baseline invoice
+INV-0475,0,none,,Clean baseline invoice
+INV-0691,0,none,,Clean baseline invoice
+INV-0831,1,exact_duplicate,INV-0086,Exact duplicate of INV-0086
+INV-0978,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0995,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0509,0,none,,Clean baseline invoice
+INV-0520,0,none,,Clean baseline invoice
+INV-0732,0,none,,Clean baseline invoice
+INV-0785,0,none,,Clean baseline invoice
+INV-0084,0,none,,Clean baseline invoice
+INV-0492,0,none,,Clean baseline invoice
+INV-0050,0,none,,Clean baseline invoice
+INV-0130,0,none,,Clean baseline invoice
+INV-0249,0,none,,Clean baseline invoice
+INV-0643,0,none,,Clean baseline invoice
+INV-0740,0,none,,Clean baseline invoice
+INV-0312,0,none,,Clean baseline invoice
+INV-0397,0,none,,Clean baseline invoice
+INV-0409,0,none,,Clean baseline invoice
+INV-0764,0,none,,Clean baseline invoice
+INV-0852,1,exact_duplicate,INV-0130,Exact duplicate of INV-0130
+INV-0155,0,none,,Clean baseline invoice
+INV-0256,0,none,,Clean baseline invoice
+INV-0263,0,none,,Clean baseline invoice
+INV-0061,0,none,,Clean baseline invoice
+INV-0276,0,none,,Clean baseline invoice
+INV-0338,0,none,,Clean baseline invoice
+INV-0669,0,none,,Clean baseline invoice
+INV-0977,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0064,0,none,,Clean baseline invoice
+INV-0302,0,none,,Clean baseline invoice
+INV-0510,0,none,,Clean baseline invoice
+INV-0576,0,none,,Clean baseline invoice
+INV-0632,0,none,,Clean baseline invoice
+INV-0848,1,exact_duplicate,INV-0302,Exact duplicate of INV-0302
+INV-0867,1,fuzzy_duplicate,INV-0256,Fuzzy duplicate of INV-0256
+INV-0928,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0979,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0230,0,none,,Clean baseline invoice
+INV-0667,0,none,,Clean baseline invoice
+INV-0698,0,none,,Clean baseline invoice
+INV-0828,1,exact_duplicate,INV-0263,Exact duplicate of INV-0263
+INV-0116,0,none,,Clean baseline invoice
+INV-0645,0,none,,Clean baseline invoice
+INV-0244,0,none,,Clean baseline invoice
+INV-0742,0,none,,Clean baseline invoice
+INV-0290,0,none,,Clean baseline invoice
+INV-0412,0,none,,Clean baseline invoice
+INV-0167,0,none,,Clean baseline invoice
+INV-0522,0,none,,Clean baseline invoice
+INV-0629,0,none,,Clean baseline invoice
+INV-0952,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0103,0,none,,Clean baseline invoice
+INV-0136,0,none,,Clean baseline invoice
+INV-0444,0,none,,Clean baseline invoice
+INV-0495,0,none,,Clean baseline invoice
+INV-0527,0,none,,Clean baseline invoice
+INV-0613,0,none,,Clean baseline invoice
+INV-0024,0,none,,Clean baseline invoice
+INV-0266,0,none,,Clean baseline invoice
+INV-0445,0,none,,Clean baseline invoice
+INV-0729,0,none,,Clean baseline invoice
+INV-0735,0,none,,Clean baseline invoice
+INV-0152,0,none,,Clean baseline invoice
+INV-0335,0,none,,Clean baseline invoice
+INV-0337,0,none,,Clean baseline invoice
+INV-0364,0,none,,Clean baseline invoice
+INV-0882,1,fuzzy_duplicate,INV-0136,Fuzzy duplicate of INV-0136
+INV-0394,0,none,,Clean baseline invoice
+INV-0466,0,none,,Clean baseline invoice
+INV-0553,0,none,,Clean baseline invoice
+INV-0647,0,none,,Clean baseline invoice
+INV-0657,0,none,,Clean baseline invoice
+INV-0804,0,none,,Clean baseline invoice
+INV-0808,0,none,,Clean baseline invoice
+INV-0855,1,exact_duplicate,INV-0364,Exact duplicate of INV-0364
+INV-0911,1,missing_field,,Required field omitted
+INV-0088,0,none,,Clean baseline invoice
+INV-0159,0,none,,Clean baseline invoice
+INV-0737,0,none,,Clean baseline invoice
+INV-0894,1,missing_field,,Required field omitted
+INV-0943,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0983,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0426,0,none,,Clean baseline invoice
+INV-0993,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0124,0,none,,Clean baseline invoice
+INV-0587,0,none,,Clean baseline invoice
+INV-0596,0,none,,Clean baseline invoice
+INV-0741,0,none,,Clean baseline invoice
+INV-0593,0,none,,Clean baseline invoice
+INV-0125,0,none,,Clean baseline invoice
+INV-0190,0,none,,Clean baseline invoice
+INV-0273,0,none,,Clean baseline invoice
+INV-0456,0,none,,Clean baseline invoice
+INV-0679,0,none,,Clean baseline invoice
+INV-0699,0,none,,Clean baseline invoice
+INV-0769,0,none,,Clean baseline invoice
+INV-0031,0,none,,Clean baseline invoice
+INV-0158,0,none,,Clean baseline invoice
+INV-0284,0,none,,Clean baseline invoice
+INV-0463,0,none,,Clean baseline invoice
+INV-0917,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0961,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0095,0,none,,Clean baseline invoice
+INV-0205,0,none,,Clean baseline invoice
+INV-0222,0,none,,Clean baseline invoice
+INV-0236,0,none,,Clean baseline invoice
+INV-0012,0,none,,Clean baseline invoice
+INV-0430,0,none,,Clean baseline invoice
+INV-0508,0,none,,Clean baseline invoice
+INV-0686,0,none,,Clean baseline invoice
+INV-0721,0,none,,Clean baseline invoice
+INV-0016,0,none,,Clean baseline invoice
+INV-0096,0,none,,Clean baseline invoice
+INV-0615,0,none,,Clean baseline invoice
+INV-0627,0,none,,Clean baseline invoice
+INV-0842,1,exact_duplicate,INV-0031,Exact duplicate of INV-0031
+INV-0310,0,none,,Clean baseline invoice
+INV-0455,0,none,,Clean baseline invoice
+INV-0464,0,none,,Clean baseline invoice
+INV-0471,0,none,,Clean baseline invoice
+INV-0100,1,missing_field,,Planted showcase missing vendor
+INV-0056,0,none,,Clean baseline invoice
+INV-0277,0,none,,Clean baseline invoice
+INV-0278,0,none,,Clean baseline invoice
+INV-0422,0,none,,Clean baseline invoice
+INV-0577,0,none,,Clean baseline invoice
+INV-0607,0,none,,Clean baseline invoice
+INV-0610,0,none,,Clean baseline invoice
+INV-0692,0,none,,Clean baseline invoice
+INV-0956,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0401,0,none,,Clean baseline invoice
+INV-0581,0,none,,Clean baseline invoice
+INV-0945,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0154,0,none,,Clean baseline invoice
+INV-0269,0,none,,Clean baseline invoice
+INV-0363,0,none,,Clean baseline invoice
+INV-0441,0,none,,Clean baseline invoice
+INV-0778,0,none,,Clean baseline invoice
+INV-0121,0,none,,Clean baseline invoice
+INV-0260,0,none,,Clean baseline invoice
+INV-0624,0,none,,Clean baseline invoice
+INV-0863,1,fuzzy_duplicate,INV-0278,Fuzzy duplicate of INV-0278
+INV-0019,0,none,,Clean baseline invoice
+INV-0673,0,none,,Clean baseline invoice
+INV-0784,0,none,,Clean baseline invoice
+INV-0292,0,none,,Clean baseline invoice
+INV-0341,0,none,,Clean baseline invoice
+INV-0344,0,none,,Clean baseline invoice
+INV-0449,0,none,,Clean baseline invoice
+INV-0571,0,none,,Clean baseline invoice
+INV-0590,0,none,,Clean baseline invoice
+INV-0605,0,none,,Clean baseline invoice
+INV-0713,0,none,,Clean baseline invoice
+INV-0779,0,none,,Clean baseline invoice
+INV-0986,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0006,0,none,,Clean baseline invoice
+INV-0403,0,none,,Clean baseline invoice
+INV-0418,0,none,,Clean baseline invoice
+INV-0435,0,none,,Clean baseline invoice
+INV-0448,0,none,,Clean baseline invoice
+INV-0481,0,none,,Clean baseline invoice
+INV-0005,0,none,,Clean baseline invoice
+INV-0046,0,none,,Clean baseline invoice
+INV-0097,0,none,,Clean baseline invoice
+INV-0283,0,none,,Clean baseline invoice
+INV-0796,0,none,,Clean baseline invoice
+INV-0856,1,exact_duplicate,INV-0019,Exact duplicate of INV-0019
+INV-0040,0,none,,Clean baseline invoice
+INV-0633,0,none,,Clean baseline invoice
+INV-0793,0,none,,Clean baseline invoice
+INV-0887,1,fuzzy_duplicate,INV-0292,Fuzzy duplicate of INV-0292
+INV-0955,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0163,0,none,,Clean baseline invoice
+INV-0454,0,none,,Clean baseline invoice
+INV-0756,0,none,,Clean baseline invoice
+INV-0899,1,missing_field,,Required field omitted
+INV-0071,0,none,,Clean baseline invoice
+INV-0085,0,none,,Clean baseline invoice
+INV-0181,0,none,,Clean baseline invoice
+INV-0332,0,none,,Clean baseline invoice
+INV-0552,0,none,,Clean baseline invoice
+INV-0562,0,none,,Clean baseline invoice
+INV-0649,0,none,,Clean baseline invoice
+INV-0685,0,none,,Clean baseline invoice
+INV-0962,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0500,0,none,,Clean showcase baseline
+INV-0164,0,none,,Clean baseline invoice
+INV-0419,0,none,,Clean baseline invoice
+INV-0546,0,none,,Clean baseline invoice
+INV-0677,0,none,,Clean baseline invoice
+INV-0294,0,none,,Clean baseline invoice
+INV-0324,0,none,,Clean baseline invoice
+INV-0996,1,amount_outlier,,Amount exceeds 3 standard deviations for vendor
+INV-0183,0,none,,Clean baseline invoice
+INV-0184,0,none,,Clean baseline invoice
+INV-0301,0,none,,Clean baseline invoice
+INV-0538,0,none,,Clean baseline invoice
+INV-0501,1,exact_duplicate,INV-0500,Planted showcase exact duplicate
+INV-0888,1,missing_field,,Required field omitted
+INV-0654,0,none,,Clean baseline invoice
+INV-0751,0,none,,Clean baseline invoice
+INV-0027,0,none,,Clean baseline invoice
+INV-0257,0,none,,Clean baseline invoice
+INV-0730,0,none,,Clean baseline invoice
+INV-0835,1,exact_duplicate,INV-0183,Exact duplicate of INV-0183
+INV-0915,1,missing_field,,Required field omitted
+INV-0970,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0160,0,none,,Clean baseline invoice
+INV-0307,0,none,,Clean baseline invoice
+INV-0749,0,none,,Clean baseline invoice
+INV-0822,1,exact_duplicate,INV-0257,Exact duplicate of INV-0257
+INV-0015,0,none,,Clean baseline invoice
+INV-0032,0,none,,Clean baseline invoice
+INV-0317,0,none,,Clean baseline invoice
+INV-0484,0,none,,Clean baseline invoice
+INV-0004,0,none,,Clean baseline invoice
+INV-0109,0,none,,Clean baseline invoice
+INV-0122,0,none,,Clean baseline invoice
+INV-0391,0,none,,Clean baseline invoice
+INV-0642,0,none,,Clean baseline invoice
+INV-0065,0,none,,Clean baseline invoice
+INV-0305,0,none,,Clean baseline invoice
+INV-0340,0,none,,Clean baseline invoice
+INV-0473,0,none,,Clean baseline invoice
+INV-0663,0,none,,Clean baseline invoice
+INV-0830,1,exact_duplicate,INV-0305,Exact duplicate of INV-0305
+INV-0836,1,exact_duplicate,INV-0109,Exact duplicate of INV-0109
+INV-0959,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0093,0,none,,Clean baseline invoice
+INV-0450,0,none,,Clean baseline invoice
+INV-0715,0,none,,Clean baseline invoice
+INV-0066,0,none,,Clean baseline invoice
+INV-0223,0,none,,Clean baseline invoice
+INV-0348,0,none,,Clean baseline invoice
+INV-0671,0,none,,Clean baseline invoice
+INV-0844,1,exact_duplicate,INV-0122,Exact duplicate of INV-0122
+INV-0165,0,none,,Clean baseline invoice
+INV-0728,0,none,,Clean baseline invoice
+INV-0186,0,none,,Clean baseline invoice
+INV-0794,0,none,,Clean baseline invoice
+INV-0877,1,fuzzy_duplicate,INV-0348,Fuzzy duplicate of INV-0348
+INV-0296,0,none,,Clean baseline invoice
+INV-0807,0,none,,Clean baseline invoice
+INV-0170,0,none,,Clean baseline invoice
+INV-0540,0,none,,Clean baseline invoice
+INV-0043,0,none,,Clean baseline invoice
+INV-0390,0,none,,Clean baseline invoice
+INV-0719,0,none,,Clean baseline invoice
+INV-0763,0,none,,Clean baseline invoice
+INV-0002,0,none,,Clean baseline invoice
+INV-0592,0,none,,Clean baseline invoice
+INV-0638,0,none,,Clean baseline invoice
+INV-0717,0,none,,Clean baseline invoice
+INV-0798,0,none,,Clean baseline invoice
+INV-0035,0,none,,Clean baseline invoice
+INV-0137,0,none,,Clean baseline invoice
+INV-0252,0,none,,Clean baseline invoice
+INV-0897,1,missing_field,,Required field omitted
+INV-0094,0,none,,Clean baseline invoice
+INV-0286,0,none,,Clean baseline invoice
+INV-0862,1,fuzzy_duplicate,INV-0252,Fuzzy duplicate of INV-0252
+INV-0020,0,none,,Clean baseline invoice
+INV-0279,0,none,,Clean baseline invoice
+INV-0748,0,none,,Clean baseline invoice
+INV-0889,1,missing_field,,Required field omitted
+INV-0350,0,none,,Clean baseline invoice
+INV-0421,0,none,,Clean baseline invoice
+INV-0423,0,none,,Clean baseline invoice
+INV-0434,0,none,,Clean baseline invoice
+INV-0404,0,none,,Clean baseline invoice
+INV-0515,0,none,,Clean baseline invoice
+INV-0913,1,missing_field,,Required field omitted
+INV-0923,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0924,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0120,0,none,,Clean baseline invoice
+INV-0322,0,none,,Clean baseline invoice
+INV-0543,0,none,,Clean baseline invoice
+INV-0837,1,exact_duplicate,INV-0120,Exact duplicate of INV-0120
+INV-0916,1,missing_field,,Required field omitted
+INV-0300,1,policy_limit,,Planted showcase policy limit
+INV-0246,0,none,,Clean baseline invoice
+INV-0346,0,none,,Clean baseline invoice
+INV-0349,0,none,,Clean baseline invoice
+INV-0640,0,none,,Clean baseline invoice
+INV-0989,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0087,0,none,,Clean baseline invoice
+INV-0483,0,none,,Clean baseline invoice
+INV-0529,0,none,,Clean baseline invoice
+INV-0646,0,none,,Clean baseline invoice
+INV-0919,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0981,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0053,0,none,,Clean baseline invoice
+INV-0598,0,none,,Clean baseline invoice
+INV-0753,0,none,,Clean baseline invoice
+INV-0759,0,none,,Clean baseline invoice
+INV-0800,0,none,,Clean baseline invoice
+INV-0001,0,none,,Clean baseline invoice
+INV-0195,0,none,,Clean baseline invoice
+INV-0525,0,none,,Clean baseline invoice
+INV-0526,0,none,,Clean baseline invoice
+INV-0585,0,none,,Clean baseline invoice
+INV-0674,0,none,,Clean baseline invoice
+INV-0805,0,none,,Clean baseline invoice
+INV-0817,0,none,,Clean baseline invoice
+INV-0881,1,fuzzy_duplicate,INV-0087,Fuzzy duplicate of INV-0087
+INV-0890,1,missing_field,,Required field omitted
+INV-0972,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0055,0,none,,Clean baseline invoice
+INV-0081,0,none,,Clean baseline invoice
+INV-0168,0,none,,Clean baseline invoice
+INV-0229,0,none,,Clean baseline invoice
+INV-0289,0,none,,Clean baseline invoice
+INV-0468,0,none,,Clean baseline invoice
+INV-0101,0,none,,Clean baseline invoice
+INV-0285,0,none,,Clean baseline invoice
+INV-0318,0,none,,Clean baseline invoice
+INV-0436,0,none,,Clean baseline invoice
+INV-0472,0,none,,Clean baseline invoice
+INV-0570,0,none,,Clean baseline invoice
+INV-0146,0,none,,Clean baseline invoice
+INV-0211,0,none,,Clean baseline invoice
+INV-0281,0,none,,Clean baseline invoice
+INV-0768,0,none,,Clean baseline invoice
+INV-0854,1,exact_duplicate,INV-0281,Exact duplicate of INV-0281
+INV-0069,0,none,,Clean baseline invoice
+INV-0090,0,none,,Clean baseline invoice
+INV-0128,0,none,,Clean baseline invoice
+INV-0151,0,none,,Clean baseline invoice
+INV-0328,0,none,,Clean baseline invoice
+INV-0558,0,none,,Clean baseline invoice
+INV-0542,0,none,,Clean baseline invoice
+INV-0668,0,none,,Clean baseline invoice
+INV-0727,0,none,,Clean baseline invoice
+INV-0780,0,none,,Clean baseline invoice
+INV-0801,0,none,,Clean baseline invoice
+INV-0113,0,none,,Clean baseline invoice
+INV-0718,0,none,,Clean baseline invoice
+INV-0792,0,none,,Clean baseline invoice
+INV-0912,1,missing_field,,Required field omitted
+INV-0214,0,none,,Clean baseline invoice
+INV-0696,0,none,,Clean baseline invoice
+INV-0731,0,none,,Clean baseline invoice
+INV-0824,1,exact_duplicate,INV-0113,Exact duplicate of INV-0113
+INV-0169,0,none,,Clean baseline invoice
+INV-0191,0,none,,Clean baseline invoice
+INV-0758,0,none,,Clean baseline invoice
+INV-0386,0,none,,Clean baseline invoice
+INV-0574,0,none,,Clean baseline invoice
+INV-0595,0,none,,Clean baseline invoice
+INV-0690,0,none,,Clean baseline invoice
+INV-0761,0,none,,Clean baseline invoice
+INV-0900,1,missing_field,,Required field omitted
+INV-0922,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0969,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0051,0,none,,Clean baseline invoice
+INV-0248,0,none,,Clean baseline invoice
+INV-0270,0,none,,Clean baseline invoice
+INV-0416,0,none,,Clean baseline invoice
+INV-0967,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0948,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0950,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0963,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0009,0,none,,Clean baseline invoice
+INV-0630,0,none,,Clean baseline invoice
+INV-0660,0,none,,Clean baseline invoice
+INV-0664,0,none,,Clean baseline invoice
+INV-0079,0,none,,Clean baseline invoice
+INV-0143,0,none,,Clean baseline invoice
+INV-0360,0,none,,Clean baseline invoice
+INV-0413,0,none,,Clean baseline invoice
+INV-0499,0,none,,Clean baseline invoice
+INV-0586,0,none,,Clean baseline invoice
+INV-0554,0,none,,Clean baseline invoice
+INV-0616,0,none,,Clean baseline invoice
+INV-0622,0,none,,Clean baseline invoice
+INV-0625,0,none,,Clean baseline invoice
+INV-0036,0,none,,Clean baseline invoice
+INV-0068,0,none,,Clean baseline invoice
+INV-0815,0,none,,Clean baseline invoice
+INV-0114,0,none,,Clean baseline invoice
+INV-0336,0,none,,Clean baseline invoice
+INV-0405,0,none,,Clean baseline invoice
+INV-0516,0,none,,Clean baseline invoice
+INV-0762,0,none,,Clean baseline invoice
+INV-0876,1,fuzzy_duplicate,INV-0360,Fuzzy duplicate of INV-0360
+INV-0334,0,none,,Clean baseline invoice
+INV-0446,0,none,,Clean baseline invoice
+INV-0601,0,none,,Clean baseline invoice
+INV-0618,0,none,,Clean baseline invoice
+INV-0757,0,none,,Clean baseline invoice
+INV-0074,0,none,,Clean baseline invoice
+INV-0326,0,none,,Clean baseline invoice
+INV-0375,0,none,,Clean baseline invoice
+INV-0420,0,none,,Clean baseline invoice
+INV-0697,0,none,,Clean baseline invoice
+INV-0840,1,exact_duplicate,INV-0074,Exact duplicate of INV-0074
+INV-0846,1,exact_duplicate,INV-0114,Exact duplicate of INV-0114
+INV-0865,1,fuzzy_duplicate,INV-0114,Fuzzy duplicate of INV-0114
+INV-0885,1,fuzzy_duplicate,INV-0375,Fuzzy duplicate of INV-0375
+INV-0987,0,none,,Clean showcase baseline
+INV-1042,1,fuzzy_duplicate,INV-0987,Planted showcase fuzzy duplicate
+INV-0320,0,none,,Clean baseline invoice
+INV-0408,0,none,,Clean baseline invoice
+INV-0521,0,none,,Clean baseline invoice
+INV-0564,0,none,,Clean baseline invoice
+INV-0788,0,none,,Clean baseline invoice
+INV-0898,1,missing_field,,Required field omitted
+INV-0131,0,none,,Clean baseline invoice
+INV-0140,0,none,,Clean baseline invoice
+INV-0327,0,none,,Clean baseline invoice
+INV-0443,0,none,,Clean baseline invoice
+INV-0582,0,none,,Clean baseline invoice
+INV-0597,0,none,,Clean baseline invoice
+INV-0599,0,none,,Clean baseline invoice
+INV-0839,1,exact_duplicate,INV-0140,Exact duplicate of INV-0140
+INV-0953,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0049,0,none,,Clean baseline invoice
+INV-0331,0,none,,Clean baseline invoice
+INV-0117,0,none,,Clean baseline invoice
+INV-0139,0,none,,Clean baseline invoice
+INV-0352,0,none,,Clean baseline invoice
+INV-0357,0,none,,Clean baseline invoice
+INV-0367,0,none,,Clean baseline invoice
+INV-0459,0,none,,Clean baseline invoice
+INV-0658,0,none,,Clean baseline invoice
+INV-0707,0,none,,Clean baseline invoice
+INV-0849,1,exact_duplicate,INV-0320,Exact duplicate of INV-0320
+INV-0083,0,none,,Clean baseline invoice
+INV-0429,0,none,,Clean baseline invoice
+INV-0476,0,none,,Clean baseline invoice
+INV-0971,1,policy_limit,,"Total amount exceeds policy ceiling 100,000"
+INV-0992,1,unknown_vendor,,Vendor not in master or disallowed category
+INV-0258,0,none,,Clean baseline invoice
+INV-0370,0,none,,Clean baseline invoice
+INV-0655,0,none,,Clean baseline invoice
+INV-0716,0,none,,Clean baseline invoice
+INV-0954,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0237,0,none,,Clean baseline invoice
+INV-0457,0,none,,Clean baseline invoice
+INV-0531,0,none,,Clean baseline invoice
+INV-0135,0,none,,Clean baseline invoice
+INV-0142,0,none,,Clean baseline invoice
+INV-0532,0,none,,Clean baseline invoice
+INV-0631,0,none,,Clean baseline invoice
+INV-0920,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0042,0,none,,Clean baseline invoice
+INV-0138,0,none,,Clean baseline invoice
+INV-0287,0,none,,Clean baseline invoice
+INV-0556,0,none,,Clean baseline invoice
+INV-0133,0,none,,Clean baseline invoice
+INV-0171,0,none,,Clean baseline invoice
+INV-0239,0,none,,Clean baseline invoice
+INV-0498,0,none,,Clean baseline invoice
+INV-0722,0,none,,Clean baseline invoice
+INV-0799,0,none,,Clean baseline invoice
+INV-0914,1,missing_field,,Required field omitted
+INV-0038,0,none,,Clean baseline invoice
+INV-0187,0,none,,Clean baseline invoice
+INV-0243,0,none,,Clean baseline invoice
+INV-0478,0,none,,Clean baseline invoice
+INV-0493,0,none,,Clean baseline invoice
+INV-0537,0,none,,Clean baseline invoice
+INV-0070,0,none,,Clean baseline invoice
+INV-0231,0,none,,Clean baseline invoice
+INV-0247,0,none,,Clean baseline invoice
+INV-0480,0,none,,Clean baseline invoice
+INV-0517,0,none,,Clean baseline invoice
+INV-0661,0,none,,Clean baseline invoice
+INV-0964,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0966,1,calculation_mismatch,,Total does not equal subtotal + tax
+INV-0177,0,none,,Clean baseline invoice
+INV-0207,0,none,,Clean baseline invoice
+INV-0402,0,none,,Clean baseline invoice
+INV-0461,0,none,,Clean baseline invoice
+INV-0482,0,none,,Clean baseline invoice
+INV-0925,1,invalid_amount,,Amount is non-positive or unparseable
+INV-0212,0,none,,Clean baseline invoice
+INV-0232,0,none,,Clean baseline invoice
+INV-0268,0,none,,Clean baseline invoice
+INV-0411,0,none,,Clean baseline invoice
+INV-0432,0,none,,Clean baseline invoice
+INV-0551,0,none,,Clean baseline invoice
+INV-0670,0,none,,Clean baseline invoice
+INV-0710,0,none,,Clean baseline invoice
+INV-0905,1,missing_field,,Required field omitted
+INV-0293,0,none,,Clean baseline invoice
+INV-0490,0,none,,Clean baseline invoice
+INV-0812,0,none,,Clean baseline invoice
+INV-0851,1,exact_duplicate,INV-0207,Exact duplicate of INV-0207
+INV-0011,0,none,,Clean baseline invoice
+INV-0013,0,none,,Clean baseline invoice
+INV-0196,0,none,,Clean baseline invoice
+INV-0372,0,none,,Clean baseline invoice
+INV-0541,0,none,,Clean baseline invoice
+INV-0688,0,none,,Clean baseline invoice
+INV-0832,1,exact_duplicate,INV-0212,Exact duplicate of INV-0212
+INV-0838,1,exact_duplicate,INV-0232,Exact duplicate of INV-0232
+INV-0934,1,future_date,,Invoice date occurs after as_of_date
+INV-0935,1,future_date,,Invoice date occurs after as_of_date
+INV-0940,1,future_date,,Invoice date occurs after as_of_date
+INV-0200,1,future_date,,Planted showcase future date
+INV-0936,1,future_date,,Invoice date occurs after as_of_date
+INV-0942,1,future_date,,Invoice date occurs after as_of_date
+INV-0937,1,future_date,,Invoice date occurs after as_of_date
+INV-0938,1,future_date,,Invoice date occurs after as_of_date
+INV-0939,1,future_date,,Invoice date occurs after as_of_date
+INV-0941,1,future_date,,Invoice date occurs after as_of_date
+INV-0929,1,invalid_date,,Date format unparseable
+INV-0930,1,invalid_date,,Date format unparseable
+INV-0931,1,invalid_date,,Date format unparseable
+INV-0932,1,invalid_date,,Date format unparseable
+INV-0933,1,invalid_date,,Date format unparseable
+INV-0896,1,missing_field,,Required field omitted
+INV-0901,1,missing_field,,Required field omitted
+INV-0903,1,missing_field,,Required field omitted
+INV-0906,1,missing_field,,Required field omitted
+INV-0907,1,missing_field,,Required field omitted
+INV-0908,1,missing_field,,Required field omitted

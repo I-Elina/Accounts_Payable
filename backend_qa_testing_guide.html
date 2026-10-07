@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend QA & Rules Testing Guide — Cache Me If You Can</title>
+  <style>
+    :root {
+      --color-primary: #0078D4;
+      --color-primary-hover: #106EBE;
+      --color-primary-soft: #E5F1FB;
+      --color-navy: #11213F;
+      --color-navy-2: #1B2F55;
+      --color-bg: #F4F7FB;
+      --color-surface: #FFFFFF;
+      --color-border: #D8E0EA;
+      --color-text: #11213F;
+      --color-text-muted: #5B6B7F;
+      --color-pass: #107C10;
+      --color-pass-bg: #E6F4E6;
+      --color-review: #B35C00;
+      --color-review-bg: #FFF1DB;
+      --color-exception: #C42B31;
+      --color-exception-bg: #FDE7E9;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+      --radius: 8px;
+      --shadow: 0 2px 8px rgba(17, 33, 63, 0.08), 0 1px 3px rgba(17, 33, 63, 0.05);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-2) 100%);
+      color: #FFFFFF;
+      padding: 36px 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 32px;
+    }
+
+    header .badge-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #D8E0EA;
+      font-size: 16px;
+      max-width: 800px;
+    }
+
+    .nav-bar {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+
+    .nav-bar a:hover {
+      background: var(--color-primary);
+    }
+
+    section {
+      background: var(--color-surface);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--color-navy);
+      border-bottom: 2px solid var(--color-primary-soft);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: var(--color-navy-2);
+      margin: 20px 0 10px 0;
+    }
+
+    p { margin-bottom: 12px; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    th {
+      background: var(--color-bg);
+      color: var(--color-navy);
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    tr:hover {
+      background: rgba(0, 120, 212, 0.02);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .badge-pass { background: var(--color-pass-bg); color: var(--color-pass); }
+    .badge-review { background: var(--color-review-bg); color: var(--color-review); }
+    .badge-exception { background: var(--color-exception-bg); color: var(--color-exception); }
+    .badge-hard { background: #FDE7E9; color: #A80000; border: 1px solid #F5B0B5; }
+    .badge-soft { background: #FFF1DB; color: #8A4600; border: 1px solid #FFE0B2; }
+
+    /* Code blocks */
+    pre, code {
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+
+    pre {
+      background: #111B2E;
+      color: #E2E8F0;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 12px 0;
+      line-height: 1.5;
+    }
+
+    code:not(pre code) {
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Callouts */
+    .callout {
+      border-left: 4px solid var(--color-primary);
+      background: var(--color-primary-soft);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .callout.warning {
+      border-left-color: var(--color-review);
+      background: var(--color-review-bg);
+      color: #7A3F00;
+    }
+
+    .callout.danger {
+      border-left-color: var(--color-exception);
+      background: var(--color-exception-bg);
+      color: #8B0000;
+    }
+
+    .test-step {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin: 16px 0;
+      background: #FCFDFF;
+    }
+
+    .test-step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .test-step-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-navy);
+    }
+
+    .method {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 12px;
+      font-family: var(--font-mono);
+    }
+
+    .method-get { background: #E6F4E6; color: #107C10; }
+    .method-post { background: #E5F1FB; color: #0078D4; }
+    .method-put { background: #FFF1DB; color: #B35C00; }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: var(--color-text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="badge-tag">Microsoft Innovate Hackathon 2026</div>
+    <h1>Backend QA & Rules Testing Guide</h1>
+    <p>Comprehensive step-by-step verification guide for validating the REST API, rule decision thresholds, grounded AI summaries, and immutable audit logs.</p>
+    <div class="nav-bar">
+      <a href="#rules-catalogue">Rule Catalogue (R01–R11)</a>
+      <a href="#scoring-routing">Scoring & Thresholds</a>
+      <a href="#test-runbook">Step-by-Step QA Runbook</a>
+      <a href="#edge-cases">Boundary & Edge Cases</a>
+      <a href="#anti-hallucination">AI Grounding Verification</a>
+    </div>
+  </header>
+
+  <!-- Section 1: Rule Catalogue -->
+  <section id="rules-catalogue">
+    <h2>📋 Section 1: Complete Rule Catalogue (R01 to R11)</h2>
+    <p>The decision engine runs in two deterministic passes. Hard violations always route an invoice straight to <span class="badge badge-exception">Exception</span> regardless of score. Soft violations decrement the confidence score.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Rule ID</th>
+          <th>Exception Type</th>
+          <th>Severity</th>
+          <th>Penalty</th>
+          <th>Pass</th>
+          <th>Trigger Logic & Conditions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>R01</code></td>
+          <td><code>missing_field</code></td>
+          <td><span class="badge badge-hard">Hard</span></td>
+          <td><code>0.50</code></td>
+          <td>Pass 1</td>
+          <td>Any required field is empty or whitespace: <code>invoice_number</code>, <code>vendor_name</code>, <code>invoice_date</code>, <code>total_amount</code>.</td>
+        </tr>
+        <tr>
+          <td><code>R02</code></td>
+          <td><code>invalid_amount</code></td>
+          <td><span class="badge badge-hard">Hard</span></td>
+          <td><code>0.60</code></td>
+          <td>Pass 1</td>
+          <td><code>total_amount</code> is unparseable text, negative (&lt; 0), or zero (≤ 0).</td>
+        </tr>
+        <tr>
+          <td><code>R03</code></td>
+          <td><code>invalid_date</code></td>
+          <td><span class="badge badge-hard">Hard</span></td>
+          <td><code>0.40</code></td>
+          <td>Pass 1</td>
+          <td><code>invoice_date</code> cannot be parsed as a valid calendar date (e.g., <code>"31/31/2026"</code>, <code>"invalid"</code>).</td>
+        </tr>
+        <tr>
+          <td><code>R04</code></td>
+          <td><code>future_date</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.30</code></td>
+          <td>Pass 1</td>
+          <td><code>invoice_date</code> is strictly greater than <code>as_of_date</code> (default: today UTC; fixed date for tests: <code>2026-10-01</code>).</td>
+        </tr>
+        <tr>
+          <td><code>R05</code></td>
+          <td><code>calculation_mismatch</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.35</code></td>
+          <td>Pass 1</td>
+          <td>Both <code>subtotal</code> and <code>tax_amount</code> are present, and <code>|subtotal + tax - total| / total * 100 > 0.5%</code>.</td>
+        </tr>
+        <tr>
+          <td><code>R06</code></td>
+          <td><code>exact_duplicate</code></td>
+          <td><span class="badge badge-hard">Hard</span></td>
+          <td><code>0.80</code></td>
+          <td>Pass 1</td>
+          <td>Identical normalized tuple <code>(vendor, invoice_number, total)</code> found in an earlier invoice in the batch or upload history.</td>
+        </tr>
+        <tr>
+          <td><code>R07</code></td>
+          <td><code>policy_limit</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.20</code></td>
+          <td>Pass 1</td>
+          <td><code>total_amount > policy_limit</code> (default threshold: <code>100,000 INR</code>).</td>
+        </tr>
+        <tr>
+          <td><code>R08</code></td>
+          <td><code>unknown_vendor</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.20</code></td>
+          <td>Pass 1</td>
+          <td>Normalized vendor not present in <code>vendor_master.csv</code>, or <code>category</code> not in approved contract list.</td>
+        </tr>
+        <tr>
+          <td><code>R09</code></td>
+          <td><code>fuzzy_duplicate</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.35 / 0.20</code></td>
+          <td>Pass 2</td>
+          <td>Gate check: <code>invoice_number</code> ratio ≥ 0.80. Weighted similarity: 35% Vendor + 30% Number + 20% Amount + 15% Date. Fires 0.35 if score ≥ 0.85; 0.20 if 0.70–0.85.</td>
+        </tr>
+        <tr>
+          <td><code>R10</code></td>
+          <td><code>fuzzy_duplicate</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.15</code></td>
+          <td>Pass 2</td>
+          <td>Fires only if <code>R09</code> triggered AND <code>amount_difference_pct ≤ 1.0%</code> against the matched record.</td>
+        </tr>
+        <tr>
+          <td><code>R11</code></td>
+          <td><code>amount_outlier</code></td>
+          <td><span class="badge badge-soft">Soft</span></td>
+          <td><code>0.20</code></td>
+          <td>Pass 2</td>
+          <td>Vendor historical standard score: <code>Z = (total - mean) / std > 3.0</code> (requires ≥ 5 historical invoices for that vendor).</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 2: Scoring and Routing -->
+  <section id="scoring-routing">
+    <h2>🎯 Section 2: Confidence Scoring & Decision Routing</h2>
+    <p>Every invoice receives a calculated <strong>confidence score</strong> between <code>0.00</code> and <code>1.00</code>:</p>
+    <pre><code>confidence = round(max(0.0, 1.0 - sum(violation.penalty for violation in violations)), 2)</code></pre>
+
+    <div class="callout">
+      <strong>Routing Decision Rules:</strong>
+      <ul style="margin-left: 20px; margin-top: 8px;">
+        <li><strong>Rule 1 (Hard Rule Override):</strong> Any hard violation (<code>R01, R02, R03, R06</code>) automatically routes the decision to <span class="badge badge-exception">Exception</span>.</li>
+        <li><strong>Rule 2 (Auto-Pass Band):</strong> If no hard violations and <code>confidence ≥ auto_pass_threshold (0.85)</code> &rarr; <span class="badge badge-pass">Auto-passed</span>. (Review status: <code>not_required</code>).</li>
+        <li><strong>Rule 3 (Needs Review Band):</strong> If <code>0.40 ≤ confidence < 0.85</code> &rarr; <span class="badge badge-review">Needs review</span>. (Review status: <code>pending</code>).</li>
+        <li><strong>Rule 4 (Exception Band):</strong> If <code>confidence < 0.40</code> &rarr; <span class="badge badge-exception">Exception</span>. (Review status: <code>pending</code>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 3: QA Test Runbook -->
+  <section id="test-runbook">
+    <h2>🧪 Section 3: Step-by-Step QA Test Runbook</h2>
+    <p>Follow these steps to thoroughly test the live backend API. All commands can be run via Terminal/PowerShell or directly in Swagger UI at <a href="http://localhost:8000/docs" target="_blank">http://localhost:8000/docs</a>.</p>
+
+    <!-- Step 1 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 1: Healthcheck & Service Liveness</span>
+        <span class="method method-get">GET /api/health</span>
+      </div>
+      <p>Verify that the service is running and report current AI configuration mode.</p>
+      <pre><code>curl -s http://localhost:8000/api/health</code></pre>
+      <p><strong>Expected Response (200 OK):</strong></p>
+      <pre><code>{
+  "status": "ok",
+  "ai_mode": "mock"
+}</code></pre>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 2: Database Seeding & Ingestion Pipeline</span>
+        <span class="method method-post">CLI: python -m backend.seed</span>
+      </div>
+      <p>Initializes the SQLite schema and runs <code>process_upload</code> on the demo dataset (1,000 invoices).</p>
+      <pre><code>python -m backend.seed</code></pre>
+      <p><strong>Expected Output:</strong></p>
+      <pre><code>Initializing database...
+Seed complete! Upload ID: 1, Processed: 1000 rows.
+Auto-pass: 816, Needs review: 90, Exception: 94</code></pre>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 3: Querying Invoices with Multi-Filters</span>
+        <span class="method method-get">GET /api/invoices</span>
+      </div>
+      <p>Test filtering by decision and sorting by confidence ascending (lowest confidence first).</p>
+      <pre><code>curl -s "http://localhost:8000/api/invoices?decision=needs_review,exception&sort=confidence&order=asc&page=1&page_size=5"</code></pre>
+      <p><strong>Verification Checklist:</strong></p>
+      <ul style="margin-left: 20px;">
+        <li>HTTP 200 OK with paginated structure: <code>items, total, page, page_size</code>.</li>
+        <li>Every item contains only canonical snake_case fields.</li>
+        <li>Confidences appear in ascending order (e.g. 0.20, 0.40, 0.50).</li>
+      </ul>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 4: Invoice Detail & Matched Record Inspection</span>
+        <span class="method method-get">GET /api/invoices/{id}</span>
+      </div>
+      <p>Retrieve full invoice detail for fuzzy duplicate showcase <code>INV-1042</code>.</p>
+      <pre><code>curl -s "http://localhost:8000/api/invoices/2"</code></pre>
+      <p><strong>Verification Checklist:</strong></p>
+      <ul style="margin-left: 20px;">
+        <li><code>matched_record</code> contains <code>"INV-0987"</code>.</li>
+        <li><code>matched_invoice</code> contains the full canonical details of earlier invoice <code>INV-0987</code>.</li>
+        <li><code>violations</code> array contains structured evidence with <code>vendor_similarity</code> and <code>amount_difference_pct</code>.</li>
+      </ul>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 5: On-Demand AI Summary Generation</span>
+        <span class="method method-post">POST /api/invoices/{id}/summary</span>
+      </div>
+      <p>Requests plain-English explanation for a flagged invoice. Checks anti-hallucination validation.</p>
+      <pre><code>curl -s -X POST "http://localhost:8000/api/invoices/2/summary"</code></pre>
+      <p><strong>Expected Response (200 OK):</strong></p>
+      <pre><code>{
+  "ai_summary": "Invoice INV-1042 appears to duplicate INV-0987. Probable duplicate of INV-0987 (96% similar)...",
+  "ai_suggested_action": "investigate",
+  "ai_summary_status": "ready"
+}</code></pre>
+      <p><em>Check audit trail:</em> <code>GET /api/audit?invoice_id=INV-1042</code> must contain an <code>AI_SUMMARY_GENERATED</code> event!</p>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 6: Human Review & 409 Conflict Protection</span>
+        <span class="method method-post">POST /api/invoices/{id}/review</span>
+      </div>
+      <p>Approve pending invoice, then verify that re-reviewing returns HTTP 409 Conflict.</p>
+      <pre><code># 1. First review: Approve
+curl -s -X POST "http://localhost:8000/api/invoices/2/review" \
+  -H "Content-Type: application/json" \
+  -d '{"action": "approve", "reviewer": "Shree", "comment": "Verified with vendor"}'
+
+# 2. Second review: Must fail with 409 Conflict
+curl -s -X POST "http://localhost:8000/api/invoices/2/review" \
+  -H "Content-Type: application/json" \
+  -d '{"action": "reject", "reviewer": "Alex"}'</code></pre>
+      <p><strong>Expected 409 Response:</strong></p>
+      <pre><code>{
+  "error": {
+    "code": "CONFLICT",
+    "message": "Invoice INV-1042 cannot be reviewed because its current review status is 'approved'",
+    "details": ["review_status must be 'pending', currently 'approved'"]
+  }
+}</code></pre>
+    </div>
+
+    <!-- Step 7 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 7: Chat Assistant & Review Proposal Safety</span>
+        <span class="method method-post">POST /api/chat</span>
+      </div>
+      <p>Ask the chatbot to approve an invoice. Verify that the assistant only proposes the action and <strong>never changes the database row</strong>.</p>
+      <pre><code>curl -s -X POST "http://localhost:8000/api/chat" \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Approve INV-1042"}'</code></pre>
+      <p><strong>Verification Checklist:</strong></p>
+      <ul style="margin-left: 20px;">
+        <li>Returns a <code>proposal</code> object: <code>{"type": "review_proposal", "invoice_id": "INV-1042", "action": "approve"}</code>.</li>
+        <li>Inspect <code>GET /api/invoices/2</code> &rarr; review status remains unchanged!</li>
+        <li>Inspect <code>GET /api/audit</code> &rarr; no <code>REVIEW_APPROVED</code> audit record was created!</li>
+      </ul>
+    </div>
+
+    <!-- Step 8 -->
+    <div class="test-step">
+      <div class="test-step-header">
+        <span class="test-step-title">Test 8: Formula-Safe CSV Report Download</span>
+        <span class="method method-get">GET /api/uploads/1/report</span>
+      </div>
+      <p>Download the short exception report. Verify encoding and spreadsheet formula injection protection.</p>
+      <pre><code>curl -s -O -J "http://localhost:8000/api/uploads/1/report"</code></pre>
+      <p><strong>Verification Checklist:</strong></p>
+      <ul style="margin-left: 20px;">
+        <li>Filename header: <code>ap_exception_report_1.csv</code>.</li>
+        <li>Starts with UTF-8 BOM bytes <code>0xEF, 0xBB, 0xBF</code> (ensures ₹ rupee symbol opens cleanly in Excel).</li>
+        <li>Only contains flagged invoices (<code>needs_review</code> and <code>exception</code>).</li>
+        <li>Text cells starting with <code>=</code>, <code>+</code>, <code>-</code>, or <code>@</code> are prefixed with <code>'</code>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 4: Edge Cases -->
+  <section id="edge-cases">
+    <h2>🛡️ Section 4: Boundary & Edge Case Checklist</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Test Case</th>
+          <th>Input Payload</th>
+          <th>Expected Status</th>
+          <th>Expected Error Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Invalid File Extension</td>
+          <td>Upload <code>notes.txt</code> or <code>document.pdf</code></td>
+          <td><code>422 Unprocessable</code></td>
+          <td><code>VALIDATION_ERROR</code></td>
+        </tr>
+        <tr>
+          <td>Empty Upload File</td>
+          <td>Upload 0-byte file</td>
+          <td><code>422 Unprocessable</code></td>
+          <td><code>VALIDATION_ERROR</code></td>
+        </tr>
+        <tr>
+          <td>Review Auto-Passed Row</td>
+          <td>Call <code>/review</code> on row with <code>decision = auto_pass</code></td>
+          <td><code>409 Conflict</code></td>
+          <td><code>CONFLICT</code></td>
+        </tr>
+        <tr>
+          <td>Empty Reviewer Name</td>
+          <td><code>{"action": "approve", "reviewer": "   "}</code></td>
+          <td><code>422 Unprocessable</code></td>
+          <td><code>VALIDATION_ERROR</code></td>
+        </tr>
+        <tr>
+          <td>Inverted Thresholds</td>
+          <td><code>PUT /api/config</code> with <code>auto_pass: 0.40, exception_below: 0.80</code></td>
+          <td><code>422 Unprocessable</code></td>
+          <td><code>VALIDATION_ERROR</code></td>
+        </tr>
+        <tr>
+          <td>Non-Existent Invoice</td>
+          <td><code>GET /api/invoices/999999</code></td>
+          <td><code>404 Not Found</code></td>
+          <td><code>NOT_FOUND</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 5: Anti-Hallucination -->
+  <section id="anti-hallucination">
+    <h2>🔒 Section 5: AI Anti-Hallucination Guardrails</h2>
+    <p>The backend implements a strict multi-stage validation barrier before any AI-generated explanation is returned or persisted:</p>
+    <div class="callout warning">
+      <strong>Strict Anti-Hallucination Enforcements:</strong>
+      <ol style="margin-left: 20px; margin-top: 6px;">
+        <li><strong>Character & Sentence Limits:</strong> Maximum 3 sentences and ≤ 600 characters.</li>
+        <li><strong>Invoice ID Whitelisting:</strong> Every uppercase token matching <code>[A-Z]{2,5}-\d{2,}</code> must be present in the verified record's <code>invoice_id</code> or <code>matched_record</code>. Fabricated IDs (e.g. <code>INV-9999</code>) fail validation immediately.</li>
+        <li><strong>Rule ID Whitelisting:</strong> Every ID in <code>referenced_rule_ids</code> must exist in the record's triggered violations.</li>
+        <li><strong>Fallback Safety:</strong> If an LLM response fails validation twice, the system falls back to the deterministic rule-based template without crashing.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <p>Cache Me If You Can &copy; 2026 — Microsoft Innovate Hackathon Team | Built for Production AP Automation</p>
+  </footer>
+</div>
+
+</body>
+</html>

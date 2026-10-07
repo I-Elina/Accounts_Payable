@@ -1,0 +1,222 @@
+[
+  {
+    "case_id": "AI-01",
+    "invoice_id": "INV-1042",
+    "vendor_name": "Acme Pvt Ltd",
+    "total_amount": 10000.0,
+    "decision": "needs_review",
+    "exception_type": "fuzzy_duplicate",
+    "matched_record": "INV-0987",
+    "primary_reason": "Probable duplicate of INV-0987 (96% similar)",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-02",
+    "invoice_id": "INV-0501",
+    "vendor_name": "Tata Consultancy Services",
+    "total_amount": 53100.0,
+    "decision": "exception",
+    "exception_type": "exact_duplicate",
+    "matched_record": "INV-0500",
+    "primary_reason": "Exact duplicate of INV-0500",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-03",
+    "invoice_id": "INV-0100",
+    "vendor_name": "",
+    "total_amount": 29500.0,
+    "decision": "exception",
+    "exception_type": "missing_field",
+    "matched_record": null,
+    "primary_reason": "Missing required field(s): vendor_name",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-04",
+    "invoice_id": "INV-0200",
+    "vendor_name": "Dell Technologies Inc",
+    "total_amount": 41300.0,
+    "decision": "needs_review",
+    "exception_type": "future_date",
+    "matched_record": null,
+    "primary_reason": "Invoice date 2026-11-15 is in the future",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-05",
+    "invoice_id": "INV-0300",
+    "vendor_name": "Infosys Limited",
+    "total_amount": 236000.0,
+    "decision": "needs_review",
+    "exception_type": "policy_limit",
+    "matched_record": null,
+    "primary_reason": "Amount 236000.0 exceeds policy limit 100000",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-06",
+    "invoice_id": "INV-0012",
+    "vendor_name": "MakeMyTrip India Pvt Ltd",
+    "total_amount": 150.0,
+    "decision": "needs_review",
+    "exception_type": "calculation_mismatch",
+    "matched_record": null,
+    "primary_reason": "Total 150.0 does not equal subtotal + tax (118.0)",
+    "expected_action": "contact_vendor"
+  },
+  {
+    "case_id": "AI-07",
+    "invoice_id": "INV-0015",
+    "vendor_name": "Global Ghost Technologies",
+    "total_amount": 17700.0,
+    "decision": "needs_review",
+    "exception_type": "unknown_vendor",
+    "matched_record": null,
+    "primary_reason": "Vendor not in approved vendor master",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-08",
+    "invoice_id": "INV-0018",
+    "vendor_name": "Oracle India Private Limited",
+    "total_amount": 23600.0,
+    "decision": "needs_review",
+    "exception_type": "unknown_vendor",
+    "matched_record": null,
+    "primary_reason": "Category 'Cryptocurrency' not permitted by procurement policy",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-09",
+    "invoice_id": "INV-0021",
+    "vendor_name": "Cognizant Technology Solutions",
+    "total_amount": 0.0,
+    "decision": "exception",
+    "exception_type": "invalid_amount",
+    "matched_record": null,
+    "primary_reason": "Invalid amount: 0.0",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-10",
+    "invoice_id": "INV-0022",
+    "vendor_name": "Lenovo India Private Limited",
+    "total_amount": -500.0,
+    "decision": "exception",
+    "exception_type": "invalid_amount",
+    "matched_record": null,
+    "primary_reason": "Invalid amount: -500.0",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-11",
+    "invoice_id": "INV-0025",
+    "vendor_name": "Reliance Retail Limited",
+    "total_amount": 14160.0,
+    "decision": "exception",
+    "exception_type": "invalid_date",
+    "matched_record": null,
+    "primary_reason": "Invalid invoice date: 31/31/2026",
+    "expected_action": "contact_vendor"
+  },
+  {
+    "case_id": "AI-12",
+    "invoice_id": "INV-0028",
+    "vendor_name": "Wipro Enterprises Limited",
+    "total_amount": 75000.0,
+    "decision": "needs_review",
+    "exception_type": "amount_outlier",
+    "matched_record": null,
+    "primary_reason": "Amount is 8.5 standard deviations from this vendor's usual",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-13",
+    "invoice_id": "INV-0030",
+    "vendor_name": "Blue Dart Express Ltd",
+    "total_amount": 4956.0,
+    "decision": "auto_pass",
+    "exception_type": "none",
+    "matched_record": null,
+    "primary_reason": "No issues found",
+    "expected_action": "approve"
+  },
+  {
+    "case_id": "AI-14",
+    "invoice_id": "INV-0035",
+    "vendor_name": "Siemens Industry Software",
+    "total_amount": 47200.0,
+    "decision": "auto_pass",
+    "exception_type": "none",
+    "matched_record": null,
+    "primary_reason": "No issues found",
+    "expected_action": "approve"
+  },
+  {
+    "case_id": "AI-15",
+    "invoice_id": "INV-0040",
+    "vendor_name": "HCL Technologies Limited",
+    "total_amount": 21240.0,
+    "decision": "auto_pass",
+    "exception_type": "none",
+    "matched_record": null,
+    "primary_reason": "No issues found",
+    "expected_action": "approve"
+  },
+  {
+    "case_id": "AI-16",
+    "invoice_id": "INV-0045",
+    "vendor_name": "Godrej Interio Ltd",
+    "total_amount": 14160.0,
+    "decision": "needs_review",
+    "exception_type": "calculation_mismatch",
+    "matched_record": null,
+    "primary_reason": "Total 14160.0 does not equal subtotal + tax (12500.0)",
+    "expected_action": "contact_vendor"
+  },
+  {
+    "case_id": "AI-17",
+    "invoice_id": "INV-0050",
+    "vendor_name": "HP India Sales Pvt Ltd",
+    "total_amount": 150000.0,
+    "decision": "needs_review",
+    "exception_type": "policy_limit",
+    "matched_record": null,
+    "primary_reason": "Amount 150000.0 exceeds policy limit 100000",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-18",
+    "invoice_id": "INV-0055",
+    "vendor_name": "Zoho Corporation Pvt Ltd",
+    "total_amount": 18880.0,
+    "decision": "exception",
+    "exception_type": "exact_duplicate",
+    "matched_record": "INV-0054",
+    "primary_reason": "Exact duplicate of INV-0054",
+    "expected_action": "reject"
+  },
+  {
+    "case_id": "AI-19",
+    "invoice_id": "INV-0060",
+    "vendor_name": "Persistent Systems Ltd",
+    "total_amount": 35400.0,
+    "decision": "needs_review",
+    "exception_type": "fuzzy_duplicate",
+    "matched_record": "INV-0059",
+    "primary_reason": "Probable duplicate of INV-0059 (94% similar)",
+    "expected_action": "investigate"
+  },
+  {
+    "case_id": "AI-20",
+    "invoice_id": "INV-0065",
+    "vendor_name": "KPMG Advisory Services",
+    "total_amount": 59000.0,
+    "decision": "auto_pass",
+    "exception_type": "none",
+    "matched_record": null,
+    "primary_reason": "No issues found",
+    "expected_action": "approve"
+  }
+]
