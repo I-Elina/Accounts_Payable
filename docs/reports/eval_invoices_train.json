@@ -1,0 +1,110 @@
+{
+  "dataset": "invoices_train.csv",
+  "total_invoices": 1000,
+  "engine_summary": {
+    "total": 1000,
+    "auto_pass": 820,
+    "needs_review": 93,
+    "exception": 87,
+    "engine_version": "1.0.0",
+    "auto_pass_threshold": 0.85,
+    "exception_below": 0.4
+  },
+  "config_used": {
+    "as_of_date": "2026-10-01"
+  },
+  "confusion_matrix": {
+    "true_positives": 180,
+    "false_positives": 0,
+    "false_negatives": 4,
+    "true_negatives": 816
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 0.9783,
+    "f1_score": 0.989,
+    "accuracy": 0.996,
+    "specificity": 1.0,
+    "type_accuracy": 0.9389
+  },
+  "meets_contract_targets": true,
+  "per_type_metrics": {
+    "amount_outlier": {
+      "total": 7,
+      "flagged": 3,
+      "missed": 4,
+      "recall": 0.4286,
+      "type_accuracy": 1.0
+    },
+    "calculation_mismatch": {
+      "total": 25,
+      "flagged": 25,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "exact_duplicate": {
+      "total": 40,
+      "flagged": 40,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "future_date": {
+      "total": 10,
+      "flagged": 10,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "fuzzy_duplicate": {
+      "total": 30,
+      "flagged": 30,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "invalid_amount": {
+      "total": 12,
+      "flagged": 12,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "invalid_date": {
+      "total": 5,
+      "flagged": 5,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 0.0
+    },
+    "missing_field": {
+      "total": 30,
+      "flagged": 30,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 0.8
+    },
+    "policy_limit": {
+      "total": 15,
+      "flagged": 15,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    },
+    "unknown_vendor": {
+      "total": 10,
+      "flagged": 10,
+      "missed": 0,
+      "recall": 1.0,
+      "type_accuracy": 1.0
+    }
+  },
+  "missed_invoice_ids": [
+    "INV-0999",
+    "INV-0994",
+    "INV-0998",
+    "INV-0995"
+  ],
+  "false_alarm_invoice_ids": []
+}

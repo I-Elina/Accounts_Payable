@@ -1,0 +1,6 @@
+raw_transaction_id,source_system,supplier_legal_entity,doc_reference,posting_date,currency_code,net_taxable,tax_charged,gross_settlement,cost_center_code,line_narrative
+TXN-1001,SAP-ERP,Acme Pvt Ltd,AC/2026/0012,2026-03-15,INR,15200.00,2736.00,17936.00,CC-OFFICE,Ergonomic workstations and office furniture
+TXN-1002,ORACLE-AP,Tata Consultancy Services,TCS/2026/0491,2026-04-10,INR,45000.00,8100.00,53100.00,CC-TECH,Quarterly software consulting retainership
+TXN-1003,SAP-ERP,Infosys Limited,INFY/2026/0118,2026-05-02,INR,38000.00,6840.00,44840.00,CC-TECH,Cloud migration architectural audit
+TXN-1004,MICROSOFT-NAV,Dell Technologies Inc,DELL/2026/0882,2026-06-20,INR,62000.00,11160.00,73160.00,CC-HARDWARE,Enterprise server rack expansion
+TXN-1005,ZOHO-BOOKS,Blue Dart Express Ltd,BD/2026/0339,2026-07-08,INR,4200.00,756.00,4956.00,CC-LOGISTICS,Express nationwide courier dispatches
