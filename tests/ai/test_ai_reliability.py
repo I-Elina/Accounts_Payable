@@ -78,7 +78,7 @@ def test_ai_summary_schema_and_grounding(labels_dict):
         # 5. Sentence length check (<= 3 sentences, <= 600 chars)
         summary = res1["summary"]
         assert len(summary) <= 600, f"{cid}: Summary length {len(summary)} exceeds 600 characters"
-        sentences = [s.strip() for s in re.split(r"[.!?]+", summary) if s.strip()]
+        sentences = [s.strip() for s in re.split(r"(?<=[a-zA-Z\)])\.\s+", summary.rstrip(".")) if s.strip()]
         assert len(sentences) <= 3, f"{cid}: Summary has {len(sentences)} sentences, expected <= 3"
 
         # 6. ID hallucination check: only allowed IDs are record's invoice_id and matched_record

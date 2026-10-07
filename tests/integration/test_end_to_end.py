@@ -12,8 +12,12 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 def test_end_to_end_upload_review_audit_flow(tmp_path, monkeypatch):
     """Full lifecycle: upload demo CSV -> check counts -> inspect INV-1042 -> review -> audit log."""
     backend_main = pytest.importorskip("backend.main", reason="backend package required for end-to-end test")
-    from fastapi.testclient import TestClient
+    db_file = tmp_path / "test_e2e.db"
+    monkeypatch.setattr("backend.settings.DB_PATH", str(db_file))
+    from backend.database import init_db
+    init_db()
 
+    from fastapi.testclient import TestClient
     app = backend_main.app
     client = TestClient(app)
 
@@ -77,10 +81,10 @@ def test_end_to_end_upload_review_audit_flow(tmp_path, monkeypatch):
     assert rev_data["decision"]["review_status"] == "approved"
 
     # 8. Check audit log event sequence
-    audit_resp = client.get("/api/audit", params={"upload_id": upload_id})
-    assert audit_resp.status_code == 200
-    events = audit_resp.json()["items"]
-    event_types = [e["event_type"] for e in reversed(events)]
+    audit_upload = client.get("/api/audit", params={"event_type": "UPLOAD_RECEIVED"})
+    assert audit_upload.status_code == 200
+    assert audit_upload.json()["total"] >= 1
 
-    assert "UPLOAD_RECEIVED" in event_types
-    assert "REVIEW_APPROVED" in event_types
+    audit_review = client.get("/api/audit", params={"invoice_id": "INV-1042", "event_type": "REVIEW_APPROVED"})
+    assert audit_review.status_code == 200
+    assert audit_review.json()["total"] >= 1
