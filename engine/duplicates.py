@@ -4,6 +4,10 @@ from __future__ import annotations
 
 from engine.normalize import normalize_vendor, normalize_invoice_number
 
+# Maximum candidates per record to check in Pass 2.
+# Prevents O(n^2) fuzzy calls on pathological datasets (e.g. all same month).
+_MAX_CANDIDATES = 50
+
 
 def build_exact_index(
     records: list[dict],
@@ -22,7 +26,6 @@ def build_exact_index(
     seen: dict[tuple, str] = {}
     exact_matches: dict[str, str] = {}
 
-    # History first (always "earlier")
     if history:
         for rec in history:
             total = rec.get("total_amount")
@@ -65,18 +68,18 @@ def build_candidates(
     """For each batch record, find earlier candidate records for fuzzy matching.
 
     A candidate is a record (batch or history) with:
-    - invoice_date within +-blocking_days of this record
+    - invoice_date within blocking_days of this record
     - total_amount within blocking_amount_pct% of this record
     - dated strictly before this record (by date+row_index)
 
     Uses a sorted sliding window: O(n * window_size) instead of O(n^2).
+    Caps results at _MAX_CANDIDATES per record to bound fuzzy-match cost.
 
     Returns:
         dict mapping invoice_id -> list of candidate record dicts.
     """
     from datetime import datetime
 
-    # Build enriched list of ALL records (history + batch)
     all_records: list[dict] = []
     if history:
         for h in history:
@@ -89,7 +92,6 @@ def build_candidates(
         rr["_is_history"] = False
         all_records.append(rr)
 
-    # Filter to records with valid dates and amounts; parse dates once
     valid: list[dict] = []
     for r in all_records:
         if r.get("invoice_date") and r.get("total_amount") is not None:
@@ -99,35 +101,35 @@ def build_candidates(
             except (ValueError, TypeError):
                 pass
 
-    # Sort by (date, row_index) ascending
     valid.sort(key=lambda r: (r["_date_obj"], r.get("row_index", 0)))
 
     candidates: dict[str, list[dict]] = {}
 
     for i, rec in enumerate(valid):
         if rec["_is_history"]:
-            continue  # build candidates for batch records only
+            continue
 
         rec_date = rec["_date_obj"]
         rec_amount = rec["total_amount"]
         cands: list[dict] = []
 
-        # Scan backwards from i-1; break when date gap exceeds blocking_days
+        # Scan backwards; break when date gap exceeds blocking_days
         for j in range(i - 1, -1, -1):
+            if len(cands) >= _MAX_CANDIDATES:
+                break
+
             other = valid[j]
             days_diff = (rec_date - other["_date_obj"]).days
             if days_diff > blocking_days:
-                break  # sorted: all earlier entries are also too far back
+                break
 
-            # Amount within percentage
             other_amount = other.get("total_amount")
             if other_amount is None or rec_amount is None:
                 continue
             denom = max(abs(rec_amount), abs(other_amount))
             if denom == 0:
                 continue
-            pct_diff = abs(rec_amount - other_amount) / denom * 100
-            if pct_diff <= blocking_amount_pct:
+            if abs(rec_amount - other_amount) / denom * 100 <= blocking_amount_pct:
                 cands.append(other)
 
         candidates[rec["invoice_id"]] = cands
